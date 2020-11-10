@@ -1,0 +1,6419 @@
+fileFormatVersion: 2
+guid: 5d62edce77cbd0c47950f8f92efae43c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -991168715181724914
+    second: B_HouseExteriorTiles_0
+  - first:
+      213: -5786491536142689469
+    second: B_HouseExteriorTiles_1
+  - first:
+      213: 2091606988977344759
+    second: B_HouseExteriorTiles_2
+  - first:
+      213: 2415283728807433183
+    second: B_HouseExteriorTiles_3
+  - first:
+      213: -1818565516343656582
+    second: B_HouseExteriorTiles_4
+  - first:
+      213: -5006403643262690424
+    second: B_HouseExteriorTiles_5
+  - first:
+      213: -4927382403899859315
+    second: B_HouseExteriorTiles_6
+  - first:
+      213: -285792910941794254
+    second: B_HouseExteriorTiles_7
+  - first:
+      213: -6647212098624083737
+    second: B_HouseExteriorTiles_8
+  - first:
+      213: -1230595818510890297
+    second: B_HouseExteriorTiles_9
+  - first:
+      213: -2983542151465908734
+    second: B_HouseExteriorTiles_10
+  - first:
+      213: 7924010019658852253
+    second: B_HouseExteriorTiles_11
+  - first:
+      213: -9120126353663321731
+    second: B_HouseExteriorTiles_12
+  - first:
+      213: -1140825513251286133
+    second: B_HouseExteriorTiles_13
+  - first:
+      213: 4950957546955403006
+    second: B_HouseExteriorTiles_14
+  - first:
+      213: -6638430550654573244
+    second: B_HouseExteriorTiles_15
+  - first:
+      213: 2744174212892707266
+    second: B_HouseExteriorTiles_16
+  - first:
+      213: -7582562664445170919
+    second: B_HouseExteriorTiles_17
+  - first:
+      213: -1933370990242236490
+    second: B_HouseExteriorTiles_18
+  - first:
+      213: -8644727697550767668
+    second: B_HouseExteriorTiles_19
+  - first:
+      213: 8452926540557812231
+    second: B_HouseExteriorTiles_20
+  - first:
+      213: 6197339313171266417
+    second: B_HouseExteriorTiles_21
+  - first:
+      213: 1276305472002539829
+    second: B_HouseExteriorTiles_22
+  - first:
+      213: -4245524419661103302
+    second: B_HouseExteriorTiles_23
+  - first:
+      213: -2922852877160004287
+    second: B_HouseExteriorTiles_24
+  - first:
+      213: -4253523467492937827
+    second: B_HouseExteriorTiles_25
+  - first:
+      213: 2193034233294353982
+    second: B_HouseExteriorTiles_26
+  - first:
+      213: -5428360443549922357
+    second: B_HouseExteriorTiles_27
+  - first:
+      213: 1575784004340899150
+    second: B_HouseExteriorTiles_28
+  - first:
+      213: -1144468747668702642
+    second: B_HouseExteriorTiles_29
+  - first:
+      213: 2540187284999174886
+    second: B_HouseExteriorTiles_30
+  - first:
+      213: 6596852626277669670
+    second: B_HouseExteriorTiles_31
+  - first:
+      213: 1495399299729624110
+    second: B_HouseExteriorTiles_32
+  - first:
+      213: 7270149345181658676
+    second: B_HouseExteriorTiles_33
+  - first:
+      213: -5571424709523302828
+    second: B_HouseExteriorTiles_34
+  - first:
+      213: 5003302736814355645
+    second: B_HouseExteriorTiles_35
+  - first:
+      213: 1978947850297624796
+    second: B_HouseExteriorTiles_36
+  - first:
+      213: 6837631101435244215
+    second: B_HouseExteriorTiles_37
+  - first:
+      213: 2326194668337779646
+    second: B_HouseExteriorTiles_38
+  - first:
+      213: -1488653418042520395
+    second: B_HouseExteriorTiles_39
+  - first:
+      213: -5229066701916487198
+    second: B_HouseExteriorTiles_40
+  - first:
+      213: -6686565198030926299
+    second: B_HouseExteriorTiles_41
+  - first:
+      213: -4638215582068644785
+    second: B_HouseExteriorTiles_42
+  - first:
+      213: -8809662598355885224
+    second: B_HouseExteriorTiles_43
+  - first:
+      213: -8258546041121729630
+    second: B_HouseExteriorTiles_44
+  - first:
+      213: 5780910287890384315
+    second: B_HouseExteriorTiles_45
+  - first:
+      213: 9036952652938147381
+    second: B_HouseExteriorTiles_46
+  - first:
+      213: 8536071564523375620
+    second: B_HouseExteriorTiles_47
+  - first:
+      213: -4734810014329250270
+    second: B_HouseExteriorTiles_48
+  - first:
+      213: -4758212586914528957
+    second: B_HouseExteriorTiles_49
+  - first:
+      213: 1436981179881700009
+    second: B_HouseExteriorTiles_50
+  - first:
+      213: -2518105548187568004
+    second: B_HouseExteriorTiles_51
+  - first:
+      213: -3564327825226969314
+    second: B_HouseExteriorTiles_52
+  - first:
+      213: -8039024660689541221
+    second: B_HouseExteriorTiles_53
+  - first:
+      213: 5987790218185498071
+    second: B_HouseExteriorTiles_54
+  - first:
+      213: 6270554469455227788
+    second: B_HouseExteriorTiles_55
+  - first:
+      213: -4828234915046191457
+    second: B_HouseExteriorTiles_56
+  - first:
+      213: 1077448671583963647
+    second: B_HouseExteriorTiles_57
+  - first:
+      213: -114009822683559469
+    second: B_HouseExteriorTiles_58
+  - first:
+      213: 4264144271664905403
+    second: B_HouseExteriorTiles_59
+  - first:
+      213: -5286484998371948309
+    second: B_HouseExteriorTiles_60
+  - first:
+      213: 6095729683776137495
+    second: B_HouseExteriorTiles_61
+  - first:
+      213: 7874851818084616380
+    second: B_HouseExteriorTiles_62
+  - first:
+      213: 7450336548503681152
+    second: B_HouseExteriorTiles_63
+  - first:
+      213: 1098363596291967005
+    second: B_HouseExteriorTiles_64
+  - first:
+      213: -3028242022013246850
+    second: B_HouseExteriorTiles_65
+  - first:
+      213: -6046256364765589773
+    second: B_HouseExteriorTiles_66
+  - first:
+      213: 8666817467227554358
+    second: B_HouseExteriorTiles_67
+  - first:
+      213: 7853706368393298447
+    second: B_HouseExteriorTiles_68
+  - first:
+      213: -3977671053504752424
+    second: B_HouseExteriorTiles_69
+  - first:
+      213: 5658760473363185286
+    second: B_HouseExteriorTiles_70
+  - first:
+      213: 5057432456348749213
+    second: B_HouseExteriorTiles_71
+  - first:
+      213: -7925188317502862060
+    second: B_HouseExteriorTiles_72
+  - first:
+      213: 4188439848202557926
+    second: B_HouseExteriorTiles_73
+  - first:
+      213: 4460340827849084301
+    second: B_HouseExteriorTiles_74
+  - first:
+      213: -7595922687714703867
+    second: B_HouseExteriorTiles_75
+  - first:
+      213: -265289845304709293
+    second: B_HouseExteriorTiles_76
+  - first:
+      213: 3090200985465366779
+    second: B_HouseExteriorTiles_77
+  - first:
+      213: 7123843077619411899
+    second: B_HouseExteriorTiles_78
+  - first:
+      213: -5304310006720195174
+    second: B_HouseExteriorTiles_79
+  - first:
+      213: -7915710392664389926
+    second: B_HouseExteriorTiles_80
+  - first:
+      213: 1482742617057371534
+    second: B_HouseExteriorTiles_81
+  - first:
+      213: 6479153292963588387
+    second: B_HouseExteriorTiles_82
+  - first:
+      213: -5161002343862103495
+    second: B_HouseExteriorTiles_83
+  - first:
+      213: 5346911372775020991
+    second: B_HouseExteriorTiles_84
+  - first:
+      213: 6548342386799889798
+    second: B_HouseExteriorTiles_85
+  - first:
+      213: 992802982243618359
+    second: B_HouseExteriorTiles_86
+  - first:
+      213: 4873916437740177696
+    second: B_HouseExteriorTiles_87
+  - first:
+      213: 7629409346576991457
+    second: B_HouseExteriorTiles_88
+  - first:
+      213: 7702284367278932847
+    second: B_HouseExteriorTiles_89
+  - first:
+      213: -6590334145030407332
+    second: B_HouseExteriorTiles_90
+  - first:
+      213: 2592581370173286226
+    second: B_HouseExteriorTiles_91
+  - first:
+      213: 3914812488463262077
+    second: B_HouseExteriorTiles_92
+  - first:
+      213: -1427027237797367354
+    second: B_HouseExteriorTiles_93
+  - first:
+      213: -3096467124832143927
+    second: B_HouseExteriorTiles_94
+  - first:
+      213: -7083948701514831778
+    second: B_HouseExteriorTiles_95
+  - first:
+      213: 7991300863609392609
+    second: B_HouseExteriorTiles_96
+  - first:
+      213: 8549149290816454134
+    second: B_HouseExteriorTiles_97
+  - first:
+      213: 4234725224138774666
+    second: B_HouseExteriorTiles_98
+  - first:
+      213: -7479403562496666807
+    second: B_HouseExteriorTiles_99
+  - first:
+      213: 6570924191646466785
+    second: B_HouseExteriorTiles_100
+  - first:
+      213: 5895169620257505244
+    second: B_HouseExteriorTiles_101
+  - first:
+      213: -5465208008283995848
+    second: B_HouseExteriorTiles_102
+  - first:
+      213: -4250546604098810455
+    second: B_HouseExteriorTiles_103
+  - first:
+      213: 3334261255027092208
+    second: B_HouseExteriorTiles_104
+  - first:
+      213: -3543142987832106656
+    second: B_HouseExteriorTiles_105
+  - first:
+      213: -4867988264413381483
+    second: B_HouseExteriorTiles_106
+  - first:
+      213: -158465098556865577
+    second: B_HouseExteriorTiles_107
+  - first:
+      213: -4705675858770733555
+    second: B_HouseExteriorTiles_108
+  - first:
+      213: -3419107606236495238
+    second: B_HouseExteriorTiles_109
+  - first:
+      213: 6698343034044808755
+    second: B_HouseExteriorTiles_110
+  - first:
+      213: 8602859321177911130
+    second: B_HouseExteriorTiles_111
+  - first:
+      213: 3857478401101145262
+    second: B_HouseExteriorTiles_112
+  - first:
+      213: -9163354705434389356
+    second: B_HouseExteriorTiles_113
+  - first:
+      213: 2855097139519991862
+    second: B_HouseExteriorTiles_114
+  - first:
+      213: 6332525449229629760
+    second: B_HouseExteriorTiles_115
+  - first:
+      213: 7141817905052499262
+    second: B_HouseExteriorTiles_116
+  - first:
+      213: -1124664823742742902
+    second: B_HouseExteriorTiles_117
+  - first:
+      213: -4477214420551196121
+    second: B_HouseExteriorTiles_118
+  - first:
+      213: 724052626497514260
+    second: B_HouseExteriorTiles_119
+  - first:
+      213: -5936843262862934983
+    second: B_HouseExteriorTiles_120
+  - first:
+      213: 1935259342417105023
+    second: B_HouseExteriorTiles_121
+  - first:
+      213: -7850181749150644964
+    second: B_HouseExteriorTiles_122
+  - first:
+      213: -7595656245954824600
+    second: B_HouseExteriorTiles_123
+  - first:
+      213: 6212460018570197552
+    second: B_HouseExteriorTiles_124
+  - first:
+      213: -2173468253808561159
+    second: B_HouseExteriorTiles_125
+  - first:
+      213: 3834591364612654574
+    second: B_HouseExteriorTiles_126
+  - first:
+      213: 7188594671874969235
+    second: B_HouseExteriorTiles_127
+  - first:
+      213: -8634439367307613808
+    second: B_HouseExteriorTiles_128
+  - first:
+      213: -8356260735994828374
+    second: B_HouseExteriorTiles_129
+  - first:
+      213: 4030671815483766089
+    second: B_HouseExteriorTiles_130
+  - first:
+      213: 7637772016519193910
+    second: B_HouseExteriorTiles_131
+  - first:
+      213: -4063965091213612261
+    second: B_HouseExteriorTiles_132
+  - first:
+      213: -8122494355036431909
+    second: B_HouseExteriorTiles_133
+  - first:
+      213: -5922722353702842580
+    second: B_HouseExteriorTiles_134
+  - first:
+      213: -2393021775120282155
+    second: B_HouseExteriorTiles_135
+  - first:
+      213: 3848665202839404197
+    second: B_HouseExteriorTiles_136
+  - first:
+      213: 3741050154376013332
+    second: B_HouseExteriorTiles_137
+  - first:
+      213: -8715620257896594366
+    second: B_HouseExteriorTiles_138
+  - first:
+      213: -8444374613972338044
+    second: B_HouseExteriorTiles_139
+  - first:
+      213: -4353415368623597151
+    second: B_HouseExteriorTiles_140
+  - first:
+      213: -1018472895563834549
+    second: B_HouseExteriorTiles_141
+  - first:
+      213: -8451879584303952920
+    second: B_HouseExteriorTiles_142
+  - first:
+      213: -124599392850771142
+    second: B_HouseExteriorTiles_143
+  - first:
+      213: -1371699474705138993
+    second: B_HouseExteriorTiles_144
+  - first:
+      213: 8193566850334958787
+    second: B_HouseExteriorTiles_145
+  - first:
+      213: -4092708629943372106
+    second: B_HouseExteriorTiles_146
+  - first:
+      213: -8117441102302998621
+    second: B_HouseExteriorTiles_147
+  - first:
+      213: 1947585638982018055
+    second: B_HouseExteriorTiles_148
+  - first:
+      213: 7558386977773286630
+    second: B_HouseExteriorTiles_149
+  - first:
+      213: 8322066603836680342
+    second: B_HouseExteriorTiles_150
+  - first:
+      213: -3636111111631455209
+    second: B_HouseExteriorTiles_151
+  - first:
+      213: -8220848771466123110
+    second: B_HouseExteriorTiles_152
+  - first:
+      213: -3329922245820754747
+    second: B_HouseExteriorTiles_153
+  - first:
+      213: 7524439434587285476
+    second: B_HouseExteriorTiles_154
+  - first:
+      213: 7237256509128512105
+    second: B_HouseExteriorTiles_155
+  - first:
+      213: 8052324374870340556
+    second: B_HouseExteriorTiles_156
+  - first:
+      213: 1710478415107398964
+    second: B_HouseExteriorTiles_157
+  - first:
+      213: 9065293154342738024
+    second: B_HouseExteriorTiles_158
+  - first:
+      213: 979468139499986582
+    second: B_HouseExteriorTiles_159
+  - first:
+      213: 8080018771364698953
+    second: B_HouseExteriorTiles_160
+  - first:
+      213: 7510117261316581702
+    second: B_HouseExteriorTiles_161
+  - first:
+      213: -4084644815534155128
+    second: B_HouseExteriorTiles_162
+  - first:
+      213: -2247590925822227673
+    second: B_HouseExteriorTiles_163
+  - first:
+      213: -4339562640564202967
+    second: B_HouseExteriorTiles_164
+  - first:
+      213: -2520789054660204440
+    second: B_HouseExteriorTiles_165
+  - first:
+      213: 6854646204447806864
+    second: B_HouseExteriorTiles_166
+  - first:
+      213: 8538367370260204482
+    second: B_HouseExteriorTiles_167
+  - first:
+      213: 1898999390716641749
+    second: B_HouseExteriorTiles_168
+  - first:
+      213: 2366556423378826268
+    second: B_HouseExteriorTiles_169
+  - first:
+      213: 6846762948189893657
+    second: B_HouseExteriorTiles_170
+  - first:
+      213: -210624326517107379
+    second: B_HouseExteriorTiles_171
+  - first:
+      213: 1004205051669067353
+    second: B_HouseExteriorTiles_172
+  - first:
+      213: 170663895738188527
+    second: B_HouseExteriorTiles_173
+  - first:
+      213: 5313853899187318093
+    second: B_HouseExteriorTiles_174
+  - first:
+      213: 144082539717406146
+    second: B_HouseExteriorTiles_175
+  - first:
+      213: -4733599109213633047
+    second: B_HouseExteriorTiles_176
+  - first:
+      213: -26383887186944511
+    second: B_HouseExteriorTiles_177
+  - first:
+      213: 3422412201214063512
+    second: B_HouseExteriorTiles_178
+  - first:
+      213: -3716822497607837052
+    second: B_HouseExteriorTiles_179
+  - first:
+      213: -1344853344360739003
+    second: B_HouseExteriorTiles_180
+  - first:
+      213: 3053715247896937106
+    second: B_HouseExteriorTiles_181
+  - first:
+      213: -5762629001790495579
+    second: B_HouseExteriorTiles_182
+  - first:
+      213: -2779031271831146110
+    second: B_HouseExteriorTiles_183
+  - first:
+      213: 8614132579979335941
+    second: B_HouseExteriorTiles_184
+  - first:
+      213: -3478677840893255541
+    second: B_HouseExteriorTiles_185
+  - first:
+      213: -3772701728332357215
+    second: B_HouseExteriorTiles_186
+  - first:
+      213: -8869647632735421125
+    second: B_HouseExteriorTiles_187
+  - first:
+      213: -4335582458156686298
+    second: B_HouseExteriorTiles_188
+  - first:
+      213: 6847806025591521618
+    second: B_HouseExteriorTiles_189
+  - first:
+      213: -837751606984871347
+    second: B_HouseExteriorTiles_190
+  - first:
+      213: -2406598510388316966
+    second: B_HouseExteriorTiles_191
+  - first:
+      213: -4344403111408713753
+    second: B_HouseExteriorTiles_192
+  - first:
+      213: 4190253600721350387
+    second: B_HouseExteriorTiles_193
+  - first:
+      213: -2091587938783641111
+    second: B_HouseExteriorTiles_194
+  - first:
+      213: -1533246377590247734
+    second: B_HouseExteriorTiles_195
+  - first:
+      213: 665787847208281053
+    second: B_HouseExteriorTiles_196
+  - first:
+      213: 5524872695414307482
+    second: B_HouseExteriorTiles_197
+  - first:
+      213: 4250426120840026714
+    second: B_HouseExteriorTiles_198
+  - first:
+      213: -4628047110534932597
+    second: B_HouseExteriorTiles_199
+  - first:
+      213: 9160800976308750025
+    second: B_HouseExteriorTiles_200
+  - first:
+      213: -8814207235748512199
+    second: B_HouseExteriorTiles_201
+  - first:
+      213: -7286566364971854393
+    second: B_HouseExteriorTiles_202
+  - first:
+      213: 4290862606117391972
+    second: B_HouseExteriorTiles_203
+  - first:
+      213: -905926675066106082
+    second: B_HouseExteriorTiles_204
+  - first:
+      213: 3065447633873852927
+    second: B_HouseExteriorTiles_205
+  - first:
+      213: -5466258216971027143
+    second: B_HouseExteriorTiles_206
+  - first:
+      213: 6933850931389658605
+    second: B_HouseExteriorTiles_207
+  - first:
+      213: -3109827563498216852
+    second: B_HouseExteriorTiles_208
+  - first:
+      213: 8935123756811785635
+    second: B_HouseExteriorTiles_209
+  - first:
+      213: -1355497941933288365
+    second: B_HouseExteriorTiles_210
+  - first:
+      213: 5954422918022443922
+    second: B_HouseExteriorTiles_211
+  - first:
+      213: -4237169636824717047
+    second: B_HouseExteriorTiles_212
+  - first:
+      213: -8408889765880656633
+    second: B_HouseExteriorTiles_213
+  - first:
+      213: -5388884590210490629
+    second: B_HouseExteriorTiles_214
+  - first:
+      213: 1494009861108663744
+    second: B_HouseExteriorTiles_215
+  - first:
+      213: -8271258189171894980
+    second: B_HouseExteriorTiles_216
+  - first:
+      213: 5260466216826244635
+    second: B_HouseExteriorTiles_217
+  - first:
+      213: 8755582417221755113
+    second: B_HouseExteriorTiles_218
+  - first:
+      213: 6829781143478468743
+    second: B_HouseExteriorTiles_219
+  - first:
+      213: -5725012260822626834
+    second: B_HouseExteriorTiles_220
+  - first:
+      213: -1158717082348473521
+    second: B_HouseExteriorTiles_221
+  - first:
+      213: -3525663527710952996
+    second: B_HouseExteriorTiles_222
+  - first:
+      213: 7380467126619068542
+    second: B_HouseExteriorTiles_223
+  - first:
+      213: 5169788449781857145
+    second: B_HouseExteriorTiles_224
+  - first:
+      213: -6494599832428202863
+    second: B_HouseExteriorTiles_225
+  - first:
+      213: -580959322820054820
+    second: B_HouseExteriorTiles_226
+  - first:
+      213: -8798901625463052618
+    second: B_HouseExteriorTiles_227
+  - first:
+      213: 8509461709601855192
+    second: B_HouseExteriorTiles_228
+  - first:
+      213: -962552220440776038
+    second: B_HouseExteriorTiles_229
+  - first:
+      213: -5137884511249721270
+    second: B_HouseExteriorTiles_230
+  - first:
+      213: 7232251275887568610
+    second: B_HouseExteriorTiles_231
+  - first:
+      213: 1958873113027629297
+    second: B_HouseExteriorTiles_232
+  - first:
+      213: -5865663414843176248
+    second: B_HouseExteriorTiles_233
+  - first:
+      213: 1227381978434181176
+    second: B_HouseExteriorTiles_234
+  - first:
+      213: -5402674134098657430
+    second: B_HouseExteriorTiles_235
+  - first:
+      213: -5450406438131271668
+    second: B_HouseExteriorTiles_236
+  - first:
+      213: 4315182110233528190
+    second: B_HouseExteriorTiles_237
+  - first:
+      213: 2286371762775896579
+    second: B_HouseExteriorTiles_238
+  - first:
+      213: -4757907633044525992
+    second: B_HouseExteriorTiles_239
+  - first:
+      213: 6418315008774623446
+    second: B_HouseExteriorTiles_240
+  - first:
+      213: 5380639048190979977
+    second: B_HouseExteriorTiles_241
+  - first:
+      213: 320959724962507047
+    second: B_HouseExteriorTiles_242
+  - first:
+      213: -1042935498239450024
+    second: B_HouseExteriorTiles_243
+  - first:
+      213: -8602517116315307236
+    second: B_HouseExteriorTiles_0
+  - first:
+      213: -385184826781457134
+    second: B_HouseExteriorTiles_1
+  - first:
+      213: -3268050035378529655
+    second: B_HouseExteriorTiles_2
+  - first:
+      213: 3725139149071585850
+    second: B_HouseExteriorTiles_3
+  - first:
+      213: 6814639239676867830
+    second: B_HouseExteriorTiles_4
+  - first:
+      213: -3216821600158155753
+    second: B_HouseExteriorTiles_5
+  - first:
+      213: -2751793583939160629
+    second: B_HouseExteriorTiles_6
+  - first:
+      213: 5624052216003284740
+    second: B_HouseExteriorTiles_7
+  - first:
+      213: 8295185947047912796
+    second: B_HouseExteriorTiles_8
+  - first:
+      213: 3099430893326290238
+    second: B_HouseExteriorTiles_9
+  - first:
+      213: 5200369639671931927
+    second: B_HouseExteriorTiles_10
+  - first:
+      213: -5624386622959876141
+    second: B_HouseExteriorTiles_11
+  - first:
+      213: 8894156416966199245
+    second: B_HouseExteriorTiles_12
+  - first:
+      213: 2414771922361616177
+    second: B_HouseExteriorTiles_13
+  - first:
+      213: 8621473522841979795
+    second: B_HouseExteriorTiles_14
+  - first:
+      213: 930130145776151741
+    second: B_HouseExteriorTiles_15
+  - first:
+      213: 3356554399505989376
+    second: B_HouseExteriorTiles_16
+  - first:
+      213: 5907425636315156457
+    second: B_HouseExteriorTiles_17
+  - first:
+      213: -1204230911962361627
+    second: B_HouseExteriorTiles_18
+  - first:
+      213: -7038231101397661726
+    second: B_HouseExteriorTiles_19
+  - first:
+      213: -3576229199526138544
+    second: B_HouseExteriorTiles_20
+  - first:
+      213: -4895426803388410507
+    second: B_HouseExteriorTiles_21
+  - first:
+      213: 2267281978166285195
+    second: B_HouseExteriorTiles_22
+  - first:
+      213: 5496363958964577878
+    second: B_HouseExteriorTiles_23
+  - first:
+      213: -3276649767356586471
+    second: B_HouseExteriorTiles_24
+  - first:
+      213: 5231476019957071802
+    second: B_HouseExteriorTiles_25
+  - first:
+      213: 627966224566888024
+    second: B_HouseExteriorTiles_26
+  - first:
+      213: 1716968746301756518
+    second: B_HouseExteriorTiles_27
+  - first:
+      213: 8807245562876736453
+    second: B_HouseExteriorTiles_28
+  - first:
+      213: 2479498425134019833
+    second: B_HouseExteriorTiles_29
+  - first:
+      213: -7060590968233635116
+    second: B_HouseExteriorTiles_30
+  - first:
+      213: 3930624863180252034
+    second: B_HouseExteriorTiles_31
+  - first:
+      213: 5301860904082235015
+    second: B_HouseExteriorTiles_32
+  - first:
+      213: -8424399263589632676
+    second: B_HouseExteriorTiles_33
+  - first:
+      213: 2690302195321144303
+    second: B_HouseExteriorTiles_34
+  - first:
+      213: 3210895090606520859
+    second: B_HouseExteriorTiles_35
+  - first:
+      213: -9093136218735028051
+    second: B_HouseExteriorTiles_36
+  - first:
+      213: -2070045502229076271
+    second: B_HouseExteriorTiles_37
+  - first:
+      213: 2186276297277893841
+    second: B_HouseExteriorTiles_38
+  - first:
+      213: 1731312181072763687
+    second: B_HouseExteriorTiles_39
+  - first:
+      213: -3602265120663588094
+    second: B_HouseExteriorTiles_40
+  - first:
+      213: 170742558723284854
+    second: B_HouseExteriorTiles_41
+  - first:
+      213: 8581943203310252631
+    second: B_HouseExteriorTiles_42
+  - first:
+      213: -8546232011456852207
+    second: B_HouseExteriorTiles_43
+  - first:
+      213: 823941484958139891
+    second: B_HouseExteriorTiles_44
+  - first:
+      213: 2327677574503654202
+    second: B_HouseExteriorTiles_45
+  - first:
+      213: 7672753704624526129
+    second: B_HouseExteriorTiles_46
+  - first:
+      213: -8691595224325739492
+    second: B_HouseExteriorTiles_47
+  - first:
+      213: -9029383861086601820
+    second: B_HouseExteriorTiles_48
+  - first:
+      213: -3890408706969035489
+    second: B_HouseExteriorTiles_49
+  - first:
+      213: 555083857721736245
+    second: B_HouseExteriorTiles_50
+  - first:
+      213: 3464997510286942822
+    second: B_HouseExteriorTiles_51
+  - first:
+      213: 7772452389496025107
+    second: B_HouseExteriorTiles_52
+  - first:
+      213: -4242466376314383605
+    second: B_HouseExteriorTiles_53
+  - first:
+      213: -361555682717419848
+    second: B_HouseExteriorTiles_54
+  - first:
+      213: 6242945176502911562
+    second: B_HouseExteriorTiles_55
+  - first:
+      213: 8827268614670921264
+    second: B_HouseExteriorTiles_56
+  - first:
+      213: -2294238783899375660
+    second: B_HouseExteriorTiles_57
+  - first:
+      213: 7154729155055830495
+    second: B_HouseExteriorTiles_58
+  - first:
+      213: -6751482155914965948
+    second: B_HouseExteriorTiles_59
+  - first:
+      213: -7430691654673985007
+    second: B_HouseExteriorTiles_60
+  - first:
+      213: -4761265096522389880
+    second: B_HouseExteriorTiles_61
+  - first:
+      213: -3807070983945487044
+    second: B_HouseExteriorTiles_62
+  - first:
+      213: -6994174067515690456
+    second: B_HouseExteriorTiles_63
+  - first:
+      213: 516832128971894117
+    second: B_HouseExteriorTiles_64
+  - first:
+      213: 8595680846163702796
+    second: B_HouseExteriorTiles_65
+  - first:
+      213: -1832662573492144663
+    second: B_HouseExteriorTiles_66
+  - first:
+      213: 2288958339172139257
+    second: B_HouseExteriorTiles_67
+  - first:
+      213: -595470897019675806
+    second: B_HouseExteriorTiles_68
+  - first:
+      213: -4230803744866318173
+    second: B_HouseExteriorTiles_69
+  - first:
+      213: 8862438094568024079
+    second: B_HouseExteriorTiles_70
+  - first:
+      213: 1446396091874664063
+    second: B_HouseExteriorTiles_71
+  - first:
+      213: 7375991491121750297
+    second: B_HouseExteriorTiles_72
+  - first:
+      213: -6016836678800055320
+    second: B_HouseExteriorTiles_73
+  - first:
+      213: 4343506153018854604
+    second: B_HouseExteriorTiles_74
+  - first:
+      213: 8603586931130888281
+    second: B_HouseExteriorTiles_75
+  - first:
+      213: -8453096085031314889
+    second: B_HouseExteriorTiles_76
+  - first:
+      213: 2442110070661955608
+    second: B_HouseExteriorTiles_77
+  - first:
+      213: -275861826820439807
+    second: B_HouseExteriorTiles_78
+  - first:
+      213: 1711657707725637516
+    second: B_HouseExteriorTiles_79
+  - first:
+      213: -2896513784230204248
+    second: B_HouseExteriorTiles_80
+  - first:
+      213: 6659928301814720348
+    second: B_HouseExteriorTiles_81
+  - first:
+      213: -3746635650915965167
+    second: B_HouseExteriorTiles_82
+  - first:
+      213: 8806054350331972713
+    second: B_HouseExteriorTiles_83
+  - first:
+      213: -8466076675484953287
+    second: B_HouseExteriorTiles_84
+  - first:
+      213: -3371396900424030332
+    second: B_HouseExteriorTiles_85
+  - first:
+      213: 7906273679014657951
+    second: B_HouseExteriorTiles_86
+  - first:
+      213: -5742963052425398583
+    second: B_HouseExteriorTiles_87
+  - first:
+      213: -1316805236983005268
+    second: B_HouseExteriorTiles_88
+  - first:
+      213: 1799303493045969685
+    second: B_HouseExteriorTiles_89
+  - first:
+      213: -5914336136868976155
+    second: B_HouseExteriorTiles_90
+  - first:
+      213: -5538314648702771655
+    second: B_HouseExteriorTiles_91
+  - first:
+      213: -7488489697467993688
+    second: B_HouseExteriorTiles_92
+  - first:
+      213: -2726393634953240837
+    second: B_HouseExteriorTiles_93
+  - first:
+      213: 6917595270796965507
+    second: B_HouseExteriorTiles_94
+  - first:
+      213: -595834749295281685
+    second: B_HouseExteriorTiles_95
+  - first:
+      213: 9058999086128029515
+    second: B_HouseExteriorTiles_96
+  - first:
+      213: -8661235910328872379
+    second: B_HouseExteriorTiles_97
+  - first:
+      213: 4717904026592666722
+    second: B_HouseExteriorTiles_98
+  - first:
+      213: 3497950257757633666
+    second: B_HouseExteriorTiles_99
+  - first:
+      213: -6976458660559326005
+    second: B_HouseExteriorTiles_100
+  - first:
+      213: -7052296118838772042
+    second: B_HouseExteriorTiles_101
+  - first:
+      213: 4479004394630574733
+    second: B_HouseExteriorTiles_102
+  - first:
+      213: 7945152557201073193
+    second: B_HouseExteriorTiles_103
+  - first:
+      213: 5550639581020179321
+    second: B_HouseExteriorTiles_104
+  - first:
+      213: 242952752298539144
+    second: B_HouseExteriorTiles_105
+  - first:
+      213: -7720745902268266008
+    second: B_HouseExteriorTiles_106
+  - first:
+      213: -7831702316039120757
+    second: B_HouseExteriorTiles_107
+  - first:
+      213: -252937574349955403
+    second: B_HouseExteriorTiles_108
+  - first:
+      213: -6041977647548492904
+    second: B_HouseExteriorTiles_109
+  - first:
+      213: 5475167906619168729
+    second: B_HouseExteriorTiles_110
+  - first:
+      213: 2512774439853489657
+    second: B_HouseExteriorTiles_111
+  - first:
+      213: 3300018285445387007
+    second: B_HouseExteriorTiles_112
+  - first:
+      213: 8400921845565778084
+    second: B_HouseExteriorTiles_113
+  - first:
+      213: 6220085168934933165
+    second: B_HouseExteriorTiles_114
+  - first:
+      213: -4185278478821073894
+    second: B_HouseExteriorTiles_115
+  - first:
+      213: 7521849187473767092
+    second: B_HouseExteriorTiles_116
+  - first:
+      213: 3366778149202359024
+    second: B_HouseExteriorTiles_117
+  - first:
+      213: -6647281235918789980
+    second: B_HouseExteriorTiles_118
+  - first:
+      213: 6471295751949159043
+    second: B_HouseExteriorTiles_119
+  - first:
+      213: -9108712757707891192
+    second: B_HouseExteriorTiles_120
+  - first:
+      213: 7059365120223262427
+    second: B_HouseExteriorTiles_121
+  - first:
+      213: -2502132051201059169
+    second: B_HouseExteriorTiles_122
+  - first:
+      213: 1243279085281455385
+    second: B_HouseExteriorTiles_123
+  - first:
+      213: -7739814421747425448
+    second: B_HouseExteriorTiles_124
+  - first:
+      213: 7215902263511237195
+    second: B_HouseExteriorTiles_125
+  - first:
+      213: 4586783014024285214
+    second: B_HouseExteriorTiles_126
+  - first:
+      213: 6536502794120608879
+    second: B_HouseExteriorTiles_127
+  - first:
+      213: 2987743248011450086
+    second: B_HouseExteriorTiles_128
+  - first:
+      213: -5861987055950324524
+    second: B_HouseExteriorTiles_129
+  - first:
+      213: -4080674162470142059
+    second: B_HouseExteriorTiles_130
+  - first:
+      213: -6257401126458857126
+    second: B_HouseExteriorTiles_131
+  - first:
+      213: -3112652810035783438
+    second: B_HouseExteriorTiles_132
+  - first:
+      213: 5944646543864799305
+    second: B_HouseExteriorTiles_133
+  - first:
+      213: -7641276900816956284
+    second: B_HouseExteriorTiles_134
+  - first:
+      213: -7532741792972965243
+    second: B_HouseExteriorTiles_135
+  - first:
+      213: 675035267692317954
+    second: B_HouseExteriorTiles_136
+  - first:
+      213: 2448766159157451557
+    second: B_HouseExteriorTiles_137
+  - first:
+      213: 3734315820372800951
+    second: B_HouseExteriorTiles_138
+  - first:
+      213: -4283263669896881618
+    second: B_HouseExteriorTiles_139
+  - first:
+      213: 5699302722014609204
+    second: B_HouseExteriorTiles_140
+  - first:
+      213: 585417888058085839
+    second: B_HouseExteriorTiles_141
+  - first:
+      213: -3995581469507991913
+    second: B_HouseExteriorTiles_142
+  - first:
+      213: 193802439862577949
+    second: B_HouseExteriorTiles_143
+  - first:
+      213: 3126135557851298503
+    second: B_HouseExteriorTiles_144
+  - first:
+      213: 5857806967807739528
+    second: B_HouseExteriorTiles_145
+  - first:
+      213: -3037359822462211312
+    second: B_HouseExteriorTiles_146
+  - first:
+      213: -1066065139375262026
+    second: B_HouseExteriorTiles_147
+  - first:
+      213: -518028861244683290
+    second: B_HouseExteriorTiles_148
+  - first:
+      213: 5591016674301881319
+    second: B_HouseExteriorTiles_149
+  - first:
+      213: 3011956603890306835
+    second: B_HouseExteriorTiles_150
+  - first:
+      213: 1504917764894171160
+    second: B_HouseExteriorTiles_151
+  - first:
+      213: 4183116725594410334
+    second: B_HouseExteriorTiles_152
+  - first:
+      213: -1829703258814237643
+    second: B_HouseExteriorTiles_153
+  - first:
+      213: -1416329273770389346
+    second: B_HouseExteriorTiles_154
+  - first:
+      213: 2664505364273263862
+    second: B_HouseExteriorTiles_155
+  - first:
+      213: 8244833592678790778
+    second: B_HouseExteriorTiles_156
+  - first:
+      213: -6137231238761320507
+    second: B_HouseExteriorTiles_157
+  - first:
+      213: 7794518989488152041
+    second: B_HouseExteriorTiles_158
+  - first:
+      213: 6384193879168182550
+    second: B_HouseExteriorTiles_159
+  - first:
+      213: -7883116588482333494
+    second: B_HouseExteriorTiles_160
+  - first:
+      213: -1524811843185117787
+    second: B_HouseExteriorTiles_161
+  - first:
+      213: 2635311222929109112
+    second: B_HouseExteriorTiles_162
+  - first:
+      213: 9176744797270429737
+    second: B_HouseExteriorTiles_163
+  - first:
+      213: 6552344894985762907
+    second: B_HouseExteriorTiles_164
+  - first:
+      213: 4202981716668515695
+    second: B_HouseExteriorTiles_165
+  - first:
+      213: -6559257707235903366
+    second: B_HouseExteriorTiles_166
+  - first:
+      213: 6441343928199474191
+    second: B_HouseExteriorTiles_167
+  - first:
+      213: -933442112654508740
+    second: B_HouseExteriorTiles_168
+  - first:
+      213: 8405233911517929835
+    second: B_HouseExteriorTiles_169
+  - first:
+      213: 2647922840194232248
+    second: B_HouseExteriorTiles_170
+  - first:
+      213: -8320066278908050053
+    second: B_HouseExteriorTiles_171
+  - first:
+      213: -9162891596336721608
+    second: B_HouseExteriorTiles_172
+  - first:
+      213: 3065586865913168832
+    second: B_HouseExteriorTiles_173
+  - first:
+      213: 4463000636125369728
+    second: B_HouseExteriorTiles_174
+  - first:
+      213: 8218392173834323830
+    second: B_HouseExteriorTiles_175
+  - first:
+      213: 5881540867894569531
+    second: B_HouseExteriorTiles_176
+  - first:
+      213: -1351070882115711486
+    second: B_HouseExteriorTiles_177
+  - first:
+      213: 2736036963892643450
+    second: B_HouseExteriorTiles_178
+  - first:
+      213: -6456944298700783423
+    second: B_HouseExteriorTiles_179
+  - first:
+      213: 1065067843693349158
+    second: B_HouseExteriorTiles_180
+  - first:
+      213: 5903237069420672140
+    second: B_HouseExteriorTiles_181
+  - first:
+      213: 7568374770820532199
+    second: B_HouseExteriorTiles_182
+  - first:
+      213: -1769351287714248925
+    second: B_HouseExteriorTiles_183
+  - first:
+      213: 2351617814187178280
+    second: B_HouseExteriorTiles_184
+  - first:
+      213: 7087415792719716704
+    second: B_HouseExteriorTiles_185
+  - first:
+      213: -3290724995816226515
+    second: B_HouseExteriorTiles_186
+  - first:
+      213: 5156533825438331938
+    second: B_HouseExteriorTiles_187
+  - first:
+      213: -9144030975087363645
+    second: B_HouseExteriorTiles_188
+  - first:
+      213: -4264505807940561824
+    second: B_HouseExteriorTiles_189
+  - first:
+      213: -5040367938640048494
+    second: B_HouseExteriorTiles_190
+  - first:
+      213: 814418054055975133
+    second: B_HouseExteriorTiles_191
+  - first:
+      213: -3025094337410812002
+    second: B_HouseExteriorTiles_192
+  - first:
+      213: 3259520243044536087
+    second: B_HouseExteriorTiles_193
+  - first:
+      213: -7115758753255173589
+    second: B_HouseExteriorTiles_194
+  - first:
+      213: 4054538498383138056
+    second: B_HouseExteriorTiles_195
+  - first:
+      213: 1170311495610609173
+    second: B_HouseExteriorTiles_196
+  - first:
+      213: -8024743715061970342
+    second: B_HouseExteriorTiles_197
+  - first:
+      213: -2224326642606349709
+    second: B_HouseExteriorTiles_198
+  - first:
+      213: 3486743484068757623
+    second: B_HouseExteriorTiles_199
+  - first:
+      213: 6475401573090681199
+    second: B_HouseExteriorTiles_200
+  - first:
+      213: 723654317001917260
+    second: B_HouseExteriorTiles_201
+  - first:
+      213: 3189412997188070702
+    second: B_HouseExteriorTiles_202
+  - first:
+      213: -139542929062631560
+    second: B_HouseExteriorTiles_203
+  - first:
+      213: -9151394232167008786
+    second: B_HouseExteriorTiles_204
+  - first:
+      213: -922866557504459386
+    second: B_HouseExteriorTiles_205
+  - first:
+      213: 3630939952816683969
+    second: B_HouseExteriorTiles_206
+  - first:
+      213: 563587501997180989
+    second: B_HouseExteriorTiles_207
+  - first:
+      213: 526592391348103783
+    second: B_HouseExteriorTiles_208
+  - first:
+      213: -4731303741183837870
+    second: B_HouseExteriorTiles_209
+  - first:
+      213: -2510584034046338567
+    second: B_HouseExteriorTiles_210
+  - first:
+      213: 3182083271508736676
+    second: B_HouseExteriorTiles_211
+  - first:
+      213: 6677771220638923805
+    second: B_HouseExteriorTiles_212
+  - first:
+      213: 1565000234695907044
+    second: B_HouseExteriorTiles_213
+  - first:
+      213: -2692878835684731150
+    second: B_HouseExteriorTiles_214
+  - first:
+      213: 7271849708661338426
+    second: B_HouseExteriorTiles_215
+  - first:
+      213: 8955488591216911054
+    second: B_HouseExteriorTiles_216
+  - first:
+      213: 6138625753889299009
+    second: B_HouseExteriorTiles_217
+  - first:
+      213: 3278259594373036330
+    second: B_HouseExteriorTiles_218
+  - first:
+      213: -4404457458763172017
+    second: B_HouseExteriorTiles_219
+  - first:
+      213: -725335708849568975
+    second: B_HouseExteriorTiles_220
+  - first:
+      213: 2384601976670687706
+    second: B_HouseExteriorTiles_221
+  - first:
+      213: 2976096133756757022
+    second: B_HouseExteriorTiles_222
+  - first:
+      213: -963023833147344603
+    second: B_HouseExteriorTiles_223
+  - first:
+      213: 2099816880076277711
+    second: B_HouseExteriorTiles_224
+  - first:
+      213: -4859976769821222887
+    second: B_HouseExteriorTiles_225
+  - first:
+      213: -5935489325628289976
+    second: B_HouseExteriorTiles_226
+  - first:
+      213: 8714721042116637502
+    second: B_HouseExteriorTiles_227
+  - first:
+      213: -735707927671822545
+    second: B_HouseExteriorTiles_228
+  - first:
+      213: 6363465213001476475
+    second: B_HouseExteriorTiles_229
+  - first:
+      213: 505334276352813802
+    second: B_HouseExteriorTiles_230
+  - first:
+      213: 2921882873393477728
+    second: B_HouseExteriorTiles_231
+  - first:
+      213: -3197558428059457609
+    second: B_HouseExteriorTiles_232
+  - first:
+      213: -3511804426384947995
+    second: B_HouseExteriorTiles_233
+  - first:
+      213: -4046521259670658307
+    second: B_HouseExteriorTiles_234
+  - first:
+      213: 7877042020702410627
+    second: B_HouseExteriorTiles_235
+  - first:
+      213: -148989058396110552
+    second: B_HouseExteriorTiles_236
+  - first:
+      213: 8820972568239960564
+    second: B_HouseExteriorTiles_237
+  - first:
+      213: 5905959991203830665
+    second: B_HouseExteriorTiles_238
+  - first:
+      213: 7932496355465010143
+    second: B_HouseExteriorTiles_239
+  - first:
+      213: 2726062455259310404
+    second: B_HouseExteriorTiles_240
+  - first:
+      213: -6819449452010574843
+    second: B_HouseExteriorTiles_241
+  - first:
+      213: 4965861460363628066
+    second: B_HouseExteriorTiles_242
+  - first:
+      213: 4813355320785176022
+    second: B_HouseExteriorTiles_243
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c13fec3c248bd9880800000000000000
+      internalID: -8602517116315307236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21522dad07c87aaf0800000000000000
+      internalID: -385184826781457134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98a5f05cecd85a2d0800000000000000
+      internalID: -3268050035378529655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_3
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a321057c15a52b330800000000000000
+      internalID: 3725139149071585850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_4
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f4b0617846729e50800000000000000
+      internalID: 6814639239676867830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_5
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71cf4c05ccd8b53d0800000000000000
+      internalID: -3216821600158155753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_6
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc57b16a05aafc9d0800000000000000
+      internalID: -2751793583939160629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_7
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40fcf1561b5ac0e40800000000000000
+      internalID: 5624052216003284740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_8
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c556a974bab6e1370800000000000000
+      internalID: 8295185947047912796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_9
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3dc59ad9f3630b20800000000000000
+      internalID: 3099430893326290238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_10
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7142f5172ac6b2840800000000000000
+      internalID: 5200369639671931927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_11
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d7840b6a2a22f1b0800000000000000
+      internalID: -5624386622959876141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_12
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc7080253246e6b70800000000000000
+      internalID: 8894156416966199245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_13
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13783f5f44ef28120800000000000000
+      internalID: 2414771922361616177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39b8e619d70a5a770800000000000000
+      internalID: 8621473522841979795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_15
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbcaed5807c78ec00800000000000000
+      internalID: 930130145776151741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_16
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00f34db4170e49e20800000000000000
+      internalID: 3356554399505989376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_17
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9efc99d31546bf150800000000000000
+      internalID: 5907425636315156457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_18
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e050f8ad56b94fe0800000000000000
+      internalID: -1204230911962361627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_19
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e7061a7a1e235e90800000000000000
+      internalID: -7038231101397661726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_20
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05d6dde9d7eae5ec0800000000000000
+      internalID: -3576229199526138544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_21
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5759b186243ff0cb0800000000000000
+      internalID: -4895426803388410507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_22
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b831f3252f0077f10800000000000000
+      internalID: 2267281978166285195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_23
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 656e75256e1074c40800000000000000
+      internalID: 5496363958964577878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_24
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9162853a5600782d0800000000000000
+      internalID: -3276649767356586471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_25
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abff38cf8bfe99840800000000000000
+      internalID: 5231476019957071802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_26
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 856a04244fbf6b800800000000000000
+      internalID: 627966224566888024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_27
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66493c55af5e3d710800000000000000
+      internalID: 1716968746301756518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_28
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c337e83d2f993a70800000000000000
+      internalID: 8807245562876736453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d25a1a4cedb30e90800000000000000
+      internalID: -7060590968233635116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_31
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2836d2bdc726c8630800000000000000
+      internalID: 3930624863180252034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_32
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78e5a5cd66ef39940800000000000000
+      internalID: 5301860904082235015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_33
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c557daf0185861b80800000000000000
+      internalID: -8424399263589632676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_34
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe30292c79fd55520800000000000000
+      internalID: 2690302195321144303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_35
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1ab5a6a2146f8c20800000000000000
+      internalID: 3210895090606520859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_36
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da85f0c59c0bec180800000000000000
+      internalID: -9093136218735028051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_37
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d6adb25598b543e0800000000000000
+      internalID: -2070045502229076271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_38
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dcea1085b6375e10800000000000000
+      internalID: 2186276297277893841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_39
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72b162c714bd60810800000000000000
+      internalID: 1731312181072763687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_40
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 203311855fe220ec0800000000000000
+      internalID: -3602265120663588094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_41
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67f1eb8d3799e5200800000000000000
+      internalID: 170742558723284854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_42
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 752b2e3dfdf291770800000000000000
+      internalID: 8581943203310252631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_43
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11fca05f34fa56980800000000000000
+      internalID: -8546232011456852207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_44
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 416
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f543a64a6a3f6b00800000000000000
+      internalID: 823941484958139891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_45
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 416
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a33eee3eb629d4020800000000000000
+      internalID: 2327677574503654202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_46
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1331535a7d81b7a60800000000000000
+      internalID: 7672753704624526129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_47
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1c259a8130416780800000000000000
+      internalID: -8691595224325739492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_48
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4adb943d73f21b280800000000000000
+      internalID: -9029383861086601820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_49
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1d160ea4ed720ac0800000000000000
+      internalID: -3890408706969035489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_50
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53cbe00e3dd04b700800000000000000
+      internalID: 555083857721736245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_51
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 662244490e4261030800000000000000
+      internalID: 3464997510286942822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_52
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 310fb8d944c4ddb60800000000000000
+      internalID: 7772452389496025107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_53
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b031e3cee4bbf15c0800000000000000
+      internalID: -4242466376314383605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_54
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b6ba1da50f7bfaf0800000000000000
+      internalID: -361555682717419848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_55
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a42c1bdbf8563a650800000000000000
+      internalID: 6242945176502911562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_56
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03e2a624902c08a70800000000000000
+      internalID: 8827268614670921264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_57
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d7e0cf3bf93920e0800000000000000
+      internalID: -2294238783899375660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_58
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd5cb375244ba4360800000000000000
+      internalID: 7154729155055830495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_59
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44ccc4500caed42a0800000000000000
+      internalID: -6751482155914965948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_60
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 384
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11292bf3f41e0e890800000000000000
+      internalID: -7430691654673985007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_62
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3d7b3f5c119a2bc0800000000000000
+      internalID: -3807070983945487044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_63
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8227a780eb3bfee90800000000000000
+      internalID: -6994174067515690456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_64
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56de0ef35182c2700800000000000000
+      internalID: 516832128971894117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_65
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c04773e003ef94770800000000000000
+      internalID: 8595680846163702796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_66
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e5f8d969131196e0800000000000000
+      internalID: -1832662573492144663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_71
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7ed3bc0591a21410800000000000000
+      internalID: 1446396091874664063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_72
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 911ad967e29cc5660800000000000000
+      internalID: 7375991491121750297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_73
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e3e4905be6ef7ca0800000000000000
+      internalID: -6016836678800055320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_74
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccc896255db374c30800000000000000
+      internalID: 4343506153018854604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_75
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 950ff38eab4166770800000000000000
+      internalID: 8603586931130888281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_76
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73a9677a5e190ba80800000000000000
+      internalID: -8453096085031314889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_77
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 352
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 810c530ab2e14e120800000000000000
+      internalID: 2442110070661955608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_78
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 101074d4121fb2cf0800000000000000
+      internalID: -275861826820439807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_79
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c87cb0ecd9701c710800000000000000
+      internalID: 1711657707725637516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_80
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8acafe34f048dc7d0800000000000000
+      internalID: -2896513784230204248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_81
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c57ac333181dc6c50800000000000000
+      internalID: 6659928301814720348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_82
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 117e65cd9b6410cc0800000000000000
+      internalID: -3746635650915965167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_83
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96c025076c3653a70800000000000000
+      internalID: 8806054350331972713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_84
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 935df7c6e14728a80800000000000000
+      internalID: -8466076675484953287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_85
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4876f59a1646631d0800000000000000
+      internalID: -3371396900424030332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_86
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9f70b6950ab8bd60800000000000000
+      internalID: 7906273679014657951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_87
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c6bdf50885ec40b0800000000000000
+      internalID: -5742963052425398583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_88
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caff04b1d94c9bde0800000000000000
+      internalID: -1316805236983005268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_89
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 513ef1a6ef868f810800000000000000
+      internalID: 1799303493045969685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_90
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e92ba77e9e0ceda0800000000000000
+      internalID: -5914336136868976155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_91
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93e9ab59b24f323b0800000000000000
+      internalID: -5538314648702771655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_92
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a17f3ebb4a831890800000000000000
+      internalID: -7488489697467993688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_93
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfed9be1f67e92ad0800000000000000
+      internalID: -2726393634953240837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_94
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38676cf6f3c300060800000000000000
+      internalID: 6917595270796965507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_95
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be9bb6fc37b2bb7f0800000000000000
+      internalID: -595834749295281685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_96
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4fdf351ca708bd70800000000000000
+      internalID: 9058999086128029515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_97
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5429df824db1dc780800000000000000
+      internalID: -8661235910328872379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_98
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 264e07537bc597140800000000000000
+      internalID: 4717904026592666722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_99
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28c31abf9373b8030800000000000000
+      internalID: 3497950257757633666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_100
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc4f923afc3ae2f90800000000000000
+      internalID: -6976458660559326005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_101
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bebfb96b06312e90800000000000000
+      internalID: -7052296118838772042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_102
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d827e5124ce982e30800000000000000
+      internalID: 4479004394630574733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_103
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 924a142d72ad24e60800000000000000
+      internalID: 7945152557201073193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_104
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97b4ee65a45d70d40800000000000000
+      internalID: 5550639581020179321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_105
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88835f1bd342f5300800000000000000
+      internalID: 242952752298539144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_107
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8852e9dc34305390800000000000000
+      internalID: -7831702316039120757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_108
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5be9582cd926d7cf0800000000000000
+      internalID: -252937574349955403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_109
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89395016755962ca0800000000000000
+      internalID: -6041977647548492904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_110
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d797afc334bbfb40800000000000000
+      internalID: 5475167906619168729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_111
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fdf5203a0b2fd220800000000000000
+      internalID: 2512774439853489657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_112
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff2144875250ccd20800000000000000
+      internalID: 3300018285445387007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_113
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a864c698e1169470800000000000000
+      internalID: 8400921845565778084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_114
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da2da07718e225650800000000000000
+      internalID: 6220085168934933165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_115
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1c58c7e567eae5c0800000000000000
+      internalID: -4185278478821073894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_116
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ba3f69cbf9f26860800000000000000
+      internalID: 7521849187473767092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_117
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f2f0c483e239be20800000000000000
+      internalID: 3366778149202359024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_118
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a2e0fa4fec10c3a0800000000000000
+      internalID: -6647281235918789980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_119
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38a8c633339aec950800000000000000
+      internalID: 6471295751949159043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_120
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80e90c3c10a579180800000000000000
+      internalID: -9108712757707891192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_121
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 256
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd6b0babc27e7f160800000000000000
+      internalID: 7059365120223262427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_122
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 256
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f969a030824a64dd0800000000000000
+      internalID: -2502132051201059169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_123
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91dafdaadb3014110800000000000000
+      internalID: 1243279085281455385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_124
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85f9c4c6ac7a69490800000000000000
+      internalID: -7739814421747425448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_125
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b42468e80e8042460800000000000000
+      internalID: 7215902263511237195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_126
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1c86b479d687af30800000000000000
+      internalID: 4586783014024285214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_127
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6c38ecc8a256ba50800000000000000
+      internalID: 6536502794120608879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_128
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e65bc187a8967920800000000000000
+      internalID: 2987743248011450086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_129
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dc942ca4d906aea0800000000000000
+      internalID: -5861987055950324524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_130
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59f3ad538788e57c0800000000000000
+      internalID: -4080674162470142059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_131
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a596a4024de3929a0800000000000000
+      internalID: -6257401126458857126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_132
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f812b4c2c2adc4d0800000000000000
+      internalID: -3112652810035783438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_133
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 940a05a1980af7250800000000000000
+      internalID: 5944646543864799305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_134
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4845868d42bb4f590800000000000000
+      internalID: -7641276900816956284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_135
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58a7b1ddf33567790800000000000000
+      internalID: -7532741792972965243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_136
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20d49addff43e5900800000000000000
+      internalID: 675035267692317954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_138
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b531701474f2d330800000000000000
+      internalID: 3734315820372800951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_139
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2ad57cc26ace84c0800000000000000
+      internalID: -4283263669896881618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_140
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43ff81521adf71f40800000000000000
+      internalID: 5699302722014609204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_141
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc19cdea772df1800800000000000000
+      internalID: 585417888058085839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_142
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 796c7dea2d7dc88c0800000000000000
+      internalID: -3995581469507991913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_143
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1bec90da4680b200800000000000000
+      internalID: 193802439862577949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_144
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cab1751ab3426b20800000000000000
+      internalID: 3126135557851298503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_145
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8860df6b66c1b4150800000000000000
+      internalID: 5857806967807739528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_146
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01ba817855129d5d0800000000000000
+      internalID: -3037359822462211312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_147
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b63c1c67639431f0800000000000000
+      internalID: -1066065139375262026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_148
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eb4c1ece779fc8f0800000000000000
+      internalID: -518028861244683290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_149
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ebac05fa08479d40800000000000000
+      internalID: 5591016674301881319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_150
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31f06cdb29e9cc920800000000000000
+      internalID: 3011956603890306835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_151
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81021b8dbba82e410800000000000000
+      internalID: 1504917764894171160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_152
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5dcc03bf7a6d0a30800000000000000
+      internalID: 4183116725594410334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_153
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 192
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 534b00e84969b96e0800000000000000
+      internalID: -1829703258814237643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_154
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e90ddef8700385ce0800000000000000
+      internalID: -1416329273770389346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_155
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f471abf2893af420800000000000000
+      internalID: 2664505364273263862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_156
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a76b3d338788b6270800000000000000
+      internalID: 8244833592678790778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_157
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cf633d64bc24daa0800000000000000
+      internalID: -6137231238761320507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_158
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ed5a7b49b1bb2c60800000000000000
+      internalID: 7794518989488152041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_159
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 619ea091286399850800000000000000
+      internalID: 6384193879168182550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_160
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac47584ba3b899290800000000000000
+      internalID: -7883116588482333494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_161
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a574a915b7c6dae0800000000000000
+      internalID: -1524811843185117787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_162
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8703a434891829420800000000000000
+      internalID: 2635311222929109112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_163
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 920d7bbc5c85a5f70800000000000000
+      internalID: 9176744797270429737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_164
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b58787757fa9eea50800000000000000
+      internalID: 6552344894985762907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_165
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f650d7b5a9df35a30800000000000000
+      internalID: 4202981716668515695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_166
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a78f5f12ed5d8f4a0800000000000000
+      internalID: -6559257707235903366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_167
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0ce27ccc20446950800000000000000
+      internalID: 6441343928199474191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_168
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3d76d8185fbb03f0800000000000000
+      internalID: -933442112654508740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_169
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b61e71ea5b365a470800000000000000
+      internalID: 8405233911517929835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_170
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bfab6a3bcf4fb420800000000000000
+      internalID: 2647922840194232248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_171
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b75caf90dcf298c80800000000000000
+      internalID: -8320066278908050053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_172
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83110f4e3aed6d080800000000000000
+      internalID: -9162891596336721608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_173
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c38bda23072b8a20800000000000000
+      internalID: 3065586865913168832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_174
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 085589cbe63cfed30800000000000000
+      internalID: 4463000636125369728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_175
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 677ce32a3289d0270800000000000000
+      internalID: 8218392173834323830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_176
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3a6cc2f14e6f9150800000000000000
+      internalID: 5881540867894569531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_177
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20e8e15e038004de0800000000000000
+      internalID: -1351070882115711486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_178
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a76c82d5f1b58f520800000000000000
+      internalID: 2736036963892643450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_179
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c0c475ee535466a0800000000000000
+      internalID: -6456944298700783423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_180
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62988059f81e7ce00800000000000000
+      internalID: 1065067843693349158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_181
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c84bcb386d28ce150800000000000000
+      internalID: 5903237069420672140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_182
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e749cd41c4480960800000000000000
+      internalID: 7568374770820532199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_183
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32789e4d0600277e0800000000000000
+      internalID: -1769351287714248925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_184
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8297b1e41ff92a020800000000000000
+      internalID: 2351617814187178280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_185
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0616d8cdc1f8b5260800000000000000
+      internalID: 7087415792719716704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_186
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2100e22d0ff452d0800000000000000
+      internalID: -3290724995816226515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_187
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 224b9899130bf8740800000000000000
+      internalID: 5156533825438331938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_188
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c9bfba7640e91180800000000000000
+      internalID: -9144030975087363645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_189
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 064dc1fdf8e61d4c0800000000000000
+      internalID: -4264505807940561824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_190
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29e871890140d0ab0800000000000000
+      internalID: -5040367938640048494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_191
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd8dbaab7e46d4b00800000000000000
+      internalID: 814418054055975133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_192
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e97359e4ab4b406d0800000000000000
+      internalID: -3025094337410812002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_193
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71f4dd034642c3d20800000000000000
+      internalID: 3259520243044536087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_194
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2259d46d1fbf3d90800000000000000
+      internalID: -7115758753255173589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_195
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80dc54c484d944830800000000000000
+      internalID: 4054538498383138056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_196
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51e2d6cca18cd3010800000000000000
+      internalID: 1170311495610609173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_197
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5ace2aab1262a090800000000000000
+      internalID: -8024743715061970342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_198
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 372e20b14ba9121e0800000000000000
+      internalID: -2224326642606349709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_199
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77083d6a9b6636030800000000000000
+      internalID: 3486743484068757623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_200
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f61631e2c6f3dd950800000000000000
+      internalID: 6475401573090681199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_201
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c43c31964cfea0a00800000000000000
+      internalID: 723654317001917260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_202
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2da8630932134c20800000000000000
+      internalID: 3189412997188070702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_203
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 877ed42027e301ef0800000000000000
+      internalID: -139542929062631560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_204
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee570289e67bff080800000000000000
+      internalID: -9151394232167008786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_205
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68debd861c15133f0800000000000000
+      internalID: -922866557504459386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_206
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cb796846a0b36230800000000000000
+      internalID: 3630939952816683969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_207
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d384468d8d342d700800000000000000
+      internalID: 563587501997180989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_208
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76a2abb6df4de4700800000000000000
+      internalID: 526592391348103783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_209
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 259b24e9058075eb0800000000000000
+      internalID: -4731303741183837870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_210
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f996e76f1d982dd0800000000000000
+      internalID: -2510584034046338567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_211
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aabdf340e7092c20800000000000000
+      internalID: 3182083271508736676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_212
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1c72897b853cac50800000000000000
+      internalID: 6677771220638923805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_213
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e6d376fb6ff7b510800000000000000
+      internalID: 1565000234695907044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_214
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f618d767f8f0aad0800000000000000
+      internalID: -2692878835684731150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_215
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3179c838cccae460800000000000000
+      internalID: 7271849708661338426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_216
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec22c8dec69484c70800000000000000
+      internalID: 8955488591216911054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_217
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14ad2ad6997c03550800000000000000
+      internalID: 6138625753889299009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_218
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a29fe1c6bb7be7d20800000000000000
+      internalID: 3278259594373036330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_219
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f47f91ee64930e2c0800000000000000
+      internalID: -4404457458763172017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_220
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1338d1b04071fe5f0800000000000000
+      internalID: -725335708849568975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_221
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad196261ddec71120800000000000000
+      internalID: 2384601976670687706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_222
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e142cf56aa73d4920800000000000000
+      internalID: 2976096133756757022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_223
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52974031de6a2a2f0800000000000000
+      internalID: -963023833147344603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_224
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc7c05eb35c042d10800000000000000
+      internalID: 2099816880076277711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_225
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 918d72a80e4ed8cb0800000000000000
+      internalID: -4859976769821222887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_226
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84c8dc9e7e7e0ada0800000000000000
+      internalID: -5935489325628289976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_227
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e33fbff7d98e0f870800000000000000
+      internalID: 8714721042116637502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_233
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e44ea40b70934fc0800000000000000
+      internalID: -3511804426384947995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_234
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df2a34d8a5ed7d7c0800000000000000
+      internalID: -4046521259670658307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_235
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 387dac4cbffd05d60800000000000000
+      internalID: 7877042020702410627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_236
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82141e2ad3faeedf0800000000000000
+      internalID: -148989058396110552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_237
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f17867b0d36a6a70800000000000000
+      internalID: 8820972568239960564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_238
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98b9f55225f26f150800000000000000
+      internalID: 5905959991203830665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_239
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdb92993863e51e60800000000000000
+      internalID: 7932496355465010143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_240
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 449a2491c5be4d520800000000000000
+      internalID: 2726062455259310404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_241
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50c6d29bad27c51a0800000000000000
+      internalID: -6819449452010574843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_242
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22ec6cc10b84ae440800000000000000
+      internalID: 4965861460363628066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B_HouseExteriorTiles_243
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d5032979297cc240800000000000000
+      internalID: 4813355320785176022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
