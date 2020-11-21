@@ -18,7 +18,8 @@ public class BattleManager : MonoBehaviour
     public Button bagButton;
     public Button monstersButton;
     public Button fleeButton;
-    public string[] FleeText;
+    public string[] FleeingText;
+    public string[] FailedFleeText;
 
     public bool InBattle { get { return inBattle; } set { inBattle = value; } }
 
@@ -53,7 +54,7 @@ public class BattleManager : MonoBehaviour
         inBattle = true;
 
         // Set info from battle data
-        canFlee = false;
+        canFlee = true;
         
         SetButtonsInteractable(true);
     }
@@ -70,12 +71,13 @@ public class BattleManager : MonoBehaviour
     {
         if (canFlee)
         {
-            ExitBattle();
+            SetButtonsInteractable(false);
+            StartCoroutine(mainBattleDialogueBox.PresentDialogue(FleeingText, this.ExitBattle));
         }
         else
         {
             SetButtonsInteractable(false);
-            StartCoroutine(mainBattleDialogueBox.PresentDialogue(FleeText, this.FailedToFlee));
+            StartCoroutine(mainBattleDialogueBox.PresentDialogue(FailedFleeText, this.FailedToFlee));
         }
     }
 

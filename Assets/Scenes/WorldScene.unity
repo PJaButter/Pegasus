@@ -5684,8 +5684,10 @@ MonoBehaviour:
   bagButton: {fileID: 432127241}
   monstersButton: {fileID: 911391602}
   fleeButton: {fileID: 579884523}
-  FleeText:
-  - Can not flee the battle!
+  FleeingText:
+  - You got away safely.
+  FailedFleeText:
+  - You failed to escape.
 --- !u!4 &874397959
 Transform:
   m_ObjectHideFlags: 0
