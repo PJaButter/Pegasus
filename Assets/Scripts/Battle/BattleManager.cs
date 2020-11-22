@@ -13,6 +13,7 @@ public class BattleManager : MonoBehaviour
 
     public DialogueBox mainBattleDialogueBox;
 
+    public GameObject actionsPanel;
     public Button attackButton;
     public Button evolutionsButton;
     public Button bagButton;
@@ -20,6 +21,14 @@ public class BattleManager : MonoBehaviour
     public Button fleeButton;
     public string[] FleeingText;
     public string[] FailedFleeText;
+
+    public GameObject attackPanel;
+    public Button attackBackButton;
+    public Button attackButton1;
+    public Button attackButton2;
+    public Button attackButton3;
+    public Button attackButton4;
+    public Button attackButton5;
 
     public bool InBattle { get { return inBattle; } set { inBattle = value; } }
 
@@ -56,42 +65,64 @@ public class BattleManager : MonoBehaviour
         // Set info from battle data
         canFlee = true;
         
-        SetButtonsInteractable(true);
+        SetActionsButtonsInteractable(true);
     }
 
     public void ExitBattle()
     {
-        SetButtonsInteractable(false);
+        SetActionsButtonsInteractable(false);
         GameManager.Get.WorldCamera.gameObject.SetActive(true);
         GameManager.Get.BattleCamera.gameObject.SetActive(false);
         inBattle = false;
+    }
+
+    public void OnClick_AttackAction()
+    {
+        actionsPanel.SetActive(false);
+        attackPanel.SetActive(true);
+    }
+
+    public void OnClick_AttackBackButton()
+    {
+        actionsPanel.SetActive(true);
+        attackPanel.SetActive(false);
     }
 
     public void TryFleeBattle()
     {
         if (canFlee)
         {
-            SetButtonsInteractable(false);
+            SetActionsButtonsInteractable(false);
             StartCoroutine(mainBattleDialogueBox.PresentDialogue(FleeingText, this.ExitBattle));
         }
         else
         {
-            SetButtonsInteractable(false);
+            SetActionsButtonsInteractable(false);
             StartCoroutine(mainBattleDialogueBox.PresentDialogue(FailedFleeText, this.FailedToFlee));
         }
     }
 
     private void FailedToFlee()
     {
-        SetButtonsInteractable(true);
+        SetActionsButtonsInteractable(true);
     }
 
-    public void SetButtonsInteractable(bool interactable)
+    public void SetActionsButtonsInteractable(bool interactable)
     {
         attackButton.interactable = interactable;
         evolutionsButton.interactable = interactable;
         bagButton.interactable = interactable;
         monstersButton.interactable = interactable;
         fleeButton.interactable = interactable;
+    }
+
+    public void SetAttackButtonsInteractable(bool interactable)
+    {
+        attackBackButton.interactable = interactable;
+        attackButton1.interactable = interactable;
+        attackButton2.interactable = interactable;
+        attackButton3.interactable = interactable;
+        attackButton4.interactable = interactable;
+        attackButton5.interactable = interactable;
     }
 }
