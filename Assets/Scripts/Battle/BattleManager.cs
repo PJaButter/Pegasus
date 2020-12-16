@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+public enum BattleState { Start, PlayerAction, PlayerMove, EnemyMove, Busy }
+
 public class BattleManager : MonoBehaviour
 {
     private static BattleManager instance = null;
@@ -11,24 +13,34 @@ public class BattleManager : MonoBehaviour
     private bool inBattle;
     private bool canFlee;
 
-    public DialogueBox mainBattleDialogueBox;
+    private BattleState state;
 
-    public GameObject actionsPanel;
-    public Button attackButton;
-    public Button evolutionsButton;
-    public Button bagButton;
-    public Button monstersButton;
-    public Button fleeButton;
-    public string[] FleeingText;
-    public string[] FailedFleeText;
+    [SerializeField] private DialogueBox mainBattleDialogueBox;
+    [SerializeField] private BattleDialogueBox battleDialogueBox;
 
-    public GameObject attackPanel;
-    public Button attackBackButton;
-    public Button attackButton1;
-    public Button attackButton2;
-    public Button attackButton3;
-    public Button attackButton4;
-    public Button attackButton5;
+    [SerializeField] private GameObject actionsPanel;
+    [SerializeField] private Button attackButton;
+    [SerializeField] private Button evolutionsButton;
+    [SerializeField] private Button bagButton;
+    [SerializeField] private Button monstersButton;
+    [SerializeField] private Button fleeButton;
+    [SerializeField] private string[] FleeingText;
+    [SerializeField] private string[] FailedFleeText;
+
+    [SerializeField] private GameObject moveDetailsPanel;
+    [SerializeField] private Text moveDescriptionText;
+    [SerializeField] private Text moveUsesText;
+    [SerializeField] private Text moveTypeText;
+
+    [SerializeField] private GameObject attackPanel;
+    [SerializeField] private Button attackBackButton;
+    [SerializeField] private AttackButton basicAttackButton;
+    [SerializeField] private List<AttackButton> attackButtons;
+
+    [SerializeField] private BattleUnit playerUnit;
+    [SerializeField] private MonsterBattleHUD playerMonsterHUD;
+    [SerializeField] private BattleUnit enemyUnit;
+    [SerializeField] private MonsterBattleHUD enemyMonsterHUD;
 
     public bool InBattle { get { return inBattle; } set { inBattle = value; } }
 
@@ -56,7 +68,7 @@ public class BattleManager : MonoBehaviour
 
     }
 
-    public void EnterBattle()
+    public IEnumerator EnterBattle()
     {
         GameManager.Get.WorldCamera.gameObject.SetActive(false);
         GameManager.Get.BattleCamera.gameObject.SetActive(true);
@@ -64,7 +76,19 @@ public class BattleManager : MonoBehaviour
 
         // Set info from battle data
         canFlee = true;
-        
+
+        playerUnit.Setup();
+        enemyUnit.Setup();
+
+        playerMonsterHUD.SetupHUD(playerUnit.Monster);
+        enemyMonsterHUD.SetupHUD(enemyUnit.Monster);
+
+        SetupAttackButtons(playerUnit.Monster.BasicMove, playerUnit.Monster.Moves);
+
+        yield return battleDialogueBox.TypeDialogue($"A wild { enemyUnit.Monster.MonsterBase.Name } appeared.");
+
+        PlayerAction();
+
         SetActionsButtonsInteractable(true);
     }
 
@@ -78,13 +102,29 @@ public class BattleManager : MonoBehaviour
 
     public void OnClick_AttackAction()
     {
+        PlayerMove();
+        mainBattleDialogueBox.gameObject.SetActive(false);
         actionsPanel.SetActive(false);
+        moveDetailsPanel.SetActive(true);
         attackPanel.SetActive(true);
     }
 
     public void OnClick_AttackBackButton()
     {
+        PlayerAction();
+        mainBattleDialogueBox.gameObject.SetActive(true);
         actionsPanel.SetActive(true);
+        moveDetailsPanel.SetActive(false);
+        attackPanel.SetActive(false);
+    }
+
+    public void OnClick_AttackButton(Move move)
+    {
+        StartCoroutine(PerformPlayerMove(move));
+        mainBattleDialogueBox.gameObject.SetActive(true);
+        battleDialogueBox.EnableDialogueText(true);
+        actionsPanel.SetActive(false);
+        moveDetailsPanel.SetActive(false);
         attackPanel.SetActive(false);
     }
 
@@ -119,10 +159,118 @@ public class BattleManager : MonoBehaviour
     public void SetAttackButtonsInteractable(bool interactable)
     {
         attackBackButton.interactable = interactable;
-        attackButton1.interactable = interactable;
-        attackButton2.interactable = interactable;
-        attackButton3.interactable = interactable;
-        attackButton4.interactable = interactable;
-        attackButton5.interactable = interactable;
+        basicAttackButton.GetComponent<Button>().interactable = interactable;
+        foreach (AttackButton attackButton in attackButtons)
+        {
+            attackButton.GetComponent<Button>().interactable = interactable;
+        }
+    }
+
+    public void SetAttackDetails(Move move)
+    {
+        moveDescriptionText.text = move.MoveBase.Description;
+        moveTypeText.text = $"{move.MoveBase.Attribute.ToString()}";
+
+        if (move.MoveBase.MaxUses == 0)
+        {
+            moveUsesText.text = $"Uses: Unlimited";
+        }
+        else
+        {
+            moveUsesText.text = $"Uses: {move.MaxUses}/{move.MoveBase.MaxUses}";
+        }
+    }
+
+    private void PlayerAction()
+    {
+        state = BattleState.PlayerAction;
+        StartCoroutine(battleDialogueBox.TypeDialogue("Choose an action"));
+        battleDialogueBox.EnableActionsPanel(true);
+    }
+
+    private void PlayerMove()
+    {
+        state = BattleState.PlayerMove;
+        battleDialogueBox.EnableActionsPanel(false);
+        battleDialogueBox.EnableDialogueText(false);
+        battleDialogueBox.EnableAttackPanel(false);
+    }
+
+    private void SetupAttackButtons(Move basicMove, List<Move> moves)
+    {
+        basicAttackButton.SetupButton(basicMove);
+        for (int i = 0; i < attackButtons.Count; ++i)
+        {
+            attackButtons[i].SetupButton(i < moves.Count ? moves[i] : null);
+        }
+    }
+
+    private IEnumerator PerformPlayerMove(Move move)
+    {
+        state = BattleState.Busy;
+
+        yield return battleDialogueBox.TypeDialogue($"{playerUnit.Monster.MonsterBase.Name} used {move.MoveBase.Name}");
+
+        playerUnit.PlayAttackAnimation();
+        yield return new WaitForSeconds(1.0f);
+
+        enemyUnit.PlayHitAnimation();
+        DamageDetails damageDetails = enemyUnit.Monster.TakeDamage(move, playerUnit.Monster);
+        yield return enemyMonsterHUD.UpdateHealth();
+        yield return ShowDamageDetails(damageDetails);
+
+        if (damageDetails.Fainted)
+        {
+            yield return battleDialogueBox.TypeDialogue($"{enemyUnit.Monster.MonsterBase.Name} Died");
+            enemyUnit.PlayDeathAnimation();
+        }
+        else
+        {
+            StartCoroutine(EnemyMove());
+        }
+    }
+
+    private IEnumerator EnemyMove()
+    {
+        state = BattleState.EnemyMove;
+
+        Move move = enemyUnit.Monster.GetRandomMove();
+
+        yield return battleDialogueBox.TypeDialogue($"{enemyUnit.Monster.MonsterBase.Name} used {move.MoveBase.Name}");
+
+        enemyUnit.PlayAttackAnimation();
+        yield return new WaitForSeconds(1.0f);
+
+        playerUnit.PlayHitAnimation();
+        DamageDetails damageDetails = playerUnit.Monster.TakeDamage(move, enemyUnit.Monster);
+        yield return playerMonsterHUD.UpdateHealth();
+        yield return ShowDamageDetails(damageDetails);
+
+        if (damageDetails.Fainted)
+        {
+            yield return battleDialogueBox.TypeDialogue($"{playerUnit.Monster.MonsterBase.Name} Died");
+            playerUnit.PlayDeathAnimation();
+        }
+        else
+        {
+            PlayerAction();
+        }
+    }
+
+    private IEnumerator ShowDamageDetails(DamageDetails damageDetails)
+    {
+        if (damageDetails.CriticalModifier > 1.0f)
+        {
+            yield return battleDialogueBox.TypeDialogue("A critical hit!");
+        }
+
+        if (damageDetails.AttributeModifier > 1.0f)
+        {
+            yield return battleDialogueBox.TypeDialogue("It's super effective!");
+        }
+        else if (damageDetails.AttributeModifier < 1.0f)
+        {
+            yield return battleDialogueBox.TypeDialogue("It's not very effective!");
+        }
     }
 }

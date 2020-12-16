@@ -4,7 +4,6 @@ using System;
 
 public class PlayerController : MonoBehaviour
 {
-
     public float movementSpeed = 1f;
     public Vector2 movement;
     private Rigidbody2D rb;

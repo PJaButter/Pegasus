@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49afb50dc5d1ef74d8c5ffb4999737b6, type: 3}
+  m_Name: Monster2
+  m_EditorClassIdentifier: 
+  id: 1
+  name: Monster 2
+  description: Test Monster 2
+  frontSprite: {fileID: 6937817954938267909, guid: fc8b5f2af3000f24ba0235271ff73f94,
+    type: 3}
+  backSprite: {fileID: -2847823790183061483, guid: fc8b5f2af3000f24ba0235271ff73f94,
+    type: 3}
+  mainAttribute: 4
+  secondaryAttribute: 7
+  maxHealth: 31
+  maxEnergy: 23
+  attack: 21
+  defense: 32
+  specialAttack: 22
+  specialDefense: 11
+  speed: 41
+  basicMove: {fileID: 11400000, guid: c95ad4bda25cd894db4d641c57dbfb06, type: 2}
+  learnableMoves:
+  - moveBase: {fileID: 11400000, guid: d0264ae0a8c11434a8078a5e54fb7ed4, type: 2}
+    level: 1

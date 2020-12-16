@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum GameState { FreeRoam, Battle }
+
 public class GameManager : MonoBehaviour
 {
     private static GameManager instance = null;
@@ -13,6 +15,8 @@ public class GameManager : MonoBehaviour
     private Camera battleCamera;
     [SerializeField]
     private string currentAreaID;
+
+    private GameState gameState;
 
     public Camera WorldCamera { get { return worldCamera; } set { worldCamera = value; } }
     public Camera BattleCamera { get { return battleCamera; } set { battleCamera = value; } }
@@ -43,7 +47,7 @@ public class GameManager : MonoBehaviour
         {
             if (!BattleManager.Get.InBattle)
             {
-                BattleManager.Get.EnterBattle();
+                StartCoroutine(BattleManager.Get.EnterBattle());
             }
             else
             {
