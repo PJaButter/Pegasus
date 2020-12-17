@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18d021ab8c294314fb1e6a1a801e3ba6, type: 3}
   m_Name: Move1
   m_EditorClassIdentifier: 
-  id: 0
+  id: 1
   name: Move1
   description: Test Move 1
   attribute: 7
   power: 26
   accuracy: 100
-  maxUses: 20
+  energyCost: 5

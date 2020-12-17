@@ -29,7 +29,7 @@ public class BattleManager : MonoBehaviour
 
     [SerializeField] private GameObject moveDetailsPanel;
     [SerializeField] private Text moveDescriptionText;
-    [SerializeField] private Text moveUsesText;
+    [SerializeField] private Text moveEnergyCostText;
     [SerializeField] private Text moveTypeText;
 
     [SerializeField] private GameObject attackPanel;
@@ -171,13 +171,13 @@ public class BattleManager : MonoBehaviour
         moveDescriptionText.text = move.MoveBase.Description;
         moveTypeText.text = $"{move.MoveBase.Attribute.ToString()}";
 
-        if (move.MoveBase.MaxUses == 0)
+        if (move.MoveBase.EnergyCost == 0)
         {
-            moveUsesText.text = $"Uses: Unlimited";
+            moveEnergyCostText.text = $"Basic Move";
         }
         else
         {
-            moveUsesText.text = $"Uses: {move.MaxUses}/{move.MoveBase.MaxUses}";
+            moveEnergyCostText.text = $"Energy Cost: {move.MoveBase.EnergyCost}";
         }
     }
 

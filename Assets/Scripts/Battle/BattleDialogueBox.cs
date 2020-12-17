@@ -16,7 +16,7 @@ public class BattleDialogueBox : MonoBehaviour
     [SerializeField] private List<Text> attackTexts;
 
     [SerializeField] private Text moveDescriptionText;
-    [SerializeField] private Text moveUsesText;
+    [SerializeField] private Text energyCostText;
     [SerializeField] private Text typeText;
 
     public void SetDialogue(string dialogue)

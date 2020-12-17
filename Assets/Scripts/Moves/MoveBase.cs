@@ -12,7 +12,7 @@ public class MoveBase : ScriptableObject
     [SerializeField] private Attribute attribute;
     [SerializeField] private int power;
     [SerializeField] private int accuracy;
-    [SerializeField] private int maxUses;
+    [SerializeField] private int energyCost;
 
     public int ID { get { return id; } }
     public string Name { get { return name; } }
@@ -20,5 +20,5 @@ public class MoveBase : ScriptableObject
     public Attribute Attribute { get { return attribute; } }
     public int Power { get { return power; } }
     public int Accuracy { get { return accuracy; } }
-    public int MaxUses { get { return maxUses; } }
+    public int EnergyCost { get { return energyCost; } }
 }
