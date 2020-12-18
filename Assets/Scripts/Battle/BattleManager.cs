@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -15,6 +16,7 @@ public class BattleManager : MonoBehaviour
 
     private BattleState state;
 
+    [SerializeField] private Camera battleCamera;
     [SerializeField] private DialogueBox mainBattleDialogueBox;
     [SerializeField] private BattleDialogueBox battleDialogueBox;
 
@@ -70,8 +72,6 @@ public class BattleManager : MonoBehaviour
 
     public IEnumerator EnterBattle()
     {
-        GameManager.Get.WorldCamera.gameObject.SetActive(false);
-        GameManager.Get.BattleCamera.gameObject.SetActive(true);
         inBattle = true;
 
         // Set info from battle data
@@ -82,6 +82,12 @@ public class BattleManager : MonoBehaviour
 
         playerMonsterHUD.SetupHUD(playerUnit.Monster);
         enemyMonsterHUD.SetupHUD(enemyUnit.Monster);
+
+        battleDialogueBox.SetDialogue("");
+
+        Coroutine playerEnterAnimationCor = StartCoroutine(playerUnit.PlayEnterAnimation());
+        yield return enemyUnit.PlayEnterAnimation();
+        yield return playerEnterAnimationCor;
 
         SetupAttackButtons(playerUnit.Monster.BasicMove, playerUnit.Monster.Moves);
 
@@ -95,8 +101,6 @@ public class BattleManager : MonoBehaviour
     public void ExitBattle()
     {
         SetActionsButtonsInteractable(false);
-        GameManager.Get.WorldCamera.gameObject.SetActive(true);
-        GameManager.Get.BattleCamera.gameObject.SetActive(false);
         inBattle = false;
     }
 
@@ -211,10 +215,10 @@ public class BattleManager : MonoBehaviour
 
         yield return battleDialogueBox.TypeDialogue($"{playerUnit.Monster.MonsterBase.Name} used {move.MoveBase.Name}");
 
-        playerUnit.PlayAttackAnimation();
+        yield return playerUnit.PlayAttackAnimation();
         yield return new WaitForSeconds(1.0f);
 
-        enemyUnit.PlayHitAnimation();
+        yield return enemyUnit.PlayHitAnimation();
         DamageDetails damageDetails = enemyUnit.Monster.TakeDamage(move, playerUnit.Monster);
         yield return enemyMonsterHUD.UpdateHealth();
         yield return ShowDamageDetails(damageDetails);
@@ -222,7 +226,10 @@ public class BattleManager : MonoBehaviour
         if (damageDetails.Fainted)
         {
             yield return battleDialogueBox.TypeDialogue($"{enemyUnit.Monster.MonsterBase.Name} Died");
-            enemyUnit.PlayDeathAnimation();
+            yield return enemyUnit.PlayDeathAnimation();
+
+            yield return new WaitForSeconds(2.0f);
+            GameManager.Get.EndBattle(true);
         }
         else
         {
@@ -238,10 +245,10 @@ public class BattleManager : MonoBehaviour
 
         yield return battleDialogueBox.TypeDialogue($"{enemyUnit.Monster.MonsterBase.Name} used {move.MoveBase.Name}");
 
-        enemyUnit.PlayAttackAnimation();
+        yield return enemyUnit.PlayAttackAnimation();
         yield return new WaitForSeconds(1.0f);
 
-        playerUnit.PlayHitAnimation();
+        yield return playerUnit.PlayHitAnimation();
         DamageDetails damageDetails = playerUnit.Monster.TakeDamage(move, enemyUnit.Monster);
         yield return playerMonsterHUD.UpdateHealth();
         yield return ShowDamageDetails(damageDetails);
@@ -249,7 +256,10 @@ public class BattleManager : MonoBehaviour
         if (damageDetails.Fainted)
         {
             yield return battleDialogueBox.TypeDialogue($"{playerUnit.Monster.MonsterBase.Name} Died");
-            playerUnit.PlayDeathAnimation();
+            yield return playerUnit.PlayDeathAnimation();
+
+            yield return new WaitForSeconds(2.0f);
+            GameManager.Get.EndBattle(false);
         }
         else
         {

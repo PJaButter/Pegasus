@@ -4,6 +4,8 @@ using System;
 
 public class PlayerController : MonoBehaviour
 {
+    public event Action OnEncountered;
+
     public float movementSpeed = 1f;
     public Vector2 movement;
     private Rigidbody2D rb;
@@ -11,6 +13,7 @@ public class PlayerController : MonoBehaviour
     private BoxCollider2D boxCollider;
     private Vector2 directionPlayerFacing;
     private RaycastHit2D target;
+    private bool isPaused;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +27,9 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (isPaused)
+            return;
+
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
         movement = movement.normalized;
@@ -76,6 +82,9 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (isPaused)
+            return;
+
         rb.MovePosition(rb.position + movement * movementSpeed * Time.fixedDeltaTime);
     }
 
@@ -86,5 +95,31 @@ public class PlayerController : MonoBehaviour
             Door door = collision.gameObject.GetComponent<Door>();
             door.UsedDoor(this.gameObject);
         }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Monster")
+        {
+            OnEncountered();
+        }
+    }
+
+    public void Pause()
+    {
+        isPaused = true;
+
+        StopMoving();
+    }
+
+    public void Resume()
+    {
+        isPaused = false;
+    }
+
+    private void StopMoving()
+    {
+        movement = Vector2.zero;
+        animator.SetFloat("Speed", 0.0f);
     }
 }

@@ -9,12 +9,11 @@ public class GameManager : MonoBehaviour
     private static GameManager instance = null;
     public static GameManager Get { get { return instance; } }
 
-    [SerializeField]
-    private Camera worldCamera;
-    [SerializeField]
-    private Camera battleCamera;
-    [SerializeField]
-    private string currentAreaID;
+    [SerializeField] private Camera worldCamera;
+    [SerializeField] private Camera battleCamera;
+    [SerializeField] private string currentAreaID;
+    [SerializeField] PlayerController playerController;
+    [SerializeField] GameObject battleSystem;
 
     private GameState gameState;
 
@@ -37,23 +36,34 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        playerController.OnEncountered += StartBattle;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Battle"))
-        {
-            if (!BattleManager.Get.InBattle)
-            {
-                StartCoroutine(BattleManager.Get.EnterBattle());
-            }
-            else
-            {
-                BattleManager.Get.ExitBattle();
-            }
-        }
-        
+
+    }
+
+    public void StartBattle()
+    {
+        gameState = GameState.Battle;
+
+        playerController.Pause();
+        battleSystem.SetActive(true);
+        worldCamera.gameObject.SetActive(false);
+        battleCamera.gameObject.SetActive(true);
+        StartCoroutine(BattleManager.Get.EnterBattle());
+    }
+
+    public void EndBattle(bool won)
+    {
+        gameState = GameState.FreeRoam;
+
+        playerController.Resume();
+        BattleManager.Get.ExitBattle();
+        worldCamera.gameObject.SetActive(true);
+        battleCamera.gameObject.SetActive(false);
+        battleSystem.SetActive(false);
     }
 }

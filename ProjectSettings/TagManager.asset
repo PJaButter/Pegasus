@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Door
   - NPC
+  - Monster
   layers:
   - Default
   - TransparentFX
