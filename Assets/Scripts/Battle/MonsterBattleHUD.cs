@@ -31,4 +31,10 @@ public class MonsterBattleHUD : MonoBehaviour
         yield return healthSliderBar.SetValueSmooth((float)m_pMonster.CurrentHealth / m_pMonster.MaxHealth,
             (currentValue)=> { healthText.text = Mathf.FloorToInt(m_pMonster.MaxHealth * currentValue) + "/" + m_pMonster.MaxHealth; });
     }
+
+    public IEnumerator UpdateEnergy()
+    {
+        yield return energySliderBar.SetValueSmooth((float)m_pMonster.CurrentEnergy / m_pMonster.MaxEnergy,
+            (currentValue) => { energyText.text = Mathf.FloorToInt(m_pMonster.MaxEnergy * currentValue) + "/" + m_pMonster.MaxEnergy; });
+    }
 }

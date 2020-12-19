@@ -213,6 +213,9 @@ public class BattleManager : MonoBehaviour
     {
         state = BattleState.Busy;
 
+        playerUnit.Monster.UseEnergy(move.MoveBase.EnergyCost);
+        yield return playerMonsterHUD.UpdateEnergy();
+
         yield return battleDialogueBox.TypeDialogue($"{playerUnit.Monster.MonsterBase.Name} used {move.MoveBase.Name}");
 
         yield return playerUnit.PlayAttackAnimation();
@@ -242,6 +245,9 @@ public class BattleManager : MonoBehaviour
         state = BattleState.EnemyMove;
 
         Move move = enemyUnit.Monster.GetRandomMove();
+
+        enemyUnit.Monster.UseEnergy(move.MoveBase.EnergyCost);
+        yield return enemyMonsterHUD.UpdateEnergy();
 
         yield return battleDialogueBox.TypeDialogue($"{enemyUnit.Monster.MonsterBase.Name} used {move.MoveBase.Name}");
 

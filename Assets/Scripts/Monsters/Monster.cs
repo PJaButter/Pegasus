@@ -90,6 +90,17 @@ public class Monster
             return Moves[r - 1];
         }
     }
+
+    public bool UseEnergy(int amount)
+    {
+        if (CurrentEnergy >= amount)
+        {
+            CurrentEnergy -= amount;
+            return true;
+        }
+
+        return false;
+    }
 }
 
 public class DamageDetails
