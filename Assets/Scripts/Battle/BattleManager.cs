@@ -44,6 +44,9 @@ public class BattleManager : MonoBehaviour
     [SerializeField] private BattleUnit enemyUnit;
     [SerializeField] private MonsterBattleHUD enemyMonsterHUD;
 
+    private MonsterParty playerParty;
+    private WildMonster wildMonster;
+
     public bool InBattle { get { return inBattle; } set { inBattle = value; } }
 
     private void Awake()
@@ -58,27 +61,18 @@ public class BattleManager : MonoBehaviour
         }
     }
 
-    // Start is called before the first frame update
-    void Start()
+    public IEnumerator EnterBattle(MonsterParty playerParty, WildMonster wildMonster)
     {
+        this.playerParty = playerParty;
+        this.wildMonster = wildMonster;
 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
-    public IEnumerator EnterBattle()
-    {
         inBattle = true;
 
         // Set info from battle data
         canFlee = true;
 
-        playerUnit.Setup();
-        enemyUnit.Setup();
+        playerUnit.Setup(playerParty.GetHealthyMonster());
+        enemyUnit.Setup(wildMonster.Monster);
 
         playerMonsterHUD.SetupHUD(playerUnit.Monster);
         enemyMonsterHUD.SetupHUD(enemyUnit.Monster);
@@ -232,6 +226,7 @@ public class BattleManager : MonoBehaviour
             yield return enemyUnit.PlayDeathAnimation();
 
             yield return new WaitForSeconds(2.0f);
+            wildMonster.Defeated();
             GameManager.Get.EndBattle(true);
         }
         else
@@ -265,7 +260,26 @@ public class BattleManager : MonoBehaviour
             yield return playerUnit.PlayDeathAnimation();
 
             yield return new WaitForSeconds(2.0f);
-            GameManager.Get.EndBattle(false);
+
+            Monster nextMonster = playerParty.GetHealthyMonster();
+            if (nextMonster != null)
+            {
+                playerUnit.Setup(nextMonster);
+                playerMonsterHUD.SetupHUD(nextMonster);
+
+                yield return playerUnit.PlayEnterAnimation();
+
+                SetupAttackButtons(nextMonster.BasicMove, nextMonster.Moves);
+
+                yield return battleDialogueBox.TypeDialogue($"Go { nextMonster.MonsterBase.Name }!");
+
+                PlayerAction();
+                SetActionsButtonsInteractable(true);
+            }
+            else
+            {
+                GameManager.Get.EndBattle(false);
+            }
         }
         else
         {

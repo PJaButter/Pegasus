@@ -5,8 +5,6 @@ using UnityEngine.UI;
 
 public class BattleUnit : MonoBehaviour
 {
-    [SerializeField] MonsterBase monsterBase;
-    [SerializeField] int level;
     [SerializeField] bool isPlayerUnit;
     [SerializeField] float offScreenPosX;
 
@@ -23,9 +21,9 @@ public class BattleUnit : MonoBehaviour
         originalColor = monsterImage.color;
     }
 
-    public void Setup()
+    public void Setup(Monster monster)
     {
-        Monster = new Monster(monsterBase, level);
+        Monster = monster;
         if (isPlayerUnit)
         {
             monsterImage.sprite = Monster.MonsterBase.BackSprite;

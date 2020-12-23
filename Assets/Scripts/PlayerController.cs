@@ -4,7 +4,7 @@ using System;
 
 public class PlayerController : MonoBehaviour
 {
-    public event Action OnEncountered;
+    public event Action<WildMonster> OnEncountered;
 
     public float movementSpeed = 1f;
     public Vector2 movement;
@@ -101,7 +101,8 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.tag == "Monster")
         {
-            OnEncountered();
+            WildMonster wildMonster = collision.gameObject.GetComponent<WildMonster>();
+            OnEncountered(wildMonster);
         }
     }
 

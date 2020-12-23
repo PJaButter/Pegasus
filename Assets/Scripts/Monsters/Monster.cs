@@ -2,29 +2,35 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public class Monster
 {
-    public MonsterBase MonsterBase { get; set; }
-    public int Level { get; set; }
+    [SerializeField] private MonsterBase monsterBase;
+    [SerializeField] private int level;
+    public MonsterBase MonsterBase { get { return monsterBase; } set { monsterBase = value; } }
+    public int Level { get { return level; } set { level = value; } }
 
     public int CurrentHealth { get; set; }
     public int CurrentEnergy { get; set; }
 
     public Move BasicMove { get; set; }
     public List<Move> Moves { get; set; }
+    public int MaxHealth { get { return Mathf.FloorToInt((MonsterBase.MaxHealth * Level) / 100.0f) + 10; } }
+    public int MaxEnergy { get { return Mathf.FloorToInt((MonsterBase.MaxEnergy * Level) / 100.0f) + 10; } }
+    public int Attack { get { return Mathf.FloorToInt((MonsterBase.Attack * Level) / 100.0f) + 5; } }
+    public int Defense { get { return Mathf.FloorToInt((MonsterBase.Defense * Level) / 100.0f) + 5; } }
+    public int Speed { get { return Mathf.FloorToInt((MonsterBase.Speed * Level) / 100.0f) + 5; } }
 
-    public Monster(MonsterBase pMonsterBase, int iLevel)
+    public void Init()
     {
-        MonsterBase = pMonsterBase;
-        Level = iLevel;
         CurrentHealth = MaxHealth;
         CurrentEnergy = MaxEnergy;
 
         // Generate Moves
-        BasicMove = new Move(pMonsterBase.BasicMove);
+        BasicMove = new Move(MonsterBase.BasicMove);
 
         Moves = new List<Move>();
-        foreach (LearnableMove move in pMonsterBase.LearnableMoves)
+        foreach (LearnableMove move in MonsterBase.LearnableMoves)
         {
             if (move.Level <= Level)
             {
@@ -35,14 +41,6 @@ public class Monster
             }
         }
     }
-
-    public int MaxHealth { get { return Mathf.FloorToInt((MonsterBase.MaxHealth * Level) / 100.0f) + 10; } }
-    public int MaxEnergy { get { return Mathf.FloorToInt((MonsterBase.MaxEnergy * Level) / 100.0f) + 10; } }
-    public int Attack { get { return Mathf.FloorToInt((MonsterBase.Attack * Level) / 100.0f) + 5; } }
-    public int Defense { get { return Mathf.FloorToInt((MonsterBase.Defense * Level) / 100.0f) + 5; } }
-    public int SpecialAttack { get { return Mathf.FloorToInt((MonsterBase.SpecialAttack * Level) / 100.0f) + 5; } }
-    public int SpecialDefense { get { return Mathf.FloorToInt((MonsterBase.SpecialDefense * Level) / 100.0f) + 5; } }
-    public int Speed { get { return Mathf.FloorToInt((MonsterBase.Speed * Level) / 100.0f) + 5; } }
 
     public DamageDetails TakeDamage(Move move, Monster attacker)
     {

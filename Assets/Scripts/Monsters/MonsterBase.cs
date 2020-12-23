@@ -13,6 +13,7 @@ public class MonsterBase : ScriptableObject
 
     [SerializeField] private Sprite frontSprite;
     [SerializeField] private Sprite backSprite;
+    [SerializeField] private Sprite worldSprite;
 
     [SerializeField] private Attribute mainAttribute;
     [SerializeField] private Attribute secondaryAttribute;
@@ -22,8 +23,6 @@ public class MonsterBase : ScriptableObject
     [SerializeField] private int maxEnergy;
     [SerializeField] private int attack;
     [SerializeField] private int defense;
-    [SerializeField] private int specialAttack;
-    [SerializeField] private int specialDefense;
     [SerializeField] private int speed;
 
     [SerializeField] private MoveBase basicMove;
@@ -34,14 +33,13 @@ public class MonsterBase : ScriptableObject
     public string Description { get { return description; } }
     public Sprite FrontSprite { get { return frontSprite; } }
     public Sprite BackSprite { get { return backSprite; } }
+    public Sprite WorldSprite { get { return worldSprite; } }
     public Attribute MainAttribute { get { return mainAttribute; } }
     public Attribute SecondaryAttribute { get { return secondaryAttribute; } }
     public int MaxHealth { get { return maxHealth; } }
     public int MaxEnergy { get { return maxEnergy; } }
     public int Attack { get { return attack; } }
     public int Defense { get { return defense; } }
-    public int SpecialAttack { get { return specialAttack; } }
-    public int SpecialDefense { get { return specialDefense; } }
     public int Speed { get { return speed; } }
     public MoveBase BasicMove { get { return basicMove; } }
     public List<LearnableMove> LearnableMoves { get { return learnableMoves; } }

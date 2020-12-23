@@ -10,24 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 49afb50dc5d1ef74d8c5ffb4999737b6, type: 3}
-  m_Name: Monster2
+  m_Name: Monster3
   m_EditorClassIdentifier: 
-  id: 1
-  name: Monster 2
-  description: Test Monster 2
-  frontSprite: {fileID: 6937817954938267909, guid: fc8b5f2af3000f24ba0235271ff73f94,
+  id: 2
+  name: Monster3
+  description: Test Monster 3
+  frontSprite: {fileID: -4178046375966092550, guid: 4ba56a4af30b5174da00faaf017fe61a,
     type: 3}
-  backSprite: {fileID: -2847823790183061483, guid: fc8b5f2af3000f24ba0235271ff73f94,
+  backSprite: {fileID: 8753623403962045454, guid: 4ba56a4af30b5174da00faaf017fe61a,
     type: 3}
-  worldSprite: {fileID: 6937817954938267909, guid: fc8b5f2af3000f24ba0235271ff73f94,
+  worldSprite: {fileID: -4178046375966092550, guid: 4ba56a4af30b5174da00faaf017fe61a,
     type: 3}
-  mainAttribute: 4
-  secondaryAttribute: 7
-  maxHealth: 31
-  maxEnergy: 23
-  attack: 21
-  defense: 32
-  speed: 41
+  mainAttribute: 6
+  secondaryAttribute: 0
+  maxHealth: 40
+  maxEnergy: 70
+  attack: 15
+  defense: 55
+  speed: 50
   basicMove: {fileID: 11400000, guid: c95ad4bda25cd894db4d641c57dbfb06, type: 2}
   learnableMoves:
   - moveBase: {fileID: 11400000, guid: d0264ae0a8c11434a8078a5e54fb7ed4, type: 2}

@@ -19,14 +19,14 @@ MonoBehaviour:
     type: 3}
   backSprite: {fileID: -3724514210783730073, guid: fb83c32894bffb741933fa1491253229,
     type: 3}
+  worldSprite: {fileID: -855298285791758126, guid: fb83c32894bffb741933fa1491253229,
+    type: 3}
   mainAttribute: 6
   secondaryAttribute: 0
   maxHealth: 50
   maxEnergy: 50
   attack: 20
   defense: 30
-  specialAttack: 40
-  specialDefense: 10
   speed: 25
   basicMove: {fileID: 11400000, guid: c95ad4bda25cd894db4d641c57dbfb06, type: 2}
   learnableMoves:

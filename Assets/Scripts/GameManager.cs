@@ -45,7 +45,7 @@ public class GameManager : MonoBehaviour
 
     }
 
-    public void StartBattle()
+    public void StartBattle(WildMonster wildMonster)
     {
         gameState = GameState.Battle;
 
@@ -53,7 +53,10 @@ public class GameManager : MonoBehaviour
         battleSystem.SetActive(true);
         worldCamera.gameObject.SetActive(false);
         battleCamera.gameObject.SetActive(true);
-        StartCoroutine(BattleManager.Get.EnterBattle());
+
+        MonsterParty playerParty = playerController.GetComponent<MonsterParty>();
+
+        StartCoroutine(BattleManager.Get.EnterBattle(playerParty, wildMonster));
     }
 
     public void EndBattle(bool won)
