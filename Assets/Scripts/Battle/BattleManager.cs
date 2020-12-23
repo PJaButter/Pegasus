@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public enum BattleState { Start, PlayerAction, PlayerMove, EnemyMove, Busy }
+public enum BattleState { Start, PlayerAction, PlayerMove, EnemyMove, Busy, PartyScreen }
 
 public class BattleManager : MonoBehaviour
 {
@@ -44,6 +44,8 @@ public class BattleManager : MonoBehaviour
     [SerializeField] private BattleUnit enemyUnit;
     [SerializeField] private MonsterBattleHUD enemyMonsterHUD;
 
+    [SerializeField] private PartyScreen partyScreen;
+
     private MonsterParty playerParty;
     private WildMonster wildMonster;
 
@@ -76,6 +78,8 @@ public class BattleManager : MonoBehaviour
 
         playerMonsterHUD.SetupHUD(playerUnit.Monster);
         enemyMonsterHUD.SetupHUD(enemyUnit.Monster);
+
+        partyScreen.Init();
 
         battleDialogueBox.SetDialogue("");
 
@@ -124,6 +128,37 @@ public class BattleManager : MonoBehaviour
         actionsPanel.SetActive(false);
         moveDetailsPanel.SetActive(false);
         attackPanel.SetActive(false);
+    }
+
+    public void OnClick_MonstersButton()
+    {
+        OpenPartyScreen(false);
+    }
+
+    public void OnClick_PartyMember(int partyMemberIndex)
+    {
+        Monster selectedMonster = playerParty.Monsters[partyMemberIndex];
+        if (selectedMonster.CurrentHealth <= 0)
+        {
+            partyScreen.SetMessageText("This monster is currently unable to battle.");
+            return;
+        }
+        else if (selectedMonster == playerUnit.Monster)
+        {
+            partyScreen.SetMessageText("This monster is already in battle.");
+            return;
+        }
+
+        partyScreen.gameObject.SetActive(false);
+        state = BattleState.Busy;
+        battleDialogueBox.SetDialogue("");
+        StartCoroutine(SwitchMonster(selectedMonster));
+    }
+
+    public void OnClick_PartyScreenBack()
+    {
+        partyScreen.gameObject.SetActive(false);
+        PlayerAction();
     }
 
     public void TryFleeBattle()
@@ -182,7 +217,7 @@ public class BattleManager : MonoBehaviour
     private void PlayerAction()
     {
         state = BattleState.PlayerAction;
-        StartCoroutine(battleDialogueBox.TypeDialogue("Choose an action"));
+        battleDialogueBox.SetDialogue("Choose an action");
         battleDialogueBox.EnableActionsPanel(true);
     }
 
@@ -192,6 +227,12 @@ public class BattleManager : MonoBehaviour
         battleDialogueBox.EnableActionsPanel(false);
         battleDialogueBox.EnableDialogueText(false);
         battleDialogueBox.EnableAttackPanel(false);
+    }
+
+    private void OpenPartyScreen(bool mustChooseMonster)
+    {
+        partyScreen.SetPartyData(playerParty.Monsters, mustChooseMonster);
+        partyScreen.gameObject.SetActive(true);
     }
 
     private void SetupAttackButtons(Move basicMove, List<Move> moves)
@@ -264,17 +305,7 @@ public class BattleManager : MonoBehaviour
             Monster nextMonster = playerParty.GetHealthyMonster();
             if (nextMonster != null)
             {
-                playerUnit.Setup(nextMonster);
-                playerMonsterHUD.SetupHUD(nextMonster);
-
-                yield return playerUnit.PlayEnterAnimation();
-
-                SetupAttackButtons(nextMonster.BasicMove, nextMonster.Moves);
-
-                yield return battleDialogueBox.TypeDialogue($"Go { nextMonster.MonsterBase.Name }!");
-
-                PlayerAction();
-                SetActionsButtonsInteractable(true);
+                OpenPartyScreen(true);
             }
             else
             {
@@ -302,5 +333,26 @@ public class BattleManager : MonoBehaviour
         {
             yield return battleDialogueBox.TypeDialogue("It's not very effective!");
         }
+    }
+
+    private IEnumerator SwitchMonster(Monster newMonster)
+    {
+        if (playerUnit.Monster.CurrentHealth > 0)
+        {
+            yield return battleDialogueBox.TypeDialogue($"Take a break { playerUnit.Monster.MonsterBase.Name }");
+            yield return playerUnit.PlayDeathAnimation();
+            yield return new WaitForSeconds(1.0f);
+        }
+
+        playerUnit.Setup(newMonster);
+        playerMonsterHUD.SetupHUD(newMonster);
+
+        yield return playerUnit.PlayEnterAnimation();
+
+        SetupAttackButtons(newMonster.BasicMove, newMonster.Moves);
+
+        yield return battleDialogueBox.TypeDialogue($"Go { newMonster.MonsterBase.Name }!");
+
+        StartCoroutine(EnemyMove());
     }
 }
