@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public enum BattleState { Start, PlayerAction, PlayerMove, EnemyMove, Busy, PartyScreen }
+public enum BattleState { Start, ActionSelection, MoveSelection, PerformMove, Busy, PartyScreen, BattleOver }
 
 public class BattleManager : MonoBehaviour
 {
@@ -40,9 +40,7 @@ public class BattleManager : MonoBehaviour
     [SerializeField] private List<AttackButton> attackButtons;
 
     [SerializeField] private BattleUnit playerUnit;
-    [SerializeField] private MonsterBattleHUD playerMonsterHUD;
     [SerializeField] private BattleUnit enemyUnit;
-    [SerializeField] private MonsterBattleHUD enemyMonsterHUD;
 
     [SerializeField] private PartyScreen partyScreen;
 
@@ -76,9 +74,6 @@ public class BattleManager : MonoBehaviour
         playerUnit.Setup(playerParty.GetHealthyMonster());
         enemyUnit.Setup(wildMonster.Monster);
 
-        playerMonsterHUD.SetupHUD(playerUnit.Monster);
-        enemyMonsterHUD.SetupHUD(enemyUnit.Monster);
-
         partyScreen.Init();
 
         battleDialogueBox.SetDialogue("");
@@ -91,7 +86,7 @@ public class BattleManager : MonoBehaviour
 
         yield return battleDialogueBox.TypeDialogue($"A wild { enemyUnit.Monster.MonsterBase.Name } appeared.");
 
-        PlayerAction();
+        ActionSelection();
 
         SetActionsButtonsInteractable(true);
     }
@@ -104,7 +99,7 @@ public class BattleManager : MonoBehaviour
 
     public void OnClick_AttackAction()
     {
-        PlayerMove();
+        MoveSelection();
         mainBattleDialogueBox.gameObject.SetActive(false);
         actionsPanel.SetActive(false);
         moveDetailsPanel.SetActive(true);
@@ -113,7 +108,7 @@ public class BattleManager : MonoBehaviour
 
     public void OnClick_AttackBackButton()
     {
-        PlayerAction();
+        ActionSelection();
         mainBattleDialogueBox.gameObject.SetActive(true);
         actionsPanel.SetActive(true);
         moveDetailsPanel.SetActive(false);
@@ -122,7 +117,7 @@ public class BattleManager : MonoBehaviour
 
     public void OnClick_AttackButton(Move move)
     {
-        StartCoroutine(PerformPlayerMove(move));
+        StartCoroutine(PlayerMove(move));
         mainBattleDialogueBox.gameObject.SetActive(true);
         battleDialogueBox.EnableDialogueText(true);
         actionsPanel.SetActive(false);
@@ -158,7 +153,7 @@ public class BattleManager : MonoBehaviour
     public void OnClick_PartyScreenBack()
     {
         partyScreen.gameObject.SetActive(false);
-        PlayerAction();
+        ActionSelection();
     }
 
     public void TryFleeBattle()
@@ -214,19 +209,25 @@ public class BattleManager : MonoBehaviour
         }
     }
 
-    private void PlayerAction()
+    private void ActionSelection()
     {
-        state = BattleState.PlayerAction;
+        state = BattleState.ActionSelection;
         battleDialogueBox.SetDialogue("Choose an action");
         battleDialogueBox.EnableActionsPanel(true);
     }
 
-    private void PlayerMove()
+    private void MoveSelection()
     {
-        state = BattleState.PlayerMove;
+        state = BattleState.MoveSelection;
         battleDialogueBox.EnableActionsPanel(false);
         battleDialogueBox.EnableDialogueText(false);
         battleDialogueBox.EnableAttackPanel(false);
+    }
+
+    private void BattleOver(bool won)
+    {
+        state = BattleState.BattleOver;
+        GameManager.Get.EndBattle(won);
     }
 
     private void OpenPartyScreen(bool mustChooseMonster)
@@ -244,64 +245,58 @@ public class BattleManager : MonoBehaviour
         }
     }
 
-    private IEnumerator PerformPlayerMove(Move move)
+    private IEnumerator PlayerMove(Move move)
     {
-        state = BattleState.Busy;
+        state = BattleState.PerformMove;
 
-        playerUnit.Monster.UseEnergy(move.MoveBase.EnergyCost);
-        yield return playerMonsterHUD.UpdateEnergy();
+        yield return RunMove(playerUnit, enemyUnit, move);
 
-        yield return battleDialogueBox.TypeDialogue($"{playerUnit.Monster.MonsterBase.Name} used {move.MoveBase.Name}");
-
-        yield return playerUnit.PlayAttackAnimation();
-        yield return new WaitForSeconds(1.0f);
-
-        yield return enemyUnit.PlayHitAnimation();
-        DamageDetails damageDetails = enemyUnit.Monster.TakeDamage(move, playerUnit.Monster);
-        yield return enemyMonsterHUD.UpdateHealth();
-        yield return ShowDamageDetails(damageDetails);
-
-        if (damageDetails.Fainted)
-        {
-            yield return battleDialogueBox.TypeDialogue($"{enemyUnit.Monster.MonsterBase.Name} Died");
-            yield return enemyUnit.PlayDeathAnimation();
-
-            yield return new WaitForSeconds(2.0f);
-            wildMonster.Defeated();
-            GameManager.Get.EndBattle(true);
-        }
-        else
-        {
+        // If the battle state was not changed by RunMove, proceed to the next step
+        if (state == BattleState.PerformMove)
             StartCoroutine(EnemyMove());
-        }
     }
 
     private IEnumerator EnemyMove()
     {
-        state = BattleState.EnemyMove;
+        state = BattleState.PerformMove;
 
         Move move = enemyUnit.Monster.GetRandomMove();
+        yield return RunMove(enemyUnit, playerUnit, move);
 
-        enemyUnit.Monster.UseEnergy(move.MoveBase.EnergyCost);
-        yield return enemyMonsterHUD.UpdateEnergy();
+        // If the battle state was not changed by RunMove, proceed to the next step
+        if (state == BattleState.PerformMove)
+            ActionSelection();
+    }
 
-        yield return battleDialogueBox.TypeDialogue($"{enemyUnit.Monster.MonsterBase.Name} used {move.MoveBase.Name}");
+    private IEnumerator RunMove(BattleUnit sourceUnit, BattleUnit targetUnit, Move move)
+    {
+        sourceUnit.Monster.UseEnergy(move.MoveBase.EnergyCost);
+        yield return sourceUnit.HUD.UpdateEnergy();
 
-        yield return enemyUnit.PlayAttackAnimation();
+        yield return battleDialogueBox.TypeDialogue($"{sourceUnit.Monster.MonsterBase.Name} used {move.MoveBase.Name}");
+
+        yield return sourceUnit.PlayAttackAnimation();
         yield return new WaitForSeconds(1.0f);
 
-        yield return playerUnit.PlayHitAnimation();
-        DamageDetails damageDetails = playerUnit.Monster.TakeDamage(move, enemyUnit.Monster);
-        yield return playerMonsterHUD.UpdateHealth();
+        yield return targetUnit.PlayHitAnimation();
+        DamageDetails damageDetails = targetUnit.Monster.TakeDamage(move, sourceUnit.Monster);
+        yield return targetUnit.HUD.UpdateHealth();
         yield return ShowDamageDetails(damageDetails);
 
         if (damageDetails.Fainted)
         {
-            yield return battleDialogueBox.TypeDialogue($"{playerUnit.Monster.MonsterBase.Name} Died");
-            yield return playerUnit.PlayDeathAnimation();
+            yield return battleDialogueBox.TypeDialogue($"{targetUnit.Monster.MonsterBase.Name} Died");
+            yield return targetUnit.PlayDeathAnimation();
 
             yield return new WaitForSeconds(2.0f);
+            HandleMonsterFainted(targetUnit);
+        }
+    }
 
+    private void HandleMonsterFainted(BattleUnit faintedUnit)
+    {
+        if (faintedUnit.IsPlayerUnit)
+        {
             Monster nextMonster = playerParty.GetHealthyMonster();
             if (nextMonster != null)
             {
@@ -309,12 +304,13 @@ public class BattleManager : MonoBehaviour
             }
             else
             {
-                GameManager.Get.EndBattle(false);
+                BattleOver(false);
             }
         }
         else
         {
-            PlayerAction();
+            wildMonster.Defeated();
+            BattleOver(true);
         }
     }
 
@@ -345,7 +341,6 @@ public class BattleManager : MonoBehaviour
         }
 
         playerUnit.Setup(newMonster);
-        playerMonsterHUD.SetupHUD(newMonster);
 
         yield return playerUnit.PlayEnterAnimation();
 

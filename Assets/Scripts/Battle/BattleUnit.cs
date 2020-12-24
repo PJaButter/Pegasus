@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class BattleUnit : MonoBehaviour
 {
+    [SerializeField] private MonsterBattleHUD hud;
     [SerializeField] bool isPlayerUnit;
     [SerializeField] float offScreenPosX;
 
@@ -12,6 +13,8 @@ public class BattleUnit : MonoBehaviour
     private Vector3 originalPos;
     private Color originalColor;
 
+    public MonsterBattleHUD HUD { get { return hud; } }
+    public bool IsPlayerUnit { get { return isPlayerUnit; } }
     public Monster Monster { get; set; }
 
     private void Awake()
@@ -32,6 +35,8 @@ public class BattleUnit : MonoBehaviour
         {
             monsterImage.sprite = Monster.MonsterBase.FrontSprite;
         }
+
+        hud.SetupHUD(monster);
     }
 
     public IEnumerator PlayEnterAnimation()
