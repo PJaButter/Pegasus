@@ -18,6 +18,8 @@ public class AttackButton : MonoBehaviour, IPointerEnterHandler
     {
         if (move != null)
         {
+            this.GetComponent<Button>().interactable = true;
+            gameObject.SetActive(true);
             this.move = move;
             text.text = move.MoveBase.Name;
         }

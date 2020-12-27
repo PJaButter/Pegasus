@@ -86,7 +86,7 @@ public class BattleManager : MonoBehaviour
 
         yield return battleDialogueBox.TypeDialogue($"A wild { enemyUnit.Monster.MonsterBase.Name } appeared.");
 
-        ActionSelection();
+        ChooseFirstTurn();
 
         SetActionsButtonsInteractable(true);
     }
@@ -224,9 +224,18 @@ public class BattleManager : MonoBehaviour
         battleDialogueBox.EnableAttackPanel(false);
     }
 
+    private void ChooseFirstTurn()
+    {
+        if (playerUnit.Monster.Speed >= enemyUnit.Monster.Speed)
+            ActionSelection();
+        else
+            StartCoroutine(EnemyMove());
+    }
+
     private void BattleOver(bool won)
     {
         state = BattleState.BattleOver;
+        playerParty.Monsters.ForEach(monster => monster.OnBattleOver());
         GameManager.Get.EndBattle(won);
     }
 
@@ -279,17 +288,49 @@ public class BattleManager : MonoBehaviour
         yield return new WaitForSeconds(1.0f);
 
         yield return targetUnit.PlayHitAnimation();
-        DamageDetails damageDetails = targetUnit.Monster.TakeDamage(move, sourceUnit.Monster);
-        yield return targetUnit.HUD.UpdateHealth();
-        yield return ShowDamageDetails(damageDetails);
 
-        if (damageDetails.Fainted)
+        if (move.MoveBase.Category == MoveCategory.Status)
+        {
+            yield return RunMoveEffects(move, sourceUnit.Monster, targetUnit.Monster);
+        }
+        else
+        {
+            DamageDetails damageDetails = targetUnit.Monster.TakeDamage(move, sourceUnit.Monster);
+            yield return targetUnit.HUD.UpdateHealth();
+            yield return ShowDamageDetails(damageDetails);
+        }
+
+        if (targetUnit.Monster.CurrentHealth <= 0)
         {
             yield return battleDialogueBox.TypeDialogue($"{targetUnit.Monster.MonsterBase.Name} Died");
             yield return targetUnit.PlayDeathAnimation();
 
             yield return new WaitForSeconds(2.0f);
             HandleMonsterFainted(targetUnit);
+        }
+    }
+
+    private IEnumerator RunMoveEffects(Move move, Monster source, Monster target)
+    {
+        MoveEffects moveEffects = move.MoveBase.Effects;
+        if (moveEffects.StatBoosts != null)
+        {
+            if (move.MoveBase.Target == MoveTarget.Self)
+                source.ApplyStatBoosts(moveEffects.StatBoosts);
+            else
+                target.ApplyStatBoosts(moveEffects.StatBoosts);
+        }
+
+        yield return ShowStatusChanges(source);
+        yield return ShowStatusChanges(target);
+    }
+
+    private IEnumerator ShowStatusChanges(Monster monster)
+    {
+        while (monster.StatusChanges.Count > 0)
+        {
+            string message = monster.StatusChanges.Dequeue();
+            yield return battleDialogueBox.TypeDialogue(message);
         }
     }
 
@@ -333,8 +374,10 @@ public class BattleManager : MonoBehaviour
 
     private IEnumerator SwitchMonster(Monster newMonster)
     {
+        bool monsterFainted = true;
         if (playerUnit.Monster.CurrentHealth > 0)
         {
+            monsterFainted = false;
             yield return battleDialogueBox.TypeDialogue($"Take a break { playerUnit.Monster.MonsterBase.Name }");
             yield return playerUnit.PlayDeathAnimation();
             yield return new WaitForSeconds(1.0f);
@@ -348,6 +391,9 @@ public class BattleManager : MonoBehaviour
 
         yield return battleDialogueBox.TypeDialogue($"Go { newMonster.MonsterBase.Name }!");
 
-        StartCoroutine(EnemyMove());
+        if (monsterFainted)
+            ChooseFirstTurn();
+        else
+            StartCoroutine(EnemyMove());
     }
 }

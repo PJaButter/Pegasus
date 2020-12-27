@@ -67,6 +67,13 @@ public enum Attribute
     Dark
 }
 
+public enum Stat
+{
+    Attack,
+    Defense,
+    Speed
+}
+
 public class AttributeChart
 {
     static private float[][] chart =

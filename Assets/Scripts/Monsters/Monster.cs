@@ -15,17 +15,20 @@ public class Monster
 
     public Move BasicMove { get; set; }
     public List<Move> Moves { get; set; }
-    public int MaxHealth { get { return Mathf.FloorToInt((MonsterBase.MaxHealth * Level) / 100.0f) + 10; } }
-    public int MaxEnergy { get { return Mathf.FloorToInt((MonsterBase.MaxEnergy * Level) / 100.0f) + 10; } }
-    public int Attack { get { return Mathf.FloorToInt((MonsterBase.Attack * Level) / 100.0f) + 5; } }
-    public int Defense { get { return Mathf.FloorToInt((MonsterBase.Defense * Level) / 100.0f) + 5; } }
-    public int Speed { get { return Mathf.FloorToInt((MonsterBase.Speed * Level) / 100.0f) + 5; } }
+
+    public Dictionary <Stat, int> Stats { get; private set; }
+    public Dictionary<Stat, int> StatBoosts { get; private set; }
+
+    public Queue<string> StatusChanges { get; private set; } = new Queue<string>();
+
+    public int MaxHealth { get; private set; }
+    public int MaxEnergy { get; private set; }
+    public int Attack { get { return GetStat(Stat.Attack); } }
+    public int Defense { get { return GetStat(Stat.Defense); } }
+    public int Speed { get { return GetStat(Stat.Speed); } }
 
     public void Init()
     {
-        CurrentHealth = MaxHealth;
-        CurrentEnergy = MaxEnergy;
-
         // Generate Moves
         BasicMove = new Move(MonsterBase.BasicMove);
 
@@ -40,6 +43,14 @@ public class Monster
                     break;
             }
         }
+
+        CalculateStats();
+
+        CurrentHealth = MaxHealth;
+        CurrentEnergy = MaxEnergy;
+
+        ResetStatBoost();
+
     }
 
     public DamageDetails TakeDamage(Move move, Monster attacker)
@@ -98,6 +109,65 @@ public class Monster
         }
 
         return false;
+    }
+
+    public void OnBattleOver()
+    {
+        ResetStatBoost();
+    }
+
+    public void ApplyStatBoosts(List<StatBoost> statBoosts)
+    {
+        foreach (StatBoost statBoost in statBoosts)
+        {
+            Stat stat = statBoost.stat;
+            int boost = statBoost.boost;
+
+            // If you want to change the -6 or 6, you must also change "boostValues" in the GetStat method
+            StatBoosts[stat] = Mathf.Clamp(StatBoosts[stat] + boost, -6, 6);
+
+            if (boost > 0)
+                StatusChanges.Enqueue($"{MonsterBase.Name}'s {stat} rose!");
+            else
+                StatusChanges.Enqueue($"{MonsterBase.Name}'s {stat} fell!");
+        }
+    }
+
+    private void CalculateStats()
+    {
+        Stats = new Dictionary<Stat, int>();
+        Stats.Add(Stat.Attack, Mathf.FloorToInt((MonsterBase.Attack * Level) / 100.0f) + 5);
+        Stats.Add(Stat.Defense, Mathf.FloorToInt((MonsterBase.Defense * Level) / 100.0f) + 5);
+        Stats.Add(Stat.Speed, Mathf.FloorToInt((MonsterBase.Speed * Level) / 100.0f) + 5);
+
+        MaxHealth = Mathf.FloorToInt((MonsterBase.MaxHealth * Level) / 100.0f) + 10;
+        MaxEnergy = Mathf.FloorToInt((MonsterBase.MaxEnergy * Level) / 100.0f) + 10;
+    }
+
+    private void ResetStatBoost()
+    {
+        StatBoosts = new Dictionary<Stat, int>()
+        {
+            { Stat.Attack, 0 },
+            { Stat.Defense, 0 },
+            { Stat.Speed, 0 }
+        };
+    }
+
+    private int GetStat(Stat stat)
+    {
+        int statVal = Stats[stat];
+
+        // TODO: Apply stat boost
+        int boost = StatBoosts[stat];
+        var boostValues = new float[] { 1.0f, 1.5f, 2.0f, 2.5f, 3.0f, 3.5f, 4.0f };
+
+        if (boost >= 0)
+            statVal = Mathf.FloorToInt(statVal * boostValues[boost]);
+        else
+            statVal = Mathf.FloorToInt(statVal / boostValues[-boost]);
+
+        return statVal;
     }
 }
 
