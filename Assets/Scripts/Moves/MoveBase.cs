@@ -39,8 +39,12 @@ public enum MoveCategory
 public class MoveEffects
 {
     [SerializeField] List<StatBoost> statBoosts;
+    [SerializeField] ConditionID status;
+    [SerializeField] ConditionID volatileStatus;
 
     public List<StatBoost> StatBoosts { get { return statBoosts; } }
+    public ConditionID Status { get { return status; } }
+    public ConditionID VolatileStatus { get { return volatileStatus; } }
 }
 
 [System.Serializable]

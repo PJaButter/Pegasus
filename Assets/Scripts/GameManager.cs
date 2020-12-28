@@ -31,6 +31,8 @@ public class GameManager : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+
+        ConditionsDB.Init();
     }
 
     // Start is called before the first frame update

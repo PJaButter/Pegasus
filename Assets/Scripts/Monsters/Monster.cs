@@ -18,8 +18,15 @@ public class Monster
 
     public Dictionary <Stat, int> Stats { get; private set; }
     public Dictionary<Stat, int> StatBoosts { get; private set; }
+    public Condition Status { get; private set; }
+    public int StatusTime { get; set; }
+    public Condition VolatileStatus { get; private set; }
+    public int VolatileStatusTime { get; set; }
 
     public Queue<string> StatusChanges { get; private set; } = new Queue<string>();
+    public bool HealthChanged { get; set; }
+    public bool EnergyChanged { get; set; }
+    public event System.Action OnStatusChanged;
 
     public int MaxHealth { get; private set; }
     public int MaxEnergy { get; private set; }
@@ -39,7 +46,7 @@ public class Monster
             {
                 Moves.Add(new Move(move.MoveBase));
 
-                if (Moves.Count >= 4)
+                if (Moves.Count >= 5)
                     break;
             }
         }
@@ -50,7 +57,8 @@ public class Monster
         CurrentEnergy = MaxEnergy;
 
         ResetStatBoost();
-
+        Status = null;
+        VolatileStatus = null;
     }
 
     public DamageDetails TakeDamage(Move move, Monster attacker)
@@ -76,14 +84,54 @@ public class Monster
         float d = a * move.MoveBase.Power * ((float)attacker.Attack / Defense) + 2;
         int damage = Mathf.FloorToInt(d * modifiers);
 
-        CurrentHealth -= damage;
-        if (CurrentHealth <= 0)
-        {
-            // Monster died
-            CurrentHealth = 0;
-            damageDetails.Fainted = true;
-        }
+        UpdateHealth(damage);
         return damageDetails;
+    }
+
+    public void UpdateHealth(int damage)
+    {
+        CurrentHealth = Mathf.Clamp(CurrentHealth - damage, 0, MaxHealth);
+        HealthChanged = true;
+    }
+
+    public void UpdateEnergy(int amount)
+    {
+        CurrentEnergy = Mathf.Clamp(CurrentEnergy - amount, 0, MaxEnergy);
+        EnergyChanged = true;
+    }
+
+    public void SetStatus(ConditionID conditionID)
+    {
+        if (Status != null)
+            return;
+
+        Status = ConditionsDB.Conditions[conditionID];
+        Status?.OnStart?.Invoke(this);
+        StatusChanges.Enqueue($"{MonsterBase.Name} {Status.StartMessage}");
+        OnStatusChanged?.Invoke();
+    }
+
+    public void CureStatus()
+    {
+        Status = null;
+        OnStatusChanged?.Invoke();
+    }
+
+    public void SetVolatileStatus(ConditionID conditionID)
+    {
+        if (VolatileStatus != null)
+            return;
+
+        VolatileStatus = ConditionsDB.Conditions[conditionID];
+        VolatileStatus?.OnStart?.Invoke(this);
+        StatusChanges.Enqueue($"{MonsterBase.Name} {VolatileStatus.StartMessage}");
+        OnStatusChanged?.Invoke();
+    }
+
+    public void CureVolatileStatus()
+    {
+        VolatileStatus = null;
+        OnStatusChanged?.Invoke();
     }
 
     public Move GetRandomMove()
@@ -104,15 +152,39 @@ public class Monster
     {
         if (CurrentEnergy >= amount)
         {
-            CurrentEnergy -= amount;
+            UpdateEnergy(amount);
             return true;
         }
 
         return false;
     }
 
+    public bool OnBeforeMove()
+    {
+        bool canPerformMove = true;
+        if (Status?.OnBeforeMove != null)
+        {
+            if (!Status.OnBeforeMove(this))
+                canPerformMove = false;
+        }
+        if (VolatileStatus?.OnBeforeMove != null)
+        {
+            if (!VolatileStatus.OnBeforeMove(this))
+                canPerformMove = false;
+        }
+
+        return canPerformMove;
+    }
+
+    public void OnAfterTurn()
+    {
+        Status?.OnAfterTurn?.Invoke(this);
+        VolatileStatus?.OnAfterTurn?.Invoke(this);
+    }
+
     public void OnBattleOver()
     {
+        VolatileStatus = null;
         ResetStatBoost();
     }
 
@@ -140,8 +212,8 @@ public class Monster
         Stats.Add(Stat.Defense, Mathf.FloorToInt((MonsterBase.Defense * Level) / 100.0f) + 5);
         Stats.Add(Stat.Speed, Mathf.FloorToInt((MonsterBase.Speed * Level) / 100.0f) + 5);
 
-        MaxHealth = Mathf.FloorToInt((MonsterBase.MaxHealth * Level) / 100.0f) + 10;
-        MaxEnergy = Mathf.FloorToInt((MonsterBase.MaxEnergy * Level) / 100.0f) + 10;
+        MaxHealth = Mathf.FloorToInt((MonsterBase.MaxHealth * Level) / 100.0f) + 10 + Level;
+        MaxEnergy = Mathf.FloorToInt((MonsterBase.MaxEnergy * Level) / 100.0f) + 10 + Level;
     }
 
     private void ResetStatBoost()

@@ -279,6 +279,14 @@ public class BattleManager : MonoBehaviour
 
     private IEnumerator RunMove(BattleUnit sourceUnit, BattleUnit targetUnit, Move move)
     {
+        bool canRunMove = sourceUnit.Monster.OnBeforeMove();
+        yield return ShowStatusChanges(sourceUnit.Monster);
+        yield return sourceUnit.HUD.UpdateHealth();
+        if (!canRunMove)
+        {
+            yield break;
+        }
+
         sourceUnit.Monster.UseEnergy(move.MoveBase.EnergyCost);
         yield return sourceUnit.HUD.UpdateEnergy();
 
@@ -308,17 +316,44 @@ public class BattleManager : MonoBehaviour
             yield return new WaitForSeconds(2.0f);
             HandleMonsterFainted(targetUnit);
         }
+
+        // Statuses like burn or poison hurt the monster after the turn
+        sourceUnit.Monster.OnAfterTurn();
+        yield return ShowStatusChanges(sourceUnit.Monster);
+        yield return sourceUnit.HUD.UpdateHealth();
+        if (sourceUnit.Monster.CurrentHealth <= 0)
+        {
+            yield return battleDialogueBox.TypeDialogue($"{sourceUnit.Monster.MonsterBase.Name} Died");
+            yield return sourceUnit.PlayDeathAnimation();
+
+            yield return new WaitForSeconds(2.0f);
+            HandleMonsterFainted(sourceUnit);
+        }
     }
 
     private IEnumerator RunMoveEffects(Move move, Monster source, Monster target)
     {
         MoveEffects moveEffects = move.MoveBase.Effects;
+
+        // Stat Boosting
         if (moveEffects.StatBoosts != null)
         {
             if (move.MoveBase.Target == MoveTarget.Self)
                 source.ApplyStatBoosts(moveEffects.StatBoosts);
             else
                 target.ApplyStatBoosts(moveEffects.StatBoosts);
+        }
+
+        // Status Condition
+        if (moveEffects.Status != ConditionID.None)
+        {
+            target.SetStatus(moveEffects.Status);
+        }
+
+        // Volatile Status Condition
+        if (moveEffects.VolatileStatus != ConditionID.None)
+        {
+            target.SetVolatileStatus(moveEffects.VolatileStatus);
         }
 
         yield return ShowStatusChanges(source);

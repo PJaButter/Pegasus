@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18d021ab8c294314fb1e6a1a801e3ba6, type: 3}
+  m_Name: StatusMove3
+  m_EditorClassIdentifier: 
+  id: 5
+  name: StatusMove3
+  description: Test Status Move 3
+  attribute: 4
+  power: 0
+  accuracy: 100
+  energyCost: 6
+  category: 1
+  effects:
+    statBoosts: []
+    status: 2
+  target: 0
