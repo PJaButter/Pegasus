@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 [System.Serializable]
@@ -137,16 +138,11 @@ public class Monster
 
     public Move GetRandomMove()
     {
-        int r = Random.Range(0, Moves.Count + 1);
+        List<Move> useableMoves = Moves.Where(x => x.MoveBase.EnergyCost <= CurrentEnergy).ToList();
+        useableMoves.Add(BasicMove);
 
-        if (r == 0)
-        {
-            return BasicMove;
-        }
-        else
-        {
-            return Moves[r - 1];
-        }
+        int randomMoveIndex = Random.Range(0, useableMoves.Count);
+        return useableMoves[randomMoveIndex];
     }
 
     public bool UseEnergy(int amount)

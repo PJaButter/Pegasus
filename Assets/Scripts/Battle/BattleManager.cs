@@ -119,6 +119,9 @@ public class BattleManager : MonoBehaviour
 
     public void OnClick_AttackButton(Move move)
     {
+        if (playerUnit.Monster.CurrentEnergy < move.MoveBase.EnergyCost)
+            return;
+
         playerUnit.Monster.CurrentMove = move;
         StartCoroutine(RunTurns(BattleAction.Move));
 
@@ -218,6 +221,10 @@ public class BattleManager : MonoBehaviour
         else
         {
             moveEnergyCostText.text = $"Energy Cost: {move.MoveBase.EnergyCost}";
+            if (playerUnit.Monster.CurrentEnergy < move.MoveBase.EnergyCost)
+                moveEnergyCostText.color = Color.red;
+            else
+                moveEnergyCostText.color = Color.black;
         }
     }
 
@@ -268,7 +275,16 @@ public class BattleManager : MonoBehaviour
             enemyUnit.Monster.CurrentMove = enemyUnit.Monster.GetRandomMove();
 
             // Check who goes first
-            bool playerGoesFirst = playerUnit.Monster.Speed >= enemyUnit.Monster.Speed;
+            int playerMovePriority = playerUnit.Monster.CurrentMove.MoveBase.Priority;
+            int enemyMovePriority = enemyUnit.Monster.CurrentMove.MoveBase.Priority;
+            bool playerGoesFirst = true;
+            if (enemyMovePriority > playerMovePriority)
+                playerGoesFirst = false;
+            else if (enemyMovePriority == playerMovePriority)
+            {
+                playerGoesFirst = playerUnit.Monster.Speed >= enemyUnit.Monster.Speed;
+            }
+
             BattleUnit firstBattleUnit = (playerGoesFirst) ? playerUnit : enemyUnit;
             BattleUnit secondBattleUnit = (playerGoesFirst) ? enemyUnit : playerUnit;
             Monster secondMonster = secondBattleUnit.Monster;

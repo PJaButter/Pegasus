@@ -10,18 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 18d021ab8c294314fb1e6a1a801e3ba6, type: 3}
-  m_Name: StatMove1
+  m_Name: StatMove2
   m_EditorClassIdentifier: 
-  id: 2
-  name: StatMove1
-  description: Test Stat Move
-  attribute: 0
+  id: 9
+  name: StatMove2
+  description: Test Stat Move 2
+  attribute: 1
   power: 0
   accuracy: 100
+  alwaysHits: 0
   energyCost: 3
+  priority: 0
   category: 1
   effects:
     statBoosts:
-    - stat: 0
+    - stat: 3
       boost: -1
+    status: 0
+    volatileStatus: 0
+  secondaryEffects: []
   target: 0

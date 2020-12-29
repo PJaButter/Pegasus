@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 18d021ab8c294314fb1e6a1a801e3ba6, type: 3}
-  m_Name: Move1
+  m_Name: Move2
   m_EditorClassIdentifier: 
-  id: 1
-  name: Move1
-  description: Test Move 1
-  attribute: 7
+  id: 10
+  name: Move2
+  description: Test Move 2
+  attribute: 2
   power: 26
-  accuracy: 75
+  accuracy: 80
   alwaysHits: 0
-  energyCost: 5
-  priority: 0
+  energyCost: 8
+  priority: 3
   category: 0
   effects:
     statBoosts: []
@@ -30,6 +30,6 @@ MonoBehaviour:
   - statBoosts: []
     status: 6
     volatileStatus: 0
-    chance: 50
+    chance: 10
     target: 0
   target: 0
