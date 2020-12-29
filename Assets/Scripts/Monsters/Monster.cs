@@ -15,6 +15,7 @@ public class Monster
 
     public Move BasicMove { get; set; }
     public List<Move> Moves { get; set; }
+    public Move CurrentMove { get; set; }
 
     public Dictionary <Stat, int> Stats { get; private set; }
     public Dictionary<Stat, int> StatBoosts { get; private set; }
@@ -222,7 +223,9 @@ public class Monster
         {
             { Stat.Attack, 0 },
             { Stat.Defense, 0 },
-            { Stat.Speed, 0 }
+            { Stat.Speed, 0 },
+            { Stat.Accuracy, 0 },
+            { Stat.Evasion, 0 }
         };
     }
 

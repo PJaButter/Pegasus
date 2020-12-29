@@ -4,7 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public enum BattleState { Start, ActionSelection, MoveSelection, PerformMove, Busy, PartyScreen, BattleOver }
+public enum BattleState { Start, ActionSelection, MoveSelection, RunningTurn, Busy, PartyScreen, BattleOver }
+public enum BattleAction { Move, SwitchMonster, UseItem, Run }
 
 public class BattleManager : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class BattleManager : MonoBehaviour
     private bool canFlee;
 
     private BattleState state;
+    private BattleState? previousState;
 
     [SerializeField] private Camera battleCamera;
     [SerializeField] private DialogueBox mainBattleDialogueBox;
@@ -86,7 +88,7 @@ public class BattleManager : MonoBehaviour
 
         yield return battleDialogueBox.TypeDialogue($"A wild { enemyUnit.Monster.MonsterBase.Name } appeared.");
 
-        ChooseFirstTurn();
+        ActionSelection();
 
         SetActionsButtonsInteractable(true);
     }
@@ -117,7 +119,9 @@ public class BattleManager : MonoBehaviour
 
     public void OnClick_AttackButton(Move move)
     {
-        StartCoroutine(PlayerMove(move));
+        playerUnit.Monster.CurrentMove = move;
+        StartCoroutine(RunTurns(BattleAction.Move));
+
         mainBattleDialogueBox.gameObject.SetActive(true);
         battleDialogueBox.EnableDialogueText(true);
         actionsPanel.SetActive(false);
@@ -145,9 +149,17 @@ public class BattleManager : MonoBehaviour
         }
 
         partyScreen.gameObject.SetActive(false);
-        state = BattleState.Busy;
-        battleDialogueBox.SetDialogue("");
-        StartCoroutine(SwitchMonster(selectedMonster));
+
+        if (previousState == BattleState.ActionSelection)
+        {
+            StartCoroutine(RunTurns(BattleAction.SwitchMonster, selectedMonster));
+        }
+        else
+        {
+            ChangeState(BattleState.Busy);
+            battleDialogueBox.SetDialogue("");
+            StartCoroutine(SwitchMonster(selectedMonster));
+        }
     }
 
     public void OnClick_PartyScreenBack()
@@ -211,36 +223,29 @@ public class BattleManager : MonoBehaviour
 
     private void ActionSelection()
     {
-        state = BattleState.ActionSelection;
+        ChangeState(BattleState.ActionSelection);
         battleDialogueBox.SetDialogue("Choose an action");
         battleDialogueBox.EnableActionsPanel(true);
     }
 
     private void MoveSelection()
     {
-        state = BattleState.MoveSelection;
+        ChangeState(BattleState.MoveSelection);
         battleDialogueBox.EnableActionsPanel(false);
         battleDialogueBox.EnableDialogueText(false);
         battleDialogueBox.EnableAttackPanel(false);
     }
 
-    private void ChooseFirstTurn()
-    {
-        if (playerUnit.Monster.Speed >= enemyUnit.Monster.Speed)
-            ActionSelection();
-        else
-            StartCoroutine(EnemyMove());
-    }
-
     private void BattleOver(bool won)
     {
-        state = BattleState.BattleOver;
+        ChangeState(BattleState.BattleOver);
         playerParty.Monsters.ForEach(monster => monster.OnBattleOver());
         GameManager.Get.EndBattle(won);
     }
 
     private void OpenPartyScreen(bool mustChooseMonster)
     {
+        ChangeState(BattleState.PartyScreen);
         partyScreen.SetPartyData(playerParty.Monsters, mustChooseMonster);
         partyScreen.gameObject.SetActive(true);
     }
@@ -254,26 +259,49 @@ public class BattleManager : MonoBehaviour
         }
     }
 
-    private IEnumerator PlayerMove(Move move)
+    private IEnumerator RunTurns(BattleAction playerAction, Monster selectedMonster = null)
     {
-        state = BattleState.PerformMove;
+        ChangeState(BattleState.RunningTurn);
 
-        yield return RunMove(playerUnit, enemyUnit, move);
+        if (playerAction == BattleAction.Move)
+        {
+            enemyUnit.Monster.CurrentMove = enemyUnit.Monster.GetRandomMove();
 
-        // If the battle state was not changed by RunMove, proceed to the next step
-        if (state == BattleState.PerformMove)
-            StartCoroutine(EnemyMove());
-    }
+            // Check who goes first
+            bool playerGoesFirst = playerUnit.Monster.Speed >= enemyUnit.Monster.Speed;
+            BattleUnit firstBattleUnit = (playerGoesFirst) ? playerUnit : enemyUnit;
+            BattleUnit secondBattleUnit = (playerGoesFirst) ? enemyUnit : playerUnit;
+            Monster secondMonster = secondBattleUnit.Monster;
 
-    private IEnumerator EnemyMove()
-    {
-        state = BattleState.PerformMove;
+            // First Turn
+            yield return RunMove(firstBattleUnit, secondBattleUnit, firstBattleUnit.Monster.CurrentMove);
+            yield return RunAfterTurn(firstBattleUnit);
+            if (state == BattleState.BattleOver)
+                yield break;
 
-        Move move = enemyUnit.Monster.GetRandomMove();
-        yield return RunMove(enemyUnit, playerUnit, move);
+            if (secondMonster.CurrentHealth > 0)
+            {
+                // Second Turn
+                yield return RunMove(secondBattleUnit, firstBattleUnit, secondBattleUnit.Monster.CurrentMove);
+                yield return RunAfterTurn(secondBattleUnit);
+                if (state == BattleState.BattleOver)
+                    yield break;
+            }
+        }
+        else if (playerAction == BattleAction.SwitchMonster)
+        {
+            ChangeState(BattleState.Busy);
+            StartCoroutine(SwitchMonster(selectedMonster));
 
-        // If the battle state was not changed by RunMove, proceed to the next step
-        if (state == BattleState.PerformMove)
+            // Enemy Turn
+            enemyUnit.Monster.CurrentMove = enemyUnit.Monster.GetRandomMove();
+            yield return RunMove(enemyUnit, playerUnit, enemyUnit.Monster.CurrentMove);
+            yield return RunAfterTurn(enemyUnit);
+            if (state == BattleState.BattleOver)
+                yield break;
+        }
+
+        if (state != BattleState.BattleOver)
             ActionSelection();
     }
 
@@ -292,53 +320,56 @@ public class BattleManager : MonoBehaviour
 
         yield return battleDialogueBox.TypeDialogue($"{sourceUnit.Monster.MonsterBase.Name} used {move.MoveBase.Name}");
 
-        yield return sourceUnit.PlayAttackAnimation();
-        yield return new WaitForSeconds(1.0f);
-
-        yield return targetUnit.PlayHitAnimation();
-
-        if (move.MoveBase.Category == MoveCategory.Status)
+        if (CheckIfMoveHits(move, sourceUnit.Monster, targetUnit.Monster))
         {
-            yield return RunMoveEffects(move, sourceUnit.Monster, targetUnit.Monster);
+            yield return sourceUnit.PlayAttackAnimation();
+            yield return new WaitForSeconds(1.0f);
+
+            yield return targetUnit.PlayHitAnimation();
+
+            if (move.MoveBase.Category == MoveCategory.Status)
+            {
+                yield return RunMoveEffects(move.MoveBase.Effects, sourceUnit.Monster, targetUnit.Monster, move.MoveBase.Target);
+            }
+            else
+            {
+                DamageDetails damageDetails = targetUnit.Monster.TakeDamage(move, sourceUnit.Monster);
+                yield return targetUnit.HUD.UpdateHealth();
+                yield return ShowDamageDetails(damageDetails);
+            }
+
+            bool targetFainted = targetUnit.Monster.CurrentHealth <= 0;
+            if (move.MoveBase.SecondaryEffects != null && move.MoveBase.SecondaryEffects.Count > 0 && !targetFainted)
+            {
+                foreach (SecondaryEffects secondaryEffect in move.MoveBase.SecondaryEffects)
+                {
+                    int randomNum = UnityEngine.Random.Range(1, 101);
+                    if (randomNum <= secondaryEffect.Chance)
+                        yield return RunMoveEffects(secondaryEffect, sourceUnit.Monster, targetUnit.Monster, secondaryEffect.Target);
+                }
+            }
+
+            if (targetFainted)
+            {
+                yield return battleDialogueBox.TypeDialogue($"{targetUnit.Monster.MonsterBase.Name} Died");
+                yield return targetUnit.PlayDeathAnimation();
+
+                yield return new WaitForSeconds(2.0f);
+                HandleMonsterFainted(targetUnit);
+            }
         }
         else
         {
-            DamageDetails damageDetails = targetUnit.Monster.TakeDamage(move, sourceUnit.Monster);
-            yield return targetUnit.HUD.UpdateHealth();
-            yield return ShowDamageDetails(damageDetails);
-        }
-
-        if (targetUnit.Monster.CurrentHealth <= 0)
-        {
-            yield return battleDialogueBox.TypeDialogue($"{targetUnit.Monster.MonsterBase.Name} Died");
-            yield return targetUnit.PlayDeathAnimation();
-
-            yield return new WaitForSeconds(2.0f);
-            HandleMonsterFainted(targetUnit);
-        }
-
-        // Statuses like burn or poison hurt the monster after the turn
-        sourceUnit.Monster.OnAfterTurn();
-        yield return ShowStatusChanges(sourceUnit.Monster);
-        yield return sourceUnit.HUD.UpdateHealth();
-        if (sourceUnit.Monster.CurrentHealth <= 0)
-        {
-            yield return battleDialogueBox.TypeDialogue($"{sourceUnit.Monster.MonsterBase.Name} Died");
-            yield return sourceUnit.PlayDeathAnimation();
-
-            yield return new WaitForSeconds(2.0f);
-            HandleMonsterFainted(sourceUnit);
+            yield return battleDialogueBox.TypeDialogue($"{sourceUnit.Monster.MonsterBase.Name}'s attack missed!");
         }
     }
 
-    private IEnumerator RunMoveEffects(Move move, Monster source, Monster target)
+    private IEnumerator RunMoveEffects(MoveEffects moveEffects, Monster source, Monster target, MoveTarget moveTarget)
     {
-        MoveEffects moveEffects = move.MoveBase.Effects;
-
         // Stat Boosting
         if (moveEffects.StatBoosts != null)
         {
-            if (move.MoveBase.Target == MoveTarget.Self)
+            if (moveTarget == MoveTarget.Self)
                 source.ApplyStatBoosts(moveEffects.StatBoosts);
             else
                 target.ApplyStatBoosts(moveEffects.StatBoosts);
@@ -358,6 +389,52 @@ public class BattleManager : MonoBehaviour
 
         yield return ShowStatusChanges(source);
         yield return ShowStatusChanges(target);
+    }
+
+    private IEnumerator RunAfterTurn(BattleUnit sourceUnit)
+    {
+        if (state == BattleState.BattleOver)
+            yield break;
+
+        yield return new WaitUntil(() => state == BattleState.RunningTurn);
+
+        // Statuses like burn or poison hurt the monster after the turn
+        sourceUnit.Monster.OnAfterTurn();
+        yield return ShowStatusChanges(sourceUnit.Monster);
+        yield return sourceUnit.HUD.UpdateHealth();
+        if (sourceUnit.Monster.CurrentHealth <= 0)
+        {
+            yield return battleDialogueBox.TypeDialogue($"{sourceUnit.Monster.MonsterBase.Name} Died");
+            yield return sourceUnit.PlayDeathAnimation();
+
+            yield return new WaitForSeconds(2.0f);
+            HandleMonsterFainted(sourceUnit);
+        }
+    }
+
+    private bool CheckIfMoveHits(Move move, Monster source, Monster target)
+    {
+        if (move.MoveBase.AlwaysHits)
+            return true;
+
+        float accuracy = move.MoveBase.Accuracy;
+
+        int accuracyBoost = source.StatBoosts[Stat.Accuracy];
+        int evasionBoost = target.StatBoosts[Stat.Evasion];
+
+        var boostValues = new float[] { 1.0f, 4.0f/3.0f, 5.0f/3.0f, 2.0f, 7.0f/3.0f, 8.0f/3.0f, 3.0f };
+
+        if (accuracyBoost > 0)
+            accuracy *= boostValues[accuracyBoost];
+        else
+            accuracy /= boostValues[-accuracyBoost];
+
+        if (evasionBoost > 0)
+            accuracy /= boostValues[evasionBoost];
+        else
+            accuracy *= boostValues[-evasionBoost];
+
+        return UnityEngine.Random.Range(1, 101) <= accuracy;
     }
 
     private IEnumerator ShowStatusChanges(Monster monster)
@@ -409,10 +486,8 @@ public class BattleManager : MonoBehaviour
 
     private IEnumerator SwitchMonster(Monster newMonster)
     {
-        bool monsterFainted = true;
         if (playerUnit.Monster.CurrentHealth > 0)
         {
-            monsterFainted = false;
             yield return battleDialogueBox.TypeDialogue($"Take a break { playerUnit.Monster.MonsterBase.Name }");
             yield return playerUnit.PlayDeathAnimation();
             yield return new WaitForSeconds(1.0f);
@@ -426,9 +501,12 @@ public class BattleManager : MonoBehaviour
 
         yield return battleDialogueBox.TypeDialogue($"Go { newMonster.MonsterBase.Name }!");
 
-        if (monsterFainted)
-            ChooseFirstTurn();
-        else
-            StartCoroutine(EnemyMove());
+        ChangeState(BattleState.RunningTurn);
+    }
+
+    private void ChangeState(BattleState newState)
+    {
+        previousState = state;
+        state = newState;
     }
 }

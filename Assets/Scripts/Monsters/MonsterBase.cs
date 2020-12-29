@@ -71,7 +71,11 @@ public enum Stat
 {
     Attack,
     Defense,
-    Speed
+    Speed,
+
+    // These are not actual stats but used to boost move accuracy
+    Accuracy,
+    Evasion
 }
 
 public class AttributeChart

@@ -72,6 +72,7 @@ public class ConditionsDB
                         return true;
                     }
 
+                    monster.StatusChanges.Enqueue($"{monster.MonsterBase.Name} is frozen.");
                     return false;
                 }
             }
