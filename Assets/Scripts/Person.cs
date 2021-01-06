@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Person : InteractableObject
+public class Person : MonoBehaviour, Interactable
 {
     // Start is called before the first frame update
     void Start()
@@ -16,7 +16,7 @@ public class Person : InteractableObject
         
     }
 
-    public override void Interact()
+    public void Interact()
     {
         Debug.Log("Interacted with person");
     }

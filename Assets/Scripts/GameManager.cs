@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum GameState { FreeRoam, Battle }
+public enum GameState { FreeRoam, Battle, Dialogue }
 
 public class GameManager : MonoBehaviour
 {
@@ -39,12 +39,30 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         playerController.OnEncountered += StartBattle;
+
+        DialogueManager.Get.OnShowDialogue += () =>
+        {
+            gameState = GameState.Dialogue;
+            playerController.Pause();
+        };
+
+        DialogueManager.Get.OnCloseDialogue += () =>
+        {
+            if (gameState == GameState.Dialogue)
+            {
+                gameState = GameState.FreeRoam;
+                playerController.Resume();
+            }
+        };
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        if (gameState == GameState.Dialogue)
+        {
+            DialogueManager.Get.HandleUpdate();
+        }
     }
 
     public void StartBattle(WildMonster wildMonster)
