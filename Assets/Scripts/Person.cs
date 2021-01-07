@@ -16,7 +16,7 @@ public class Person : MonoBehaviour, Interactable
         
     }
 
-    public void Interact()
+    public void Interact(Transform initiator)
     {
         Debug.Log("Interacted with person");
     }

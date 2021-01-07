@@ -12,6 +12,7 @@ public class Character : MonoBehaviour
     private Action OnMoveToPositionFinished;
 
     public float MovementSpeed { get { return movementSpeed; } set { movementSpeed = value; } }
+    public bool IsMovementPaused { get; private set; }
     public bool IsPaused { get; private set; }
     public Vector2 Movement { get; set; }
     public Vector2 DirectionFacing { get; set; }
@@ -27,7 +28,7 @@ public class Character : MonoBehaviour
     // Update is called once per frame
     public void HandleUpdate()
     {
-        if (IsPaused)
+        if (IsPaused || IsMovementPaused)
             return;
 
         if (Movement.y > 0)
@@ -78,6 +79,35 @@ public class Character : MonoBehaviour
         Movement = moveAmount.normalized;
     }
 
+    public void LookTowards(Vector3 targetPosition)
+    {
+        float xDiff = Mathf.Floor(targetPosition.x) - Mathf.Floor(transform.position.x);
+        float yDiff = Mathf.Floor(targetPosition.y) - Mathf.Floor(transform.position.y);
+
+        if (Mathf.Abs(xDiff) >= Mathf.Abs(yDiff))
+        {
+            if (xDiff < 0)
+            {
+                characterAnimator.Direction = Direction.Left;
+            }
+            else if (xDiff > 0)
+            {
+                characterAnimator.Direction = Direction.Right;
+            }
+        }
+        else
+        {
+            if (yDiff > 0)
+            {
+                characterAnimator.Direction = Direction.Up;
+            }
+            else if (yDiff < 0)
+            {
+                characterAnimator.Direction = Direction.Down;
+            }
+        }
+    }
+
     public void Pause()
     {
         IsPaused = true;
@@ -90,6 +120,19 @@ public class Character : MonoBehaviour
         IsPaused = false;
     }
 
+    public void PauseMovement()
+    {
+        IsMovementPaused = true;
+        characterAnimator.Speed = 0.0f;
+        characterAnimator.Pause();
+    }
+
+    public void ResumeMovement()
+    {
+        IsMovementPaused = false;
+        characterAnimator.Resume();
+    }
+
     public bool IsMoving()
     {
         return Movement != Vector2.zero;
@@ -97,6 +140,9 @@ public class Character : MonoBehaviour
 
     private void HandleMovement()
     {
+        if (IsMovementPaused)
+            return;
+
         if (targetPosition.HasValue && ((targetPosition.Value - rb.position).sqrMagnitude <= Mathf.Epsilon))
         {
             targetPosition = null;

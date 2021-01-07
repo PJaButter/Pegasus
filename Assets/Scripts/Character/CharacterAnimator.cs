@@ -34,6 +34,8 @@ public class CharacterAnimator : MonoBehaviour
     // References
     private SpriteRenderer spriteRenderer;
 
+    private bool isPaused;
+
     private void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -50,6 +52,16 @@ public class CharacterAnimator : MonoBehaviour
 
         Direction = Direction.Down;
         SetCurrentAnimator(idleDownAnim);
+    }
+
+    public void Pause()
+    {
+        isPaused = true;
+    }
+
+    public void Resume()
+    {
+        isPaused = false;
     }
 
     private void Update()
@@ -89,6 +101,9 @@ public class CharacterAnimator : MonoBehaviour
                 break;
             }
         }
+
+        if (isPaused)
+            return;
 
         currentAnimator.HandleUpdate();
     }

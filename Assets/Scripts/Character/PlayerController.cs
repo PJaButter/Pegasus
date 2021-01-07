@@ -38,7 +38,7 @@ public class PlayerController : MonoBehaviour
                 Interactable interactable = target.transform.gameObject.GetComponent<Interactable>();
                 if (interactable != null)
                 {
-                    interactable.Interact();
+                    interactable.Interact(transform);
                 }
             }
         }

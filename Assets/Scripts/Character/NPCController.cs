@@ -7,7 +7,8 @@ public class NPCController : MonoBehaviour, Interactable
     [SerializeField] private Dialogue dialogue;
     [SerializeField] private List<Waypoint> waypoints;
 
-    private NPCState state;
+    private NPCState previousState;
+    private NPCState currentState;
     private float idleTimer = 0.0f;
     private int currentWaypoint;
 
@@ -20,10 +21,7 @@ public class NPCController : MonoBehaviour, Interactable
 
     private void Update()
     {
-        if (DialogueManager.Get.IsShowing)
-            return;
-
-        if (state == NPCState.Idle)
+        if (currentState == NPCState.Idle)
         {
             idleTimer += Time.deltaTime;
             if (idleTimer > waypoints[currentWaypoint].TimeToWait)
@@ -31,7 +29,7 @@ public class NPCController : MonoBehaviour, Interactable
                 idleTimer = 0.0f;
                 if (waypoints.Count > 0)
                 {
-                    state = NPCState.Walking;
+                    SetState(NPCState.Walking);
                     character.MovementSpeed = waypoints[currentWaypoint].MovementSpeed;
                     character.MoveToPosition(waypoints[currentWaypoint].Position, ReachedWaypoint);
                 }
@@ -46,16 +44,32 @@ public class NPCController : MonoBehaviour, Interactable
         character.HandleFixedUpdate();
     }
 
-    public void Interact()
+    public void Interact(Transform initiator)
     {
-        StartCoroutine(DialogueManager.Get.ShowDialogue(dialogue));
+        SetState(NPCState.Dialogue);
+        character.LookTowards(initiator.position);
+        character.PauseMovement();
+        StartCoroutine(DialogueManager.Get.ShowDialogue(dialogue, FinishedDialogue));
     }
 
     private void ReachedWaypoint()
     {
-        state = NPCState.Idle;
+        SetState(NPCState.Idle);
         currentWaypoint = (currentWaypoint + 1) % waypoints.Count;
+    }
+
+    private void FinishedDialogue()
+    {
+        character.ResumeMovement();
+        SetState(previousState);
+        idleTimer = 0.0f;
+    }
+
+    private void SetState(NPCState newState)
+    {
+        previousState = currentState;
+        currentState = newState;
     }
 }
 
-public enum NPCState { Idle, Walking }
+public enum NPCState { Idle, Walking, Dialogue }
