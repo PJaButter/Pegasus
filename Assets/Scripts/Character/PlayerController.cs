@@ -4,11 +4,18 @@ using System;
 
 public class PlayerController : MonoBehaviour
 {
+    [SerializeField] private Sprite battleSprite;
+    [SerializeField] private string tamerName;
+
     public event Action<WildMonster> OnEncountered;
+    public event Action OnEnteredTamersView;
 
     private BoxCollider2D boxCollider;
     private RaycastHit2D target;
     private Character character;
+
+    public Sprite BattleSprite { get { return battleSprite; } }
+    public string Name { get { return tamerName; } }
 
     // Start is called before the first frame update
     void Start()
@@ -58,6 +65,12 @@ public class PlayerController : MonoBehaviour
         {
             Door door = collision.gameObject.GetComponent<Door>();
             door.UsedDoor(this.gameObject);
+        }
+        else if (collision.tag == "Tamer" &&
+            ((GameManager.Get.FOVLayer.value & (1 << collision.gameObject.layer)) > 0))
+        {
+            OnEnteredTamersView?.Invoke();
+            StartCoroutine(collision.GetComponentInParent<TamerController>().TriggerBattle(this));
         }
     }
 

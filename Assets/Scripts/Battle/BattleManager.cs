@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public enum BattleState { Start, ActionSelection, MoveSelection, RunningTurn, Busy, PartyScreen, BattleOver }
+public enum BattleState { Start, ActionSelection, MoveSelection, RunningTurn, Busy, PartyScreen, AboutToSummon, BattleOver }
 public enum BattleAction { Move, SwitchMonster, UseItem, Run }
 
 public class BattleManager : MonoBehaviour
@@ -12,7 +12,6 @@ public class BattleManager : MonoBehaviour
     private static BattleManager instance = null;
     public static BattleManager Get { get { return instance; } }
 
-    private bool inBattle;
     private bool canFlee;
 
     private BattleState state;
@@ -44,12 +43,21 @@ public class BattleManager : MonoBehaviour
     [SerializeField] private BattleUnit playerUnit;
     [SerializeField] private BattleUnit enemyUnit;
 
+    [SerializeField] private Image playerImage;
+    [SerializeField] private Image enemyTamerImage;
+
     [SerializeField] private PartyScreen partyScreen;
 
     private MonsterParty playerParty;
+    private MonsterParty enemyTamerParty;
+
+    private PlayerController playerController;
+    private TamerController enemyTamerController;
+
     private WildMonster wildMonster;
 
-    public bool InBattle { get { return inBattle; } set { inBattle = value; } }
+    private bool isTamerBattle;
+    private bool mustSummonEnemyMonster;
 
     private void Awake()
     {
@@ -63,40 +71,98 @@ public class BattleManager : MonoBehaviour
         }
     }
 
-    public IEnumerator EnterBattle(MonsterParty playerParty, WildMonster wildMonster)
+    public void StartWildBattle(MonsterParty playerParty, WildMonster wildMonster)
     {
         this.playerParty = playerParty;
         this.wildMonster = wildMonster;
+        isTamerBattle = false;
 
-        inBattle = true;
+        StartCoroutine(SetupBattle());
+    }
 
-        // Set info from battle data
-        canFlee = true;
+    public void StartTamerBattle(MonsterParty playerParty, MonsterParty enemyParty)
+    {
+        this.playerParty = playerParty;
+        this.enemyTamerParty = enemyParty;
 
-        playerUnit.Setup(playerParty.GetHealthyMonster());
-        enemyUnit.Setup(wildMonster.Monster);
+        isTamerBattle = true;
+        playerController = playerParty.GetComponent<PlayerController>();
+        enemyTamerController = enemyParty.GetComponent<TamerController>();
+
+        StartCoroutine(SetupBattle());
+    }
+
+    private IEnumerator SetupBattle()
+    {
+        battleDialogueBox.SetDialogue("");
+
+        if (!isTamerBattle)
+        {
+            // Wild Monster Battle
+            canFlee = true;
+
+            playerUnit.gameObject.SetActive(true);
+            enemyUnit.gameObject.SetActive(true);
+
+            playerImage.gameObject.SetActive(false);
+            enemyTamerImage.gameObject.SetActive(false);
+
+            playerUnit.Setup(playerParty.GetHealthyMonster());
+            enemyUnit.Setup(wildMonster.Monster);
+
+            Coroutine playerEnterAnimationCor = StartCoroutine(playerUnit.PlayEnterAnimation());
+            yield return enemyUnit.PlayEnterAnimation();
+            yield return playerEnterAnimationCor;
+
+            SetupAttackButtons(playerUnit.Monster.BasicMove, playerUnit.Monster.Moves);
+            yield return battleDialogueBox.TypeDialogue($"A wild { enemyUnit.Monster.MonsterBase.Name } appeared.");
+        }
+        else
+        {
+            // Tamer Battle
+            canFlee = false;
+
+            playerUnit.gameObject.SetActive(false);
+            enemyUnit.gameObject.SetActive(false);
+            playerUnit.HUD.gameObject.SetActive(false);
+            enemyUnit.HUD.gameObject.SetActive(false);
+
+            playerImage.gameObject.SetActive(true);
+            enemyTamerImage.gameObject.SetActive(true);
+            playerImage.sprite = playerController.BattleSprite;
+            enemyTamerImage.sprite = enemyTamerController.BattleSprite;
+
+            yield return battleDialogueBox.TypeDialogue($"{ enemyTamerController.Name } wants to fight.");
+
+            // Send out enemy's first monster
+            enemyTamerImage.gameObject.SetActive(false);
+            enemyUnit.gameObject.SetActive(true);
+            Monster enemyMonster = enemyTamerParty.GetHealthyMonster();
+            enemyUnit.Setup(enemyMonster);
+            Coroutine enemyEnterAnimationCor = StartCoroutine(enemyUnit.PlayEnterAnimation());
+            yield return battleDialogueBox.TypeDialogue($"{ enemyTamerController.Name } sent out { enemyMonster.MonsterBase.Name }.");
+            yield return enemyEnterAnimationCor;
+
+            // Send out player's first monster
+            playerImage.gameObject.SetActive(false);
+            playerUnit.gameObject.SetActive(true);
+            Monster playerMonster = playerParty.GetHealthyMonster();
+            playerUnit.Setup(playerMonster);
+            Coroutine playerEnterAnimationCor = StartCoroutine(playerUnit.PlayEnterAnimation());
+            yield return battleDialogueBox.TypeDialogue($"Go { playerMonster.MonsterBase.Name }.");
+            yield return playerEnterAnimationCor;
+            SetupAttackButtons(playerMonster.BasicMove, playerMonster.Moves);
+        }
 
         partyScreen.Init();
 
-        battleDialogueBox.SetDialogue("");
-
-        Coroutine playerEnterAnimationCor = StartCoroutine(playerUnit.PlayEnterAnimation());
-        yield return enemyUnit.PlayEnterAnimation();
-        yield return playerEnterAnimationCor;
-
-        SetupAttackButtons(playerUnit.Monster.BasicMove, playerUnit.Monster.Moves);
-
-        yield return battleDialogueBox.TypeDialogue($"A wild { enemyUnit.Monster.MonsterBase.Name } appeared.");
-
         ActionSelection();
-
         SetActionsButtonsInteractable(true);
     }
 
     public void ExitBattle()
     {
         SetActionsButtonsInteractable(false);
-        inBattle = false;
     }
 
     public void OnClick_AttackAction()
@@ -168,7 +234,26 @@ public class BattleManager : MonoBehaviour
     public void OnClick_PartyScreenBack()
     {
         partyScreen.gameObject.SetActive(false);
-        ActionSelection();
+        if (!mustSummonEnemyMonster)
+        {
+            ActionSelection();
+        }
+        else
+        {
+            StartCoroutine(SendNextTamerMonster());
+        }
+    }
+
+    public void OnClick_AboutToSummon_Yes()
+    {
+        battleDialogueBox.EnableChoiceBox(false);
+        OpenPartyScreen(false);
+    }
+
+    public void OnClick_AboutToSummon_No()
+    {
+        battleDialogueBox.EnableChoiceBox(false);
+        StartCoroutine(SendNextTamerMonster());
     }
 
     public void TryFleeBattle()
@@ -241,6 +326,15 @@ public class BattleManager : MonoBehaviour
         battleDialogueBox.EnableActionsPanel(false);
         battleDialogueBox.EnableDialogueText(false);
         battleDialogueBox.EnableAttackPanel(false);
+    }
+
+    private IEnumerator AboutToSummon(Monster newMonster)
+    {
+        mustSummonEnemyMonster = true;
+        ChangeState(BattleState.Busy);
+        yield return battleDialogueBox.TypeDialogue($"{ enemyTamerController.Name } is about to summon { newMonster.MonsterBase.Name }. Do you want to change monsters?");
+        ChangeState(BattleState.AboutToSummon);
+        battleDialogueBox.EnableChoiceBox(true);
     }
 
     private void BattleOver(bool won)
@@ -425,6 +519,7 @@ public class BattleManager : MonoBehaviour
 
             yield return new WaitForSeconds(2.0f);
             HandleMonsterFainted(sourceUnit);
+            yield return new WaitUntil(() => state == BattleState.RunningTurn);
         }
     }
 
@@ -478,8 +573,24 @@ public class BattleManager : MonoBehaviour
         }
         else
         {
-            wildMonster.Defeated();
-            BattleOver(true);
+            if (!isTamerBattle)
+            {
+                wildMonster.Defeated();
+                BattleOver(true);
+            }
+            else
+            {
+                Monster nextMonster = enemyTamerParty.GetHealthyMonster();
+                if (nextMonster != null)
+                {
+                    // Send out next monster
+                    StartCoroutine(AboutToSummon(nextMonster));
+                }
+                else
+                {
+                    BattleOver(true);
+                }
+            }
         }
     }
 
@@ -517,6 +628,28 @@ public class BattleManager : MonoBehaviour
 
         yield return battleDialogueBox.TypeDialogue($"Go { newMonster.MonsterBase.Name }!");
 
+        if (!mustSummonEnemyMonster)
+        {
+            ChangeState(BattleState.RunningTurn);
+        }
+        else
+        {
+            StartCoroutine(SendNextTamerMonster());
+        }
+    }
+
+    private IEnumerator SendNextTamerMonster()
+    {
+        ChangeState(BattleState.Busy);
+
+        Monster nextMonster = enemyTamerParty.GetHealthyMonster();
+        enemyUnit.Setup(nextMonster);
+
+        Coroutine enemyEnterAnimationCor = StartCoroutine(enemyUnit.PlayEnterAnimation());
+        yield return battleDialogueBox.TypeDialogue($"{ enemyTamerController.Name } sent out { nextMonster.MonsterBase.Name }.");
+        yield return enemyEnterAnimationCor;
+
+        mustSummonEnemyMonster = false;
         ChangeState(BattleState.RunningTurn);
     }
 

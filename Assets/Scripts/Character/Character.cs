@@ -16,6 +16,7 @@ public class Character : MonoBehaviour
     public bool IsPaused { get; private set; }
     public Vector2 Movement { get; set; }
     public Vector2 DirectionFacing { get; set; }
+    public CharacterAnimator CharacterAnimator { get { return characterAnimator; } }
 
     // Start is called before the first frame update
     private void Awake()

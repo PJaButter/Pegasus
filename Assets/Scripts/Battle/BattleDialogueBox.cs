@@ -19,6 +19,10 @@ public class BattleDialogueBox : MonoBehaviour
     [SerializeField] private Text energyCostText;
     [SerializeField] private Text typeText;
 
+    [SerializeField] private GameObject choiceBox;
+    [SerializeField] private Button yesButton;
+    [SerializeField] private Button noButton;
+
     public void SetDialogue(string dialogue)
     {
         dialogueText.text = dialogue;
@@ -50,5 +54,10 @@ public class BattleDialogueBox : MonoBehaviour
     {
         attackPanel.SetActive(enabled);
         moveDetailsPanel.SetActive(enabled);
+    }
+
+    public void EnableChoiceBox(bool enabled)
+    {
+        choiceBox.SetActive(enabled);
     }
 }

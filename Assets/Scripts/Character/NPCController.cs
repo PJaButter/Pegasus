@@ -23,12 +23,12 @@ public class NPCController : MonoBehaviour, Interactable
     {
         if (currentState == NPCState.Idle)
         {
-            idleTimer += Time.deltaTime;
-            if (idleTimer > waypoints[currentWaypoint].TimeToWait)
+            if (waypoints.Count > 0)
             {
-                idleTimer = 0.0f;
-                if (waypoints.Count > 0)
+                idleTimer += Time.deltaTime;
+                if (idleTimer > waypoints[currentWaypoint].TimeToWait)
                 {
+                    idleTimer = 0.0f;
                     SetState(NPCState.Walking);
                     character.MovementSpeed = waypoints[currentWaypoint].MovementSpeed;
                     character.MoveToPosition(waypoints[currentWaypoint].Position, ReachedWaypoint);

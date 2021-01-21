@@ -36,6 +36,7 @@ public class BattleUnit : MonoBehaviour
             monsterImage.sprite = Monster.MonsterBase.FrontSprite;
         }
 
+        hud.gameObject.SetActive(true);
         hud.SetupHUD(monster);
     }
 

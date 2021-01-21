@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum GameState { FreeRoam, Battle, Dialogue }
+public enum GameState { FreeRoam, Battle, Dialogue, Cutscene }
 
 public class GameManager : MonoBehaviour
 {
@@ -12,14 +12,17 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Camera worldCamera;
     [SerializeField] private Camera battleCamera;
     [SerializeField] private string currentAreaID;
-    [SerializeField] PlayerController playerController;
-    [SerializeField] GameObject battleSystem;
+    [SerializeField] private PlayerController playerController;
+    [SerializeField] private GameObject battleSystem;
+    [SerializeField] private LayerMask fovLayer;
 
     private GameState gameState;
+    private TamerController enemyTamerController;
 
     public Camera WorldCamera { get { return worldCamera; } set { worldCamera = value; } }
     public Camera BattleCamera { get { return battleCamera; } set { battleCamera = value; } }
     public string CurrentAreaID { get { return currentAreaID; } set { currentAreaID = value; } }
+    public LayerMask FOVLayer { get { return fovLayer; } }
 
     private void Awake()
     {
@@ -38,7 +41,13 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playerController.OnEncountered += StartBattle;
+        playerController.OnEncountered += StartWildBattle;
+
+        playerController.OnEnteredTamersView += () =>
+        {
+            gameState = GameState.Cutscene;
+            playerController.Pause();
+        };
 
         DialogueManager.Get.OnShowDialogue += () =>
         {
@@ -65,7 +74,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void StartBattle(WildMonster wildMonster)
+    public void StartWildBattle(WildMonster wildMonster)
     {
         gameState = GameState.Battle;
 
@@ -76,12 +85,35 @@ public class GameManager : MonoBehaviour
 
         MonsterParty playerParty = playerController.GetComponent<MonsterParty>();
 
-        StartCoroutine(BattleManager.Get.EnterBattle(playerParty, wildMonster));
+        BattleManager.Get.StartWildBattle(playerParty, wildMonster);
+    }
+
+    public void StartTamerBattle(TamerController tamerController)
+    {
+        gameState = GameState.Battle;
+
+        enemyTamerController = tamerController;
+
+        playerController.Pause();
+        battleSystem.SetActive(true);
+        worldCamera.gameObject.SetActive(false);
+        battleCamera.gameObject.SetActive(true);
+
+        MonsterParty playerParty = playerController.GetComponent<MonsterParty>();
+        MonsterParty tamerParty = tamerController.GetComponent<MonsterParty>();
+
+        BattleManager.Get.StartTamerBattle(playerParty, tamerParty);
     }
 
     public void EndBattle(bool won)
     {
         gameState = GameState.FreeRoam;
+
+        if (enemyTamerController != null && won)
+        {
+            enemyTamerController.BattleLost();
+            enemyTamerController = null;
+        }
 
         playerController.Resume();
         BattleManager.Get.ExitBattle();

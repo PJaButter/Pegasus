@@ -14,6 +14,8 @@ public class CharacterAnimator : MonoBehaviour
     [SerializeField] private List<Sprite> idleLeftSprites;
     [SerializeField] private List<Sprite> idleRightSprites;
 
+    [SerializeField] private Direction defaultDirection = Direction.Down;
+
     // Parameters
     public Direction Direction { get; set; }
     public float Speed { get; set; }
@@ -36,6 +38,8 @@ public class CharacterAnimator : MonoBehaviour
 
     private bool isPaused;
 
+    public Direction DefaultDirection { get { return defaultDirection; } }
+
     private void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -50,8 +54,8 @@ public class CharacterAnimator : MonoBehaviour
         idleLeftAnim = new SpriteAnimator(spriteRenderer, idleLeftSprites);
         idleRightAnim = new SpriteAnimator(spriteRenderer, idleRightSprites);
 
-        Direction = Direction.Down;
-        SetCurrentAnimator(idleDownAnim);
+        Direction = defaultDirection;
+        UpdateAnimator();
     }
 
     public void Pause()
@@ -66,41 +70,7 @@ public class CharacterAnimator : MonoBehaviour
 
     private void Update()
     {
-        switch(Direction)
-        {
-            case Direction.Up:
-            {
-                if (Speed > 0)
-                    SetCurrentAnimator(walkUpAnim);
-                else
-                    SetCurrentAnimator(idleUpAnim);
-                break;
-            }
-            case Direction.Down:
-            {
-                if (Speed > 0)
-                    SetCurrentAnimator(walkDownAnim);
-                else
-                    SetCurrentAnimator(idleDownAnim);
-                break;
-            }
-            case Direction.Left:
-            {
-                if (Speed > 0)
-                    SetCurrentAnimator(walkLeftAnim);
-                else
-                    SetCurrentAnimator(idleLeftAnim);
-                break;
-            }
-            case Direction.Right:
-            {
-                if (Speed > 0)
-                    SetCurrentAnimator(walkRightAnim);
-                else
-                    SetCurrentAnimator(idleRightAnim);
-                break;
-            }
-        }
+        UpdateAnimator();
 
         if (isPaused)
             return;
@@ -114,6 +84,45 @@ public class CharacterAnimator : MonoBehaviour
         {
             currentAnimator = spriteAnimator;
             currentAnimator.Start();
+        }
+    }
+
+    private void UpdateAnimator()
+    {
+        switch (Direction)
+        {
+            case Direction.Up:
+                {
+                    if (Speed > 0)
+                        SetCurrentAnimator(walkUpAnim);
+                    else
+                        SetCurrentAnimator(idleUpAnim);
+                    break;
+                }
+            case Direction.Down:
+                {
+                    if (Speed > 0)
+                        SetCurrentAnimator(walkDownAnim);
+                    else
+                        SetCurrentAnimator(idleDownAnim);
+                    break;
+                }
+            case Direction.Left:
+                {
+                    if (Speed > 0)
+                        SetCurrentAnimator(walkLeftAnim);
+                    else
+                        SetCurrentAnimator(idleLeftAnim);
+                    break;
+                }
+            case Direction.Right:
+                {
+                    if (Speed > 0)
+                        SetCurrentAnimator(walkRightAnim);
+                    else
+                        SetCurrentAnimator(idleRightAnim);
+                    break;
+                }
         }
     }
 }
