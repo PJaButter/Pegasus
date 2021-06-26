@@ -1,0 +1,315 @@
+Using pre-set license
+Built from '2020.2/release' branch; Version is '2020.2.1f1 (270dd8c3da1c) revision 2559448'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10  (10.0.0) 64bit' Language: 'en' Physical Memory: 16326 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.2.1f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/Projects/Pegasus
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+53646
+Successfully changed project path to: D:/Projects/Pegasus
+D:/Projects/Pegasus
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 51.40 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.2.1f1 (270dd8c3da1c)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Projects/Pegasus/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 960 (ID=0x1401)
+    Vendor:   
+    VRAM:     2007 MB
+    Driver:   27.21.14.5671
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56032
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001566 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 174.62 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.808 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.001016 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.09 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.448 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.62 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1643 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 79.4 MB.
+System memory in use after: 79.5 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 2090.
+Total: 2.236100 ms (FindLiveObjects: 0.318300 ms CreateObjectMapping: 0.107400 ms MarkObjects: 1.728400 ms  DeleteObjects: 0.081000 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Resources/Battle/UI/MonsterHUD.prefab
+  artifactKey: Guid(a118ca5ed901ea545b4d33266b957291) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Battle/UI/MonsterHUD.prefab using Guid(a118ca5ed901ea545b4d33266b957291) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1dd16ae5c4d1d5f28ce7da3b1dce1f18') in 0.074652 seconds
+  Import took 0.077793 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/Resources/Battle/UI/Sprites/StatusIcons/Confusion.png
+  artifactKey: Guid(816103c9c67e19b47b0719b517fb301b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Battle/UI/Sprites/StatusIcons/Confusion.png using Guid(816103c9c67e19b47b0719b517fb301b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27f5336924341c0e82598af35eaf8bb7') in 0.077185 seconds
+  Import took 0.079655 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/Resources/Battle/UI
+  artifactKey: Guid(27a2a7e466ca2fd47a30b3eac171387b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Battle/UI using Guid(27a2a7e466ca2fd47a30b3eac171387b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8f7b99e4709ebaec50167753a483ba0') in 0.007594 seconds
+  Import took 0.010639 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/Resources/Battle/UI/Sprites/StatusIcons
+  artifactKey: Guid(0340cf2e99fa94b4faf7effd082204e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Battle/UI/Sprites/StatusIcons using Guid(0340cf2e99fa94b4faf7effd082204e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4250133a8039378a7667665e514e528') in 0.005856 seconds
+  Import took 0.008832 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/Resources/Battle/UI/Sprites
+  artifactKey: Guid(67a0f163eba935249a9fec4848401c45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Battle/UI/Sprites using Guid(67a0f163eba935249a9fec4848401c45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07822fac18a94b223031a7af693ab017') in 0.006640 seconds
+  Import took 0.009517 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/Resources/Battle/UI/Sprites/StatusIcons/Blind.png
+  artifactKey: Guid(9f349b136e02c514cbdc469c1af9a577) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Battle/UI/Sprites/StatusIcons/Blind.png using Guid(9f349b136e02c514cbdc469c1af9a577) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '905e3350cf0a5fccf3a26f571a6d826b') in 0.075437 seconds
+  Import took 0.078490 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/Resources/Battle/UI/Sprites/StatusIcons/Burn.png
+  artifactKey: Guid(814e862b258556e4f89e2a54fe0f8709) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Battle/UI/Sprites/StatusIcons/Burn.png using Guid(814e862b258556e4f89e2a54fe0f8709) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fe353c5e0931d6e973068ede59d3ecc') in 0.021438 seconds
+  Import took 0.023987 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000256 seconds.
+  path: Assets/Resources/Battle/UI/PartyMember.prefab
+  artifactKey: Guid(3f418e81079f2434f918b1baa17d2e0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Battle/UI/PartyMember.prefab using Guid(3f418e81079f2434f918b1baa17d2e0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1520ffe178252a53ff007944d058bc4') in 0.022123 seconds
+  Import took 0.025089 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000288 seconds.
+  path: Assets/Resources/Battle/UI/Sprites/StatusIcons/Paralyze.png
+  artifactKey: Guid(5f5832d7f65fa624aad03265764cf59c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Battle/UI/Sprites/StatusIcons/Paralyze.png using Guid(5f5832d7f65fa624aad03265764cf59c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01652f28d444bd059b0faae94b2b6d72') in 0.043041 seconds
+  Import took 0.045531 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/Resources/Battle/UI/Sprites/StatusIcons/Poison.png
+  artifactKey: Guid(d4bf2ed4b55660442938143500a08167) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Battle/UI/Sprites/StatusIcons/Poison.png using Guid(d4bf2ed4b55660442938143500a08167) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a300d67982f81edd21794fd3c6982be8') in 0.037460 seconds
+  Import took 0.039900 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000283 seconds.
+  path: Assets/Resources/Battle/UI/Sprites/StatusIcons/Freeze.png
+  artifactKey: Guid(f536d8899f672fd40a1117b3121ae3c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Battle/UI/Sprites/StatusIcons/Freeze.png using Guid(f536d8899f672fd40a1117b3121ae3c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abcc3eedf46ee82bbda8335823c3aefc') in 0.022824 seconds
+  Import took 0.025527 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/Resources/Battle/UI/Sprites/StatusIcons/Drown.png
+  artifactKey: Guid(afd7233fcbb9c7c44b901607d2ac61c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Battle/UI/Sprites/StatusIcons/Drown.png using Guid(afd7233fcbb9c7c44b901607d2ac61c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c17d748152376c691c861100311aa74') in 0.020826 seconds
+  Import took 0.024121 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000250 seconds.
+  path: Assets/Resources/Battle/UI/Sprites/StatusIcons/Knockback.png
+  artifactKey: Guid(f0cffcb456c883f4081e8ac880487a74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Battle/UI/Sprites/StatusIcons/Knockback.png using Guid(f0cffcb456c883f4081e8ac880487a74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad2b4dabd318649103ae811e81c8a2d1') in 0.036302 seconds
+  Import took 0.039034 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 547.335101 seconds.
+  path: Assets/Resources/Battle/Portals.png
+  artifactKey: Guid(4fb2fcafb16d7404e85f2d4414b64c44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Battle/Portals.png using Guid(4fb2fcafb16d7404e85f2d4414b64c44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebd88dc0e3f266edfe358cfa7c21ed35') in 0.021726 seconds
+  Import took 0.025300 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.058590 seconds.
+  path: Assets/Resources/Battle/Portals.png
+  artifactKey: Guid(4fb2fcafb16d7404e85f2d4414b64c44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Battle/Portals.png using Guid(4fb2fcafb16d7404e85f2d4414b64c44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebd88dc0e3f266edfe358cfa7c21ed35') in 0.017229 seconds
+  Import took 0.026928 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.495866 seconds.
+  path: Assets/Resources/Battle/Portals.png
+  artifactKey: Guid(4fb2fcafb16d7404e85f2d4414b64c44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Battle/Portals.png using Guid(4fb2fcafb16d7404e85f2d4414b64c44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '197c141146c3c63d88796370e8f66932') in 0.028028 seconds
+  Import took 0.031173 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.690774 seconds.
+  path: Assets/Resources/Battle/Portals.png
+  artifactKey: Guid(4fb2fcafb16d7404e85f2d4414b64c44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Battle/Portals.png using Guid(4fb2fcafb16d7404e85f2d4414b64c44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '132568a7ccdee9f05ee09ba83a1b1c1c') in 0.013135 seconds
+  Import took 0.016105 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.051620 seconds.
+  path: Assets/Resources/Battle/Portals.png
+  artifactKey: Guid(4fb2fcafb16d7404e85f2d4414b64c44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Battle/Portals.png using Guid(4fb2fcafb16d7404e85f2d4414b64c44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '132568a7ccdee9f05ee09ba83a1b1c1c') in 0.012921 seconds
+  Import took 0.016477 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 62.921173 seconds.
+  path: Assets/Resources/Battle/Portals.png
+  artifactKey: Guid(4fb2fcafb16d7404e85f2d4414b64c44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Battle/Portals.png using Guid(4fb2fcafb16d7404e85f2d4414b64c44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ebfd25defd6ef2ab2071a620486d4cc') in 0.015017 seconds
+  Import took 0.018177 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 65558.565681 seconds.
+  path: Assets/Resources/Battle/Portals.png
+  artifactKey: Guid(4fb2fcafb16d7404e85f2d4414b64c44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Battle/Portals.png using Guid(4fb2fcafb16d7404e85f2d4414b64c44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd33a81aa6653c1450b4646154f008532') in 0.041672 seconds
+  Import took 0.058194 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 555.106250 seconds.
+  path: Assets/Resources/Battle/portals.jpg
+  artifactKey: Guid(490d70d6eb80acb4299fb0832fe45c78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Battle/portals.jpg using Guid(490d70d6eb80acb4299fb0832fe45c78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b097259702003aa415609462aa45cd55') in 0.019757 seconds
+  Import took 0.036837 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.004237 seconds.
+  path: Assets/Resources/Battle/Portals.png
+  artifactKey: Guid(4fb2fcafb16d7404e85f2d4414b64c44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Battle/Portals.png using Guid(4fb2fcafb16d7404e85f2d4414b64c44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03b49079be230f7d5d4a17be31d590ce') in 0.036534 seconds
+  Import took 0.044816 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.879641 seconds.
+  path: Assets/Resources/Battle/Portals.jpg
+  artifactKey: Guid(490d70d6eb80acb4299fb0832fe45c78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Battle/Portals.jpg using Guid(490d70d6eb80acb4299fb0832fe45c78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '145681c57a3a219f58f63ff6a5ac5a5c') in 0.006966 seconds
+  Import took 0.028406 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.642267 seconds.
+  path: Assets/Resources/Battle/Portals.jpg
+  artifactKey: Guid(490d70d6eb80acb4299fb0832fe45c78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Battle/Portals.jpg using Guid(490d70d6eb80acb4299fb0832fe45c78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b11aef35988416a383f14c3203418f5f') in 0.015192 seconds
+  Import took 0.026035 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003783 seconds.
+  path: Assets/Resources/Battle/Portals.jpg
+  artifactKey: Guid(490d70d6eb80acb4299fb0832fe45c78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Battle/Portals.jpg using Guid(490d70d6eb80acb4299fb0832fe45c78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b11aef35988416a383f14c3203418f5f') in 0.014339 seconds
+  Import took 0.017863 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.231155 seconds.
+  path: Assets/Resources/Battle/Portals.jpg
+  artifactKey: Guid(490d70d6eb80acb4299fb0832fe45c78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Battle/Portals.jpg using Guid(490d70d6eb80acb4299fb0832fe45c78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b42ce49f946b89216578080b5bfb207d') in 0.090074 seconds
+  Import took 0.111612 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.998086 seconds.
+  path: Assets/Resources/Battle/Portals.jpg
+  artifactKey: Guid(490d70d6eb80acb4299fb0832fe45c78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Battle/Portals.jpg using Guid(490d70d6eb80acb4299fb0832fe45c78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36fbf583d26534b488956c29eefc5a6b') in 0.096989 seconds
+  Import took 0.120365 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13158.695956 seconds.
+  path: Assets/Resources/Battle/rpg-maker-mv-animation-sprite-fire-apng-animation-7ea54a85180a8414f29f0e9b9130910b.png
+  artifactKey: Guid(f87d08347f7eb774cb166c9b30076579) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Battle/rpg-maker-mv-animation-sprite-fire-apng-animation-7ea54a85180a8414f29f0e9b9130910b.png using Guid(f87d08347f7eb774cb166c9b30076579) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa83eb28317a06935805c07821843f7d') in 0.068168 seconds
+  Import took 0.125608 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.748082 seconds.
+  path: Assets/Resources/Battle/Portals.png
+  artifactKey: Guid(f87d08347f7eb774cb166c9b30076579) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Battle/Portals.png using Guid(f87d08347f7eb774cb166c9b30076579) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37cbfec36a50289aa126e891841a7f6c') in 0.019916 seconds
+  Import took 0.036583 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.578471 seconds.
+  path: Assets/Resources/Battle/Portals.png
+  artifactKey: Guid(f87d08347f7eb774cb166c9b30076579) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Battle/Portals.png using Guid(f87d08347f7eb774cb166c9b30076579) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8015c46cfd63d63cfe483330dd0e11f0') in 0.168960 seconds
+  Import took 0.204274 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
