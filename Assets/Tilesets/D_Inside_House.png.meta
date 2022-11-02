@@ -788,6 +788,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -796,12 +798,12 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -819,9 +821,12 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
@@ -4368,6 +4373,174 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      D_Inside_House_123: -5307241198915355751
+      D_Inside_House_76: 3463858285905840153
+      D_Inside_House_3: 823555821894977958
+      D_Inside_House_205: 6165552909889084382
+      D_Inside_House_37: 3354544313821900324
+      D_Inside_House_19: 607020863432499778
+      D_Inside_House_150: -4018166147648081641
+      D_Inside_House_238: 5227528599713264801
+      D_Inside_House_58: -6789171640562179912
+      D_Inside_House_49: 4989033838798322474
+      D_Inside_House_110: 1802024007285689799
+      D_Inside_House_206: 6649341220517341180
+      D_Inside_House_131: 3318090052086063759
+      D_Inside_House_4: 61820446007949487
+      D_Inside_House_155: -8767369869459827808
+      D_Inside_House_17: -958759116524136348
+      D_Inside_House_169: 8266777520806481327
+      D_Inside_House_168: 512177616056511819
+      D_Inside_House_32: -5456342598260472835
+      D_Inside_House_126: -4558290556075973113
+      D_Inside_House_31: -4943402569593265150
+      D_Inside_House_187: -234967217260114839
+      D_Inside_House_171: -2097272719886083496
+      D_Inside_House_156: -6724166597819289043
+      D_Inside_House_8: 3079333191054598037
+      D_Inside_House_33: 6585526508991348074
+      D_Inside_House_65: 4479489476282322519
+      D_Inside_House_36: -3538468780642939797
+      D_Inside_House_188: -8971789063735703939
+      D_Inside_House_47: -4346989652539976398
+      D_Inside_House_40: 4578629464329189367
+      D_Inside_House_1: 1309592179222711874
+      D_Inside_House_9: -1183137556756255205
+      D_Inside_House_62: 2278951443541757730
+      D_Inside_House_138: 2177209686067465532
+      D_Inside_House_117: 2986951344373501210
+      D_Inside_House_151: -878677396552750824
+      D_Inside_House_15: -4793649124780122669
+      D_Inside_House_189: 6269817677759730249
+      D_Inside_House_68: 8277261373659766226
+      D_Inside_House_14: 7052446765060483317
+      D_Inside_House_41: -2701910797730840492
+      D_Inside_House_190: 1585047653274482128
+      D_Inside_House_72: -7290983266869415571
+      D_Inside_House_101: -8354572258586092602
+      D_Inside_House_116: 659449261492292197
+      D_Inside_House_152: -7788688847019358055
+      D_Inside_House_34: -4402324135793615471
+      D_Inside_House_142: -8631486351502915113
+      D_Inside_House_13: -7543022285922018877
+      D_Inside_House_48: 5952125502173270820
+      D_Inside_House_173: 8464954483614691656
+      D_Inside_House_87: 1912097164925076904
+      D_Inside_House_18: -1124096436828917565
+      D_Inside_House_99: 6911402268351686172
+      D_Inside_House_174: 8495687405139174219
+      D_Inside_House_185: -1428349477615257111
+      D_Inside_House_182: -2799915776478815532
+      D_Inside_House_220: 2334891053884431550
+      D_Inside_House_172: -6763790450369443754
+      D_Inside_House_141: 4986182484642380432
+      D_Inside_House_204: 1407984967298797330
+      D_Inside_House_57: 7768640290903701825
+      D_Inside_House_45: -5089756290987112263
+      D_Inside_House_78: -5265390999325545512
+      D_Inside_House_107: 7874968964426788267
+      D_Inside_House_88: 7803854925068797434
+      D_Inside_House_139: 5150640803256590939
+      D_Inside_House_56: 7521539421180279158
+      D_Inside_House_10: -7090519360903322244
+      D_Inside_House_51: -992725993013960886
+      D_Inside_House_91: -1405225888902091089
+      D_Inside_House_167: 6402416638859557409
+      D_Inside_House_59: 408249407807415183
+      D_Inside_House_30: 1278679493102985200
+      D_Inside_House_237: -3534253797162828209
+      D_Inside_House_121: 7216735368431918414
+      D_Inside_House_6: -5542009651282735025
+      D_Inside_House_166: -3242099924499670726
+      D_Inside_House_71: -6371494787857705950
+      D_Inside_House_25: -4456380753154773138
+      D_Inside_House_54: 8077516707061813262
+      D_Inside_House_100: 2738599966029285131
+      D_Inside_House_20: -1691855335167444649
+      D_Inside_House_165: -4741657373663177781
+      D_Inside_House_221: -4445054409210176622
+      D_Inside_House_39: 1129849445774814492
+      D_Inside_House_124: 3581510225187229506
+      D_Inside_House_222: -2059041734599120265
+      D_Inside_House_11: 3645947081946160870
+      D_Inside_House_90: -3711679014098086917
+      D_Inside_House_23: 3034309777975871407
+      D_Inside_House_119: 6551073178952770686
+      D_Inside_House_89: -3529359926634729195
+      D_Inside_House_21: 6909238510472924913
+      D_Inside_House_77: 1368850943046703749
+      D_Inside_House_105: 8743785162082894465
+      D_Inside_House_135: 4667937253465942238
+      D_Inside_House_170: -1084438428362772847
+      D_Inside_House_153: -8471655076797424352
+      D_Inside_House_254: 117486533177969359
+      D_Inside_House_137: 7636040230064749342
+      D_Inside_House_84: -8431992725693253061
+      D_Inside_House_53: 4637102518922983511
+      D_Inside_House_63: -3400927944596885200
+      D_Inside_House_183: 5710197406802339304
+      D_Inside_House_93: 483674009146548111
+      D_Inside_House_29: 425746401446024674
+      D_Inside_House_22: -2180870780245501278
+      D_Inside_House_52: -1079348603777764612
+      D_Inside_House_69: -6108121517452026057
+      D_Inside_House_109: -5229300667000735401
+      D_Inside_House_70: 6130519290929097534
+      D_Inside_House_219: 8124357813904904812
+      D_Inside_House_16: -8782402883399004124
+      D_Inside_House_140: -298643593497342668
+      D_Inside_House_28: 4319733731991373716
+      D_Inside_House_74: 2081618001927667488
+      D_Inside_House_154: 3093671950670237662
+      D_Inside_House_55: -9172395867176710602
+      D_Inside_House_85: -2982499147252229579
+      D_Inside_House_125: -6528785559884638495
+      D_Inside_House_104: 7194460525914271504
+      D_Inside_House_157: 7064553031682022482
+      D_Inside_House_73: -5122473946519974850
+      D_Inside_House_5: -5514803259379210700
+      D_Inside_House_133: -739923572092784701
+      D_Inside_House_83: 5586464161178792081
+      D_Inside_House_106: -5135598655720293722
+      D_Inside_House_86: 1864679962765008380
+      D_Inside_House_134: 8925096393386865068
+      D_Inside_House_67: 2966424253004106705
+      D_Inside_House_184: 9039124668120309203
+      D_Inside_House_43: 4927738091458873416
+      D_Inside_House_118: 6932100060613344549
+      D_Inside_House_108: -2206727169577264522
+      D_Inside_House_122: 5189912420623507875
+      D_Inside_House_44: -8135459126363745725
+      D_Inside_House_0: 138448153485099858
+      D_Inside_House_61: 2176226407770527378
+      D_Inside_House_64: -194894114869153143
+      D_Inside_House_102: -7735626808457307306
+      D_Inside_House_120: -3732133861763515187
+      D_Inside_House_42: 736341678582516042
+      D_Inside_House_50: -67768437508312533
+      D_Inside_House_158: -6113474398173459629
+      D_Inside_House_181: -7704052621300746340
+      D_Inside_House_253: 7371100447945876683
+      D_Inside_House_94: -7252728534897459631
+      D_Inside_House_92: 1254684152372464847
+      D_Inside_House_132: 2442344429239379028
+      D_Inside_House_26: 8270011431335064918
+      D_Inside_House_60: 564769145866892065
+      D_Inside_House_203: -6619975345311125742
+      D_Inside_House_75: -4372885428994889212
+      D_Inside_House_12: 7703181842580563568
+      D_Inside_House_7: -5564872189371355184
+      D_Inside_House_66: 8606242192684105020
+      D_Inside_House_24: 621339215021844362
+      D_Inside_House_46: -7845068530922702485
+      D_Inside_House_186: -4841935018047673407
+      D_Inside_House_38: 8572522606764004609
+      D_Inside_House_103: -6320987143784486253
+      D_Inside_House_115: -7379125743969503291
+      D_Inside_House_27: 4314472144290888663
+      D_Inside_House_136: 5858801172784347941
+      D_Inside_House_2: -985194639166131576
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

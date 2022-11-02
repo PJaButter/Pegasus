@@ -755,6 +755,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -763,12 +765,12 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -786,9 +788,12 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
@@ -5679,6 +5684,238 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      B_HouseExteriorTiles_2_222: 2707960113210014482
+      B_HouseExteriorTiles_2_7: 5992540974056260087
+      B_HouseExteriorTiles_2_16: -693053751056334832
+      B_HouseExteriorTiles_2_30: -8104223529159835122
+      B_HouseExteriorTiles_2_227: -853533588778691201
+      B_HouseExteriorTiles_2_46: -6180840054465224542
+      B_HouseExteriorTiles_2_3: -3319387386275553651
+      B_HouseExteriorTiles_2_25: -7689165181359399554
+      B_HouseExteriorTiles_2_240: 2483391563279040761
+      B_HouseExteriorTiles_2_156: -6894679306097038045
+      B_HouseExteriorTiles_2_42: -8113200361007896479
+      B_HouseExteriorTiles_2_78: -8086134863457833328
+      B_HouseExteriorTiles_2_99: 2972495907989250081
+      B_HouseExteriorTiles_2_86: 5878728138816408434
+      B_HouseExteriorTiles_2_90: 3151474347186185553
+      B_HouseExteriorTiles_2_213: -1251416037299971642
+      B_HouseExteriorTiles_2_97: 6595511138429492309
+      B_HouseExteriorTiles_2_225: 1776829427486707659
+      B_HouseExteriorTiles_2_103: 6050518245982936409
+      B_HouseExteriorTiles_2_1: 8200737075857373369
+      B_HouseExteriorTiles_2_58: 2539339175689854386
+      B_HouseExteriorTiles_2_52: -667194532111506104
+      B_HouseExteriorTiles_2_188: 6751563284624030099
+      B_HouseExteriorTiles_2_72: 250720313142684385
+      B_HouseExteriorTiles_2_153: 1021779274120966337
+      B_HouseExteriorTiles_2_221: -1182611668708274809
+      B_HouseExteriorTiles_2_23: -1333851461130511986
+      B_HouseExteriorTiles_2_191: 3634352883139151826
+      B_HouseExteriorTiles_2_207: -5552989692144647263
+      B_HouseExteriorTiles_2_26: 9111603513659724513
+      B_HouseExteriorTiles_2_104: -2071469526481385947
+      B_HouseExteriorTiles_2_215: -8491576731054038644
+      B_HouseExteriorTiles_2_192: 6801467138856881022
+      B_HouseExteriorTiles_2_91: -3782736618369089228
+      B_HouseExteriorTiles_2_199: 4459134783627380738
+      B_HouseExteriorTiles_2_123: 2784601103960201439
+      B_HouseExteriorTiles_2_74: 2632479030906630331
+      B_HouseExteriorTiles_2_234: 7223404259421077905
+      B_HouseExteriorTiles_2_127: 4598122309842589671
+      B_HouseExteriorTiles_2_15: 3277283308091361556
+      B_HouseExteriorTiles_2_178: -6390181146851007844
+      B_HouseExteriorTiles_2_21: 6492992047395009366
+      B_HouseExteriorTiles_2_117: -6344520683845984130
+      B_HouseExteriorTiles_2_151: -1310395156674565911
+      B_HouseExteriorTiles_2_48: 2970051295992656898
+      B_HouseExteriorTiles_2_195: 5007179052118584299
+      B_HouseExteriorTiles_2_198: 2577697630515505506
+      B_HouseExteriorTiles_2_20: 2409192349202873974
+      B_HouseExteriorTiles_2_101: -8365254609727704794
+      B_HouseExteriorTiles_2_208: 7533437962778458204
+      B_HouseExteriorTiles_2_186: -4241969862154321997
+      B_HouseExteriorTiles_2_5: -452869781616676982
+      B_HouseExteriorTiles_2_146: -2354020367432579603
+      B_HouseExteriorTiles_2_6: 6019606236314210251
+      B_HouseExteriorTiles_2_111: -2009011265286857634
+      B_HouseExteriorTiles_2_155: -8780822070776847176
+      B_HouseExteriorTiles_2_57: -8291400948251594010
+      B_HouseExteriorTiles_2_139: 7055197096536716579
+      B_HouseExteriorTiles_2_164: -6476301595040327339
+      B_HouseExteriorTiles_2_217: -7352116613635422860
+      B_HouseExteriorTiles_2_34: -4194011054019615932
+      B_HouseExteriorTiles_2_135: 6425152053982567231
+      B_HouseExteriorTiles_2_110: -3149446806411916751
+      B_HouseExteriorTiles_2_92: -8538992001636753082
+      B_HouseExteriorTiles_2_193: 9089268207700443842
+      B_HouseExteriorTiles_2_171: 3881067373918697259
+      B_HouseExteriorTiles_2_212: 9181049109475352897
+      B_HouseExteriorTiles_2_0: 6969156768001466309
+      B_HouseExteriorTiles_2_162: -8490310313053382213
+      B_HouseExteriorTiles_2_173: 5763277914265686217
+      B_HouseExteriorTiles_2_71: -6908237597005544168
+      B_HouseExteriorTiles_2_175: 4032188553026664460
+      B_HouseExteriorTiles_2_226: -5951942489387139264
+      B_HouseExteriorTiles_2_133: -1000686479225168091
+      B_HouseExteriorTiles_2_33: -9060037559304785558
+      B_HouseExteriorTiles_2_4: 2885552461487711849
+      B_HouseExteriorTiles_2_134: 24263812700816852
+      B_HouseExteriorTiles_2_107: -4423342067628794977
+      B_HouseExteriorTiles_2_39: -7374179522612911745
+      B_HouseExteriorTiles_2_130: 387130181357375036
+      B_HouseExteriorTiles_2_167: -3850188699583648431
+      B_HouseExteriorTiles_2_209: -3654477468290568933
+      B_HouseExteriorTiles_2_183: 4821023636813366591
+      B_HouseExteriorTiles_2_44: 2512318091471693432
+      B_HouseExteriorTiles_2_54: 5972118188653628250
+      B_HouseExteriorTiles_2_242: 7793014789428529319
+      B_HouseExteriorTiles_2_75: -2299523121449573162
+      B_HouseExteriorTiles_2_79: -8901429413828634164
+      B_HouseExteriorTiles_2_126: 4904738211485385459
+      B_HouseExteriorTiles_2_168: 6524288046679853941
+      B_HouseExteriorTiles_2_22: -5028266437667738718
+      B_HouseExteriorTiles_2_96: -4218865580646126831
+      B_HouseExteriorTiles_2_119: -2124128526398169703
+      B_HouseExteriorTiles_2_121: -7308707868703945873
+      B_HouseExteriorTiles_2_37: -7720666304415079347
+      B_HouseExteriorTiles_2_112: -6932284929328911969
+      B_HouseExteriorTiles_2_157: 4656370490621410931
+      B_HouseExteriorTiles_2_204: 9057223476677749277
+      B_HouseExteriorTiles_2_140: -3848013368272918672
+      B_HouseExteriorTiles_2_36: -5097828218872020302
+      B_HouseExteriorTiles_2_174: 902730323333414336
+      B_HouseExteriorTiles_2_62: -5252299450406935344
+      B_HouseExteriorTiles_2_102: 1002370474005043294
+      B_HouseExteriorTiles_2_116: -1476462462710758265
+      B_HouseExteriorTiles_2_2: -3142344898858344518
+      B_HouseExteriorTiles_2_189: -3395924155161223279
+      B_HouseExteriorTiles_2_180: -6565899622898105497
+      B_HouseExteriorTiles_2_224: -3097055853189213790
+      B_HouseExteriorTiles_2_172: 2432864905725060351
+      B_HouseExteriorTiles_2_200: -4150038267103123175
+      B_HouseExteriorTiles_2_120: -6117886287452242259
+      B_HouseExteriorTiles_2_202: 8726303948514519103
+      B_HouseExteriorTiles_2_13: 5436279136648063918
+      B_HouseExteriorTiles_2_56: 7020467597740105920
+      B_HouseExteriorTiles_2_64: 1432074280220873251
+      B_HouseExteriorTiles_2_205: 7174857433435456021
+      B_HouseExteriorTiles_2_87: 8935481187537207272
+      B_HouseExteriorTiles_2_45: -5866917417994685868
+      B_HouseExteriorTiles_2_163: 5509959585417779098
+      B_HouseExteriorTiles_2_129: -7048778965038806495
+      B_HouseExteriorTiles_2_31: 7413909454594638861
+      B_HouseExteriorTiles_2_83: -2154315566717559596
+      B_HouseExteriorTiles_2_132: -227477983806157453
+      B_HouseExteriorTiles_2_181: 4299646846197152154
+      B_HouseExteriorTiles_2_118: 3154814341981512071
+      B_HouseExteriorTiles_2_114: -6622725429083039754
+      B_HouseExteriorTiles_2_10: 5359104050701914813
+      B_HouseExteriorTiles_2_109: 5700244618867028563
+      B_HouseExteriorTiles_2_138: -488053610825492003
+      B_HouseExteriorTiles_2_150: 8926770645141483700
+      B_HouseExteriorTiles_2_143: -1049873762769703475
+      B_HouseExteriorTiles_2_19: 2440932066803643828
+      B_HouseExteriorTiles_2_235: -1708964741421772890
+      B_HouseExteriorTiles_2_81: 669145149539076380
+      B_HouseExteriorTiles_2_220: 9183451064158638347
+      B_HouseExteriorTiles_2_27: 982395410328068069
+      B_HouseExteriorTiles_2_18: -8342642266592783413
+      B_HouseExteriorTiles_2_76: 4633911900689867942
+      B_HouseExteriorTiles_2_98: 5694870515917897746
+      B_HouseExteriorTiles_2_159: 3325817062005537559
+      B_HouseExteriorTiles_2_144: 1615695730110585663
+      B_HouseExteriorTiles_2_51: 4869948379887001612
+      B_HouseExteriorTiles_2_145: 3617529587677390896
+      B_HouseExteriorTiles_2_12: 2837496399580602462
+      B_HouseExteriorTiles_2_141: 8315247206576467362
+      B_HouseExteriorTiles_2_125: -8997154182359434367
+      B_HouseExteriorTiles_2_165: 1017875880983546145
+      B_HouseExteriorTiles_2_35: -97425770329677175
+      B_HouseExteriorTiles_2_108: 3233695043202139043
+      B_HouseExteriorTiles_2_236: 990129084733471636
+      B_HouseExteriorTiles_2_203: -5279435463767153118
+      B_HouseExteriorTiles_2_105: -4977186081784082231
+      B_HouseExteriorTiles_2_166: -1509502094302207541
+      B_HouseExteriorTiles_2_124: -910385956306499316
+      B_HouseExteriorTiles_2_158: -1248486531187779744
+      B_HouseExteriorTiles_2_241: -5063533743289665395
+      B_HouseExteriorTiles_2_8: -3040230027378663404
+      B_HouseExteriorTiles_2_24: -3143380602202653901
+      B_HouseExteriorTiles_2_136: 8588286838989937672
+      B_HouseExteriorTiles_2_160: 7335237431946123343
+      B_HouseExteriorTiles_2_66: 7158201884956170157
+      B_HouseExteriorTiles_2_182: -2016644910102857861
+      B_HouseExteriorTiles_2_55: -1985121961864552138
+      B_HouseExteriorTiles_2_89: -4189731425032450220
+      B_HouseExteriorTiles_2_85: -2377644038236052965
+      B_HouseExteriorTiles_2_194: 672782746360986107
+      B_HouseExteriorTiles_2_9: 1736151446158952631
+      B_HouseExteriorTiles_2_113: -4777412535845656750
+      B_HouseExteriorTiles_2_17: 1014842940689664215
+      B_HouseExteriorTiles_2_128: 1850301643191039273
+      B_HouseExteriorTiles_2_185: 2673753733621570934
+      B_HouseExteriorTiles_2_187: 8774636197708375531
+      B_HouseExteriorTiles_2_14: 4816725443360874747
+      B_HouseExteriorTiles_2_233: -7417528437657907132
+      B_HouseExteriorTiles_2_131: 7616549038874016530
+      B_HouseExteriorTiles_2_201: 8464437455753737654
+      B_HouseExteriorTiles_2_11: 6347889540052046229
+      B_HouseExteriorTiles_2_214: -7232411793425212667
+      B_HouseExteriorTiles_2_218: 4068043469542783177
+      B_HouseExteriorTiles_2_94: -3250991296049314839
+      B_HouseExteriorTiles_2_47: 3365746785907894744
+      B_HouseExteriorTiles_2_149: -4992819090399157500
+      B_HouseExteriorTiles_2_40: -6028725414556078546
+      B_HouseExteriorTiles_2_161: 8609059555505447501
+      B_HouseExteriorTiles_2_211: -1019789263979331339
+      B_HouseExteriorTiles_2_239: -8193402073815339282
+      B_HouseExteriorTiles_2_93: -4589114835818817425
+      B_HouseExteriorTiles_2_122: 4135005084317499085
+      B_HouseExteriorTiles_2_196: 7808300547655081652
+      B_HouseExteriorTiles_2_210: 7788756918448639801
+      B_HouseExteriorTiles_2_147: 435024989922467108
+      B_HouseExteriorTiles_2_223: 1021909213569112831
+      B_HouseExteriorTiles_2_82: -1017372196895658845
+      B_HouseExteriorTiles_2_154: 4579856412677179693
+      B_HouseExteriorTiles_2_95: -3753711654505786310
+      B_HouseExteriorTiles_2_88: -8849589470019043775
+      B_HouseExteriorTiles_2_243: -3969769026282767475
+      B_HouseExteriorTiles_2_41: -2783714433033523226
+      B_HouseExteriorTiles_2_60: 2242798527645056730
+      B_HouseExteriorTiles_2_80: -6862054480852291923
+      B_HouseExteriorTiles_2_184: -8659612259831570279
+      B_HouseExteriorTiles_2_49: -6426466667539504386
+      B_HouseExteriorTiles_2_197: -3665377677157554480
+      B_HouseExteriorTiles_2_100: 7173196515404000385
+      B_HouseExteriorTiles_2_152: 5078988632424442740
+      B_HouseExteriorTiles_2_176: -6533735097985397232
+      B_HouseExteriorTiles_2_73: -3040012681180895226
+      B_HouseExteriorTiles_2_38: -3734292688081137021
+      B_HouseExteriorTiles_2_170: -7083110040141882404
+      B_HouseExteriorTiles_2_148: -7438823984917060780
+      B_HouseExteriorTiles_2_219: 3178796493229247984
+      B_HouseExteriorTiles_2_237: -739568813916076592
+      B_HouseExteriorTiles_2_77: 3888934384274340562
+      B_HouseExteriorTiles_2_50: -8691169677221509403
+      B_HouseExteriorTiles_2_115: -1093172374455264408
+      B_HouseExteriorTiles_2_53: -6334164273915410801
+      B_HouseExteriorTiles_2_190: -8583417056634119178
+      B_HouseExteriorTiles_2_32: 1168460615172355230
+      B_HouseExteriorTiles_2_59: 4384252154527252846
+      B_HouseExteriorTiles_2_206: 859754148272474794
+      B_HouseExteriorTiles_2_169: -2038346023313597664
+      B_HouseExteriorTiles_2_28: -7537188623571499046
+      B_HouseExteriorTiles_2_216: 6970794037882728457
+      B_HouseExteriorTiles_2_179: -2996140438652113403
+      B_HouseExteriorTiles_2_43: -4466899862238580261
+      B_HouseExteriorTiles_2_84: 5029111967448709932
+      B_HouseExteriorTiles_2_238: 6379089404161775287
+      B_HouseExteriorTiles_2_177: 9082691877809113078
+      B_HouseExteriorTiles_2_65: 793677825687359766
+      B_HouseExteriorTiles_2_63: 3556260944181622583
+      B_HouseExteriorTiles_2_142: 7753376417652714394
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

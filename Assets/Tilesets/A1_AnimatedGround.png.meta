@@ -605,6 +605,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -613,12 +615,12 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -636,9 +638,12 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
@@ -3702,6 +3707,151 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      A1_AnimatedGround_28: -1528176506321583813
+      A1_AnimatedGround_77: -8786568226422920032
+      A1_AnimatedGround_21: 1797842217889910839
+      A1_AnimatedGround_99: -4395579590283769969
+      A1_AnimatedGround_59: 301075783281383870
+      A1_AnimatedGround_5: 2801348927215128118
+      A1_AnimatedGround_105: 6884182540467640382
+      A1_AnimatedGround_155: -3217029889270663719
+      A1_AnimatedGround_73: -8724091744668281609
+      A1_AnimatedGround_40: -3938244574177295911
+      A1_AnimatedGround_144: -7594527298131691768
+      A1_AnimatedGround_130: -3198822857291058796
+      A1_AnimatedGround_145: -7237048780320865688
+      A1_AnimatedGround_24: 1964009073517272197
+      A1_AnimatedGround_45: 1054551597342941485
+      A1_AnimatedGround_0: -9007331781161995236
+      A1_AnimatedGround_164: 9135286227589330312
+      A1_AnimatedGround_41: 2741476330488765118
+      A1_AnimatedGround_67: 8154733466341504189
+      A1_AnimatedGround_140: -7626501701030869752
+      A1_AnimatedGround_20: -556837975287986749
+      A1_AnimatedGround_44: -8189828994225659062
+      A1_AnimatedGround_96: 2689550680181294570
+      A1_AnimatedGround_123: -5521460561581383631
+      A1_AnimatedGround_189: 3040533420588766236
+      A1_AnimatedGround_124: -1389071800459418048
+      A1_AnimatedGround_115: 7211285381141775192
+      A1_AnimatedGround_48: -8881550559834337292
+      A1_AnimatedGround_72: -9185280113478787399
+      A1_AnimatedGround_65: 3086697336787826594
+      A1_AnimatedGround_121: 1614076203643237669
+      A1_AnimatedGround_129: 50972498468014273
+      A1_AnimatedGround_138: -8037549374477774555
+      A1_AnimatedGround_109: 4599857620852654516
+      A1_AnimatedGround_11: -3032009005170402741
+      A1_AnimatedGround_33: 2508674852127309278
+      A1_AnimatedGround_181: 1020731500911443999
+      A1_AnimatedGround_184: -3545198952463634444
+      A1_AnimatedGround_75: 9130528994584837365
+      A1_AnimatedGround_146: -679456074849761472
+      A1_AnimatedGround_116: 6501229068474979419
+      A1_AnimatedGround_18: -5267284474281948238
+      A1_AnimatedGround_141: 9035976546342371647
+      A1_AnimatedGround_152: -6407037864147252364
+      A1_AnimatedGround_153: 6951257709671598319
+      A1_AnimatedGround_2: -6204985392544650243
+      A1_AnimatedGround_148: 2322385320501973640
+      A1_AnimatedGround_49: 307263836878149971
+      A1_AnimatedGround_100: -4853624329449687729
+      A1_AnimatedGround_83: 456991040607741475
+      A1_AnimatedGround_104: 8355266255573513590
+      A1_AnimatedGround_106: -3954338837273456276
+      A1_AnimatedGround_139: -696260307788511330
+      A1_AnimatedGround_120: 8594061405421499866
+      A1_AnimatedGround_133: 1924944870334452384
+      A1_AnimatedGround_66: 4170732703963454045
+      A1_AnimatedGround_172: 4206720728572196320
+      A1_AnimatedGround_169: 4751446710223688817
+      A1_AnimatedGround_108: -4651934152298009134
+      A1_AnimatedGround_76: 2378894226100982418
+      A1_AnimatedGround_90: -3915179041485046956
+      A1_AnimatedGround_125: -1375794055404671317
+      A1_AnimatedGround_117: -3411649040508102165
+      A1_AnimatedGround_13: -6694398860100145665
+      A1_AnimatedGround_112: -2724938725825692545
+      A1_AnimatedGround_176: 8275577600704552232
+      A1_AnimatedGround_93: -2000607512673672549
+      A1_AnimatedGround_35: -4690524372171271640
+      A1_AnimatedGround_122: 8472859281235354403
+      A1_AnimatedGround_171: -2983251892873648133
+      A1_AnimatedGround_27: 2458146138566602242
+      A1_AnimatedGround_1: 1390745906271628423
+      A1_AnimatedGround_186: -7085674209057067546
+      A1_AnimatedGround_51: 7231388643545047219
+      A1_AnimatedGround_157: -6194741182408235687
+      A1_AnimatedGround_88: -6211943791799723783
+      A1_AnimatedGround_163: -1053058229831855298
+      A1_AnimatedGround_113: -5897651976581680800
+      A1_AnimatedGround_177: 6160295756820645819
+      A1_AnimatedGround_80: 6241210790883235973
+      A1_AnimatedGround_56: 2649315615005350144
+      A1_AnimatedGround_107: 2530192709349393418
+      A1_AnimatedGround_61: -2722400211090154917
+      A1_AnimatedGround_149: -8894657484486296285
+      A1_AnimatedGround_64: 1650588758966291072
+      A1_AnimatedGround_81: -4904762421490959442
+      A1_AnimatedGround_10: -1107733752394637160
+      A1_AnimatedGround_9: 4769922883404657366
+      A1_AnimatedGround_85: 8864706514918849099
+      A1_AnimatedGround_74: -6594773161155374214
+      A1_AnimatedGround_188: 473154122090052378
+      A1_AnimatedGround_91: 6487578618982417326
+      A1_AnimatedGround_69: -2289993268569827345
+      A1_AnimatedGround_82: 5568899795528303544
+      A1_AnimatedGround_98: -1134973236821298606
+      A1_AnimatedGround_12: -8076391744956785896
+      A1_AnimatedGround_173: 6120348851891087025
+      A1_AnimatedGround_37: -7348832512373910567
+      A1_AnimatedGround_58: 630330303183779276
+      A1_AnimatedGround_187: -3794550403815384619
+      A1_AnimatedGround_170: -8416721340383417329
+      A1_AnimatedGround_57: -208461023097247243
+      A1_AnimatedGround_97: -3402261093717021024
+      A1_AnimatedGround_180: -662608668871627559
+      A1_AnimatedGround_8: 7920196809226639643
+      A1_AnimatedGround_26: 3006222704715505939
+      A1_AnimatedGround_36: -8170444809871349625
+      A1_AnimatedGround_52: -3236644802869281475
+      A1_AnimatedGround_136: -5332028280797166960
+      A1_AnimatedGround_17: -5533464860528243773
+      A1_AnimatedGround_19: -3181715753662954746
+      A1_AnimatedGround_185: 2219501937593924686
+      A1_AnimatedGround_25: -3378376482325817138
+      A1_AnimatedGround_147: -5207657732434358555
+      A1_AnimatedGround_84: 8906574481701112748
+      A1_AnimatedGround_137: 3562893572630326187
+      A1_AnimatedGround_114: 7044578610171215177
+      A1_AnimatedGround_32: 5860302257142450192
+      A1_AnimatedGround_4: 7103341520421702152
+      A1_AnimatedGround_160: -106199222595885229
+      A1_AnimatedGround_132: -7106554618265315860
+      A1_AnimatedGround_29: -3433964223980589999
+      A1_AnimatedGround_101: 2739478797567010299
+      A1_AnimatedGround_34: 8130467244810509071
+      A1_AnimatedGround_156: 2678644540731520298
+      A1_AnimatedGround_42: 3498769735635978855
+      A1_AnimatedGround_131: 103080116849543951
+      A1_AnimatedGround_162: 4847195500317924255
+      A1_AnimatedGround_178: 3246823486630955939
+      A1_AnimatedGround_161: 1909541569052853450
+      A1_AnimatedGround_53: 3670085287003945489
+      A1_AnimatedGround_43: 5072485876954565771
+      A1_AnimatedGround_3: 5707279921740989605
+      A1_AnimatedGround_154: -6939322967253281593
+      A1_AnimatedGround_68: 3306729872777073782
+      A1_AnimatedGround_60: -8440483568700465907
+      A1_AnimatedGround_165: -444500146886831627
+      A1_AnimatedGround_128: -5734540179303455553
+      A1_AnimatedGround_92: 3829958045825436139
+      A1_AnimatedGround_168: 547763480678696496
+      A1_AnimatedGround_50: -4649032264846629223
+      A1_AnimatedGround_89: -6714622438494084301
+      A1_AnimatedGround_179: 6426597198968030913
+      A1_AnimatedGround_16: -7907314047489276209
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -407,6 +407,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -415,12 +417,12 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -438,9 +440,12 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
@@ -1530,6 +1535,57 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      A5_Tiles_52: 4685904944331306793
+      A5_Tiles_38: 4773259867001001885
+      A5_Tiles_42: 6700781146274740496
+      A5_Tiles_27: 2787929622083711335
+      A5_Tiles_46: 7352548705352332985
+      A5_Tiles_8: -7163231585900793112
+      A5_Tiles_22: -8210808877000930386
+      A5_Tiles_32: 1884517727162413327
+      A5_Tiles_54: -222100233457937092
+      A5_Tiles_16: -8959384355889568556
+      A5_Tiles_37: 206941441726148853
+      A5_Tiles_45: -5273458617628744575
+      A5_Tiles_44: 3178253182735144502
+      A5_Tiles_41: -1217177223278336731
+      A5_Tiles_53: 2292687479836101892
+      A5_Tiles_39: -241745128899256548
+      A5_Tiles_13: 5378990750589775896
+      A5_Tiles_23: -2585995783555636341
+      A5_Tiles_11: -3083540726242140526
+      A5_Tiles_28: 3994874832431257846
+      A5_Tiles_34: -4934518699806802672
+      A5_Tiles_31: -2814523356941474638
+      A5_Tiles_30: -1967028194999701848
+      A5_Tiles_9: -5188653204225996308
+      A5_Tiles_36: 1708902162205265705
+      A5_Tiles_6: 4094229898384699625
+      A5_Tiles_12: 2101830929968047787
+      A5_Tiles_17: 719165268218193151
+      A5_Tiles_25: -3808379178580589088
+      A5_Tiles_15: -1730600244235319904
+      A5_Tiles_40: 1195891451028468014
+      A5_Tiles_14: -4526447912070032991
+      A5_Tiles_2: -8748646866115307112
+      A5_Tiles_26: 7127304907166382032
+      A5_Tiles_10: -6775901666433146928
+      A5_Tiles_35: -6536921555362372523
+      A5_Tiles_5: -9079768139528358608
+      A5_Tiles_29: -945803979118531641
+      A5_Tiles_7: -7745619037385086712
+      A5_Tiles_0: 7066668729543456382
+      A5_Tiles_43: -2730135237432096427
+      A5_Tiles_3: -3728177868966572045
+      A5_Tiles_21: 83552182954005605
+      A5_Tiles_24: 2310860271261217187
+      A5_Tiles_33: 8385336376293324409
+      A5_Tiles_4: 2531518904259190125
+      A5_Tiles_1: -6223256805713607877
+      A5_Tiles_18: 8236780244620501042
+      A5_Tiles_19: 4259921964428368183
+      A5_Tiles_20: -5489356778745484852
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -102,6 +102,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -110,12 +111,12 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -748,6 +749,33 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      BattleSprite_22: -3136563604549701969
+      BattleSprite_23: -110239950817986557
+      BattleSprite_10: 1373184808561353917
+      BattleSprite_6: -349635474486292364
+      BattleSprite_24: 1572215917432996597
+      BattleSprite_2: 8372216968922775889
+      BattleSprite_3: 7961130161319697997
+      BattleSprite_9: 5412044684285988893
+      BattleSprite_4: 4337102080934767783
+      BattleSprite_25: 189946392576831645
+      BattleSprite_13: -6654057395002767110
+      BattleSprite_15: -1491207027449506400
+      BattleSprite_20: -3985539455519302089
+      BattleSprite_7: 3592555359178911229
+      BattleSprite_19: -5536901564462496246
+      BattleSprite_8: -7795595728101108887
+      BattleSprite_0: -7090176810433832668
+      BattleSprite_5: -2759578086913826183
+      BattleSprite_14: -7740290664243020268
+      BattleSprite_16: -1547125427126322448
+      BattleSprite_12: 8780571652868183971
+      BattleSprite_1: -7172203427471370193
+      BattleSprite_11: 8504167837813678947
+      BattleSprite_21: 4481771141320580374
+      BattleSprite_18: -8857049101697671881
+      BattleSprite_17: 3667959952480782726
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

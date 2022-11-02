@@ -144,6 +144,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -152,12 +153,12 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -1048,6 +1049,47 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Portals_17: 7927603579944679371
+      Portals_22: -1413168137862151942
+      Portals_34: -6168241104796585977
+      Portals_38: -5288792785285513768
+      Portals_18: 796467672159797446
+      Portals_4: -1620695543008481155
+      Portals_11: 4118073026396254646
+      Portals_1: -1074516687531151711
+      Portals_14: 8315801029207873800
+      Portals_31: 2800935890286083831
+      Portals_2: 2315834432846829864
+      Portals_20: -1904649363284380278
+      Portals_25: 8773362014818227024
+      Portals_12: -6754145032957667384
+      Portals_28: -3666955899853263783
+      Portals_36: 2894260471282886433
+      Portals_8: 6557406258087020489
+      Portals_6: 7357977180532246424
+      Portals_35: 171726163263412780
+      Portals_39: -3506908805194945525
+      Portals_23: -6119031411736277094
+      Portals_9: 234393682542946546
+      Portals_10: -5628224593728864242
+      Portals_30: -5839883080257561839
+      Portals_16: 6809306005423741248
+      Portals_13: -4967589815275288864
+      Portals_33: 8672495020921673846
+      Portals_29: 8999940021148750156
+      Portals_37: -1000305803373775398
+      Portals_19: -2235554877920768663
+      Portals_5: -8774705549872174235
+      Portals_7: -775424802910397948
+      Portals_21: 4203749802902910518
+      Portals_27: -5846277237253414970
+      Portals_24: -5509509501746750550
+      Portals_0: 5930041907640958382
+      Portals_26: 6525716932707044313
+      Portals_32: -8533034070380541769
+      Portals_15: 3220448381795051313
+      Portals_3: 5450916983043189150
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

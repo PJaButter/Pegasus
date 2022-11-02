@@ -782,6 +782,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -790,12 +792,12 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -813,9 +815,12 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
   applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
@@ -5538,6 +5543,230 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      C_OutSide_Nature_211: -92765321022841478
+      C_OutSide_Nature_173: 6302693960757723135
+      C_OutSide_Nature_8: -8862825750546994794
+      C_OutSide_Nature_157: -8745007279211338917
+      C_OutSide_Nature_169: 7200897333551716367
+      C_OutSide_Nature_6: -9117660661630783057
+      C_OutSide_Nature_206: 6424492332149218382
+      C_OutSide_Nature_170: 984150181599787439
+      C_OutSide_Nature_145: -1750148156471592660
+      C_OutSide_Nature_133: -2924334044458324274
+      C_OutSide_Nature_95: -6718640242573366387
+      C_OutSide_Nature_11: -8985668168236545857
+      C_OutSide_Nature_71: -2642584383320971856
+      C_OutSide_Nature_74: -2190730249365535445
+      C_OutSide_Nature_28: 8869781983530039159
+      C_OutSide_Nature_33: 1804510521524171321
+      C_OutSide_Nature_18: 8437362356013431664
+      C_OutSide_Nature_249: -8391564725340799253
+      C_OutSide_Nature_172: 9163837200378952269
+      C_OutSide_Nature_223: 2103075953506426965
+      C_OutSide_Nature_225: 4870955302097932833
+      C_OutSide_Nature_226: -132254565577410930
+      C_OutSide_Nature_125: 5436050817458433855
+      C_OutSide_Nature_205: -6847512690544419542
+      C_OutSide_Nature_17: 7343856628401283501
+      C_OutSide_Nature_180: -8443551301906922437
+      C_OutSide_Nature_116: -2031640237904530774
+      C_OutSide_Nature_192: -2063261184323487662
+      C_OutSide_Nature_244: -1693402427360722541
+      C_OutSide_Nature_10: 5380767263938758910
+      C_OutSide_Nature_142: 2721150669907380009
+      C_OutSide_Nature_59: -1478067059147020776
+      C_OutSide_Nature_191: 1779337102591229516
+      C_OutSide_Nature_212: -3752815733012134708
+      C_OutSide_Nature_5: -3740945498208021130
+      C_OutSide_Nature_49: -262694620788935813
+      C_OutSide_Nature_131: 2525424747014439374
+      C_OutSide_Nature_126: 6446588913652036355
+      C_OutSide_Nature_179: -7303591850943378977
+      C_OutSide_Nature_123: 347628106458776708
+      C_OutSide_Nature_195: 917236050022792458
+      C_OutSide_Nature_75: 4532029276399346852
+      C_OutSide_Nature_20: -8785812318379667434
+      C_OutSide_Nature_201: -2132811130657990863
+      C_OutSide_Nature_100: 2738809769037229354
+      C_OutSide_Nature_242: 1242168331247664571
+      C_OutSide_Nature_3: -1680500927235272083
+      C_OutSide_Nature_114: -2785694453733897829
+      C_OutSide_Nature_119: 2219172168865151639
+      C_OutSide_Nature_241: 3215990171788162379
+      C_OutSide_Nature_135: -6221907338202400603
+      C_OutSide_Nature_7: 5155930399787623086
+      C_OutSide_Nature_39: -3178825407434878159
+      C_OutSide_Nature_54: -8976488576258572168
+      C_OutSide_Nature_112: 1169190816039963074
+      C_OutSide_Nature_207: 8591072465850884029
+      C_OutSide_Nature_166: -5037732531009205090
+      C_OutSide_Nature_199: -8935564943290041536
+      C_OutSide_Nature_154: 5336825332139261709
+      C_OutSide_Nature_161: 8896019332676286945
+      C_OutSide_Nature_128: -3747300711606789631
+      C_OutSide_Nature_167: 7105703584192340790
+      C_OutSide_Nature_216: -5596588069254161426
+      C_OutSide_Nature_40: -3742635292912879768
+      C_OutSide_Nature_129: -201779080551795526
+      C_OutSide_Nature_47: 7120224471467524877
+      C_OutSide_Nature_232: -4241809197068123841
+      C_OutSide_Nature_67: 332119686252443148
+      C_OutSide_Nature_164: -1761560266544322524
+      C_OutSide_Nature_243: -6456656754988189617
+      C_OutSide_Nature_115: 6039687886945143497
+      C_OutSide_Nature_250: -6138715374240023932
+      C_OutSide_Nature_22: -6554375959784084303
+      C_OutSide_Nature_34: 2867828140795245562
+      C_OutSide_Nature_65: 3220752072814290878
+      C_OutSide_Nature_190: -764091271926096136
+      C_OutSide_Nature_4: -6541397465316267127
+      C_OutSide_Nature_143: 2616941136038503434
+      C_OutSide_Nature_230: 8406247345697521565
+      C_OutSide_Nature_99: 958253412780430144
+      C_OutSide_Nature_63: -1944624574735565538
+      C_OutSide_Nature_53: 8582282018902852099
+      C_OutSide_Nature_245: 6949499116404484927
+      C_OutSide_Nature_227: 600482515971672221
+      C_OutSide_Nature_240: -3548599326522389284
+      C_OutSide_Nature_60: 3754380461714956586
+      C_OutSide_Nature_88: -625986373041764822
+      C_OutSide_Nature_231: 3292442437861338095
+      C_OutSide_Nature_35: 8858768354805205268
+      C_OutSide_Nature_12: 1184302034489558716
+      C_OutSide_Nature_194: -321878348344007149
+      C_OutSide_Nature_118: -549855338818301775
+      C_OutSide_Nature_25: 7729227332827984384
+      C_OutSide_Nature_72: 3235537316769330585
+      C_OutSide_Nature_151: -3809592516682562602
+      C_OutSide_Nature_197: -6864680466866332683
+      C_OutSide_Nature_92: -2604967561131765610
+      C_OutSide_Nature_106: -3410193787294656829
+      C_OutSide_Nature_50: 7925507880124937479
+      C_OutSide_Nature_150: 7168760345723694320
+      C_OutSide_Nature_79: 7163484169926383326
+      C_OutSide_Nature_219: 8248206552267787788
+      C_OutSide_Nature_137: 8320050413987455624
+      C_OutSide_Nature_162: -3940384455199113923
+      C_OutSide_Nature_176: -1004712030614905473
+      C_OutSide_Nature_66: -7995006639897382854
+      C_OutSide_Nature_187: -4203206389038741931
+      C_OutSide_Nature_96: -5169667654475988606
+      C_OutSide_Nature_55: 277257921220175990
+      C_OutSide_Nature_148: -5620080164832591983
+      C_OutSide_Nature_91: 2224120490623477271
+      C_OutSide_Nature_43: -6339126130225717468
+      C_OutSide_Nature_132: -4253819931719726258
+      C_OutSide_Nature_57: 7349529969862818181
+      C_OutSide_Nature_152: -2601023326954661531
+      C_OutSide_Nature_16: 4319982354938044387
+      C_OutSide_Nature_149: -5230840805915034577
+      C_OutSide_Nature_140: 2679153789726555538
+      C_OutSide_Nature_144: 769352341595740665
+      C_OutSide_Nature_228: 4272283346872204898
+      C_OutSide_Nature_184: 5297456110152351797
+      C_OutSide_Nature_203: -534128584663891015
+      C_OutSide_Nature_200: -3055133455748614978
+      C_OutSide_Nature_213: 6038005060337580674
+      C_OutSide_Nature_127: 4075205165914945982
+      C_OutSide_Nature_183: -4140419142606542210
+      C_OutSide_Nature_215: -8714488047899820657
+      C_OutSide_Nature_218: -6334064469136405622
+      C_OutSide_Nature_181: 6226527572297005313
+      C_OutSide_Nature_248: 4272261866359157419
+      C_OutSide_Nature_37: -5786297485124524241
+      C_OutSide_Nature_234: -3319871817795397157
+      C_OutSide_Nature_138: 5667208845762077115
+      C_OutSide_Nature_193: 3624217979149272391
+      C_OutSide_Nature_159: -7916403393404147289
+      C_OutSide_Nature_185: -4404073824288712655
+      C_OutSide_Nature_204: 382613305376410210
+      C_OutSide_Nature_153: 792923288445741439
+      C_OutSide_Nature_246: 1886954191280860783
+      C_OutSide_Nature_21: 5890439227436143301
+      C_OutSide_Nature_130: -3750471226977078808
+      C_OutSide_Nature_2: -2058666914975171376
+      C_OutSide_Nature_58: 1171284595801664067
+      C_OutSide_Nature_36: -7147531037245495972
+      C_OutSide_Nature_90: 966249855047684228
+      C_OutSide_Nature_122: 305695871853677459
+      C_OutSide_Nature_48: -2084131653909408136
+      C_OutSide_Nature_108: 4004498355117730739
+      C_OutSide_Nature_32: -2538357790127054887
+      C_OutSide_Nature_217: 933290904151788167
+      C_OutSide_Nature_156: 1509051618450119182
+      C_OutSide_Nature_160: -656763870174870567
+      C_OutSide_Nature_26: -3485336610210967514
+      C_OutSide_Nature_163: -8236469895438126462
+      C_OutSide_Nature_174: 630022213364836403
+      C_OutSide_Nature_198: 1042285539380635230
+      C_OutSide_Nature_235: -2891154871005828219
+      C_OutSide_Nature_175: 3836942287406649349
+      C_OutSide_Nature_19: -7353818025727994139
+      C_OutSide_Nature_103: -9156347139998299430
+      C_OutSide_Nature_247: -1417955282781645518
+      C_OutSide_Nature_177: -2032694643714195534
+      C_OutSide_Nature_97: 9203788527673008494
+      C_OutSide_Nature_208: 5048102653325201455
+      C_OutSide_Nature_229: -7795157018866000618
+      C_OutSide_Nature_188: -1919548984577085221
+      C_OutSide_Nature_84: -4521499146337046484
+      C_OutSide_Nature_80: -4162036083163365476
+      C_OutSide_Nature_38: -6761306238307467612
+      C_OutSide_Nature_73: -7656919233749538098
+      C_OutSide_Nature_69: -5780158245028869080
+      C_OutSide_Nature_224: 3184475379613568748
+      C_OutSide_Nature_68: -29407599238373443
+      C_OutSide_Nature_239: 7903357716066144100
+      C_OutSide_Nature_104: -1323405817791364575
+      C_OutSide_Nature_44: 71854902684323885
+      C_OutSide_Nature_189: -1562954635349867167
+      C_OutSide_Nature_196: -6728599469250199872
+      C_OutSide_Nature_111: -2043753005583048537
+      C_OutSide_Nature_155: -2856669465288189549
+      C_OutSide_Nature_52: 6942473173633190023
+      C_OutSide_Nature_182: -5787312530837611663
+      C_OutSide_Nature_51: 7739407334049784680
+      C_OutSide_Nature_98: 9216376388761760687
+      C_OutSide_Nature_87: 4924557500538675253
+      C_OutSide_Nature_238: 2048858789404611100
+      C_OutSide_Nature_214: -1730234123409166056
+      C_OutSide_Nature_107: -2275355153586230762
+      C_OutSide_Nature_121: -8329570564874780641
+      C_OutSide_Nature_124: -8411758551636017939
+      C_OutSide_Nature_105: 5833893505233587895
+      C_OutSide_Nature_136: 9170604399260234245
+      C_OutSide_Nature_42: -7840047950631160452
+      C_OutSide_Nature_64: -948486100517110758
+      C_OutSide_Nature_70: 5063651226478301465
+      C_OutSide_Nature_83: -5801590616222575410
+      C_OutSide_Nature_41: 1969660053174430056
+      C_OutSide_Nature_165: 1228627938832038765
+      C_OutSide_Nature_186: 7191205409388642223
+      C_OutSide_Nature_31: -5267702609549830510
+      C_OutSide_Nature_89: 764355643941005979
+      C_OutSide_Nature_81: -8432129325840360327
+      C_OutSide_Nature_209: 6973786753944215020
+      C_OutSide_Nature_120: 6666212807562931622
+      C_OutSide_Nature_147: 4344209767593189250
+      C_OutSide_Nature_202: -1625199716085408712
+      C_OutSide_Nature_15: 529436079924074225
+      C_OutSide_Nature_139: -6871073212656658156
+      C_OutSide_Nature_9: -7367203640852740418
+      C_OutSide_Nature_113: 6766633358281243810
+      C_OutSide_Nature_158: -3830048229238815187
+      C_OutSide_Nature_141: -7318781437194552057
+      C_OutSide_Nature_1: 5689733009779588226
+      C_OutSide_Nature_82: -7465452914488415887
+      C_OutSide_Nature_220: -3728089549343445283
+      C_OutSide_Nature_23: 4718120032321728383
+      C_OutSide_Nature_233: -7818480461909532652
+      C_OutSide_Nature_0: 6730964151573904302
+      C_OutSide_Nature_146: 2323167558917890878
+      C_OutSide_Nature_134: 2199494536502701722
+      C_OutSide_Nature_76: -1101846137433418593
+      C_OutSide_Nature_56: -1614457007165088051
+      C_OutSide_Nature_117: -5865009120796502767
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
